@@ -2,18 +2,24 @@ body{
 	background: #ccc;
 }
 
+.image{
+	border-radius: 5px;
+}
+
 #title, .subtitle, .post_title {
 	color: blue;
 }
 
 .post_title{
+	margin: 0 0 15px 0;
 	font-size: 16px;
 	font-style: italic;
 }
 
 .post{
 	background: #fff;
-	padding: 10px; /*espaçamento entre a borda e o conteudo*/
-	border: 3px solid #000; /*circunda o padding e o conteudo, pode ser alterada sua estrutura como largura e cor*/
-	margin: 10px; /*espaçamento entre elementos, parte mais de fora*/
+	padding: 15px; /*espaçamento entre a borda e o conteudo*/
+	border: 2px solid #505050; /*circunda o padding e o conteudo, pode ser alterada sua estrutura como largura e cor*/
+	margin: 15px 0 15px 0; /*espaçamento entre elementos, parte mais de fora*/
+	border-radius: 5px;
 }
