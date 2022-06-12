@@ -1,13 +1,26 @@
 body{
 	background: #ccc;
+	font-family: Verdana;
 }
 
-.image{
-	border-radius: 5px;
+.photo{
+	border: 1px solid #505050;
+	border-radius: 50%;
+	max-width: 200px;
 }
 
 #title, .subtitle, .post_title {
-	color: blue;
+	color: #505050;
+}
+
+#title{
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+a{
+	text-decoration: line-through;
+	color: #505050;
 }
 
 .post_title{
@@ -20,6 +33,17 @@ body{
 	background: #fff;
 	padding: 15px; /*espaçamento entre a borda e o conteudo*/
 	border: 2px solid #505050; /*circunda o padding e o conteudo, pode ser alterada sua estrutura como largura e cor*/
-	margin: 15px 0; /*espaçamento entre elementos, parte mais de fora*/
+	margin-bottom: 15px; /*espaçamento entre elementos, parte mais de fora*/
 	border-radius: 5px;
+}
+
+.post_content{
+	margin: 0;
+	margin-bottom: 15px;
+	text-transform: capitalize;
+}
+
+.post_image{
+	border-radius: 5px;
+	margin-bottom: 15px;
 }
