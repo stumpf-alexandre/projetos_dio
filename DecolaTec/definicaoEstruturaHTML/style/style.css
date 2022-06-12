@@ -11,7 +11,7 @@ body{
 }
 
 .post_title{
-	margin: 0 0 15px 0;
+	margin-bottom: 15px;
 	font-size: 16px;
 	font-style: italic;
 }
@@ -20,6 +20,6 @@ body{
 	background: #fff;
 	padding: 15px; /*espaçamento entre a borda e o conteudo*/
 	border: 2px solid #505050; /*circunda o padding e o conteudo, pode ser alterada sua estrutura como largura e cor*/
-	margin: 15px 0 15px 0; /*espaçamento entre elementos, parte mais de fora*/
+	margin: 15px 0; /*espaçamento entre elementos, parte mais de fora*/
 	border-radius: 5px;
 }
