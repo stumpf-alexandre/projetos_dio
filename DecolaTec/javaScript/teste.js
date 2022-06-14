@@ -14,3 +14,4 @@ function returnEvenValues(array){
 let array = [1, 2, 4, 5, 7, 8];
 
 returnEvenValues(array);
+/*executando programa no terminal do git bash com o coomando node teste.js*/
