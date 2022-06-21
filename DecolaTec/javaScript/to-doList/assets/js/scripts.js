@@ -5,7 +5,7 @@ form.onsubmit = function (e) {
 	e.preventDefault();
 	const inputField = document.getElementById('task-input');
 	if(document.getElementById('task-input').value.trim() != ""){
-		addTask(inputField.value.trim());
+		addTask(inputField.value);
 	}else{
 		alert("Preenchimento de campo obrigatório");
 	}
