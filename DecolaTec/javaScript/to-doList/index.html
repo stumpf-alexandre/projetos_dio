@@ -5,23 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css"/>
-    <script src="assets/js/scripts.js"></script>
     <title>To-Do List</title>
 </head>
 <body>
-   <div class="todo">
-        <div class="title">
-            TODO - LIST
+    <h1>TODO - LIST</h1>
+    <div id="list">
+        <form id="task-form">
+            <input type="text" id="task-input" name="tarefa" placeholder="Digite uma tarefa">
+            <button type="submit">Adicionar</button>
+        </form>
+        <div id="tasks">
+            
         </div>
-
-        <div class="new_item">
-            <input type="text" id="task" name="task" placeholder="Digite uma tarefa">
-            <input type="button" id="addTask" value="Adicionar" onclick="addTask()">
-        </div>
-
-        <div id="list" class="list">
-
-        </div>
-   </div> 
+   </div>
+   <script src="assets/js/scripts.js"></script> 
 </body>
 </html>
