@@ -1,29 +1,84 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
 
+:root{
+  --primary-color: #F4CE01;
+  --secondary-color: #0F0F0B;
+}
+
 * {
   font-family: "Open Sans", sans-serif;
 }
 
 body {
-  display: flex;
-  align-items: center;
   justify-content: center;
+  font: bold 2rem;
+  background-color: var(--primary-color);
+}
+
+#todo{
+  display: flex;
+  width: 50vw;
   flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  gap: 15px;
+}
+
+h1{
+  display: flex;
+  background-color: var(--secondary-color);
+  width: 100%;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  box-shadow: 1px 1px 5px var(--secondary-color);
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+#task-form{
+  display: flex;
+  background-color: #fff59d;
+  width: 100%;
+  height: 40px;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  box-shadow: 1px 1px 5px var(--secondary-color);
+  margin: 0;
+  font: inherit;
 }
 
 button {
-  border: 1px solid rgb(105, 197, 255);
+  width: 15%;
+  border: 1px solid var(--secondary-color);
   border-radius: 5px;
-  background-color: rgb(227, 248, 255);
-  color: rgb(105, 197, 255);
+  font-size: 15px;
+  font-weight: 900;
+  color: var(--secondary-color);
   text-align: center;
   padding: 5px;
+  box-shadow: 1px 1px 5px var(--secondary-color);
+}
+
+button:hover{
+  cursor: pointer;
+  transition: all .5s ease;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+#task-form > input{
+  font: inherit;
+  width: 78%;
 }
 
 input[type="text"] {
   padding: 5px;
   border-radius: 5px;
-  border: 1px solid black;
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid var(--secondary-color);
 }
 
 #tasks {
@@ -41,4 +96,48 @@ input[type="text"] {
 :checked + label {
   text-decoration: line-through;
   color: grey;
+}
+
+#list{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#label{
+  width: 100%;
+  height: 30px;
+  padding-top: 3px;
+  font-weight: 900;
+}
+
+#label:hover{
+  cursor: pointer;
+  transition: all .5s ease;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+#taskButton{
+  width: 30px;
+  height: 30px;
+  float: right;
+  font: inherit;
+  text-align: center;
+  font-weight: 900;
+  background-color: red;
+}
+
+#taskButton:hover{
+  cursor: pointer;
+  transition: all .5s ease;
+  background-color: #8e0404;
+  color: var(--secondary-color);
+}
+ 
+#taskCheckbox{
+  width: 30px;
+  height: 30px;
+  font: inherit;
 }
