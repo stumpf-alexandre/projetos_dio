@@ -44,9 +44,10 @@ function addTask(description) {
 }
 
 function removeTask(itemId){
-	for(i = 0; i < taskList.children.length; i++){
-		if(taskList.children[i].getAtribute('taskButton') == itemId){
-			taskList.children[i].remove();
-		}
-	}
+	//for(i = 0; i < taskList.children.length; i++){
+		//console.log(taskList.children[i].getAttribute(index));
+		//if(taskList.children[i].getAttribute(index) == itemId){
+			//taskList.children[i].getAttribute(index).remove();
+		//}
+	//}
 }
