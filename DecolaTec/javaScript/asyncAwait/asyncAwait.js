@@ -12,3 +12,4 @@ async function resolvePromise() {
 
     return resolved;
 }
+//sem o async e o await a função promise não sera executada pq no javascript as funções são sincronas
