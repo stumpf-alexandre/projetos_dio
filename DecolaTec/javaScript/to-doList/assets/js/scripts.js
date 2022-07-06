@@ -1,6 +1,7 @@
 const form = document.getElementById('task-form');
 const taskList = document.getElementById('tasks');
 var itemId;
+const btn = document.getElementById('taskButton');
 
 form.onsubmit = function (e) {
 	e.preventDefault();
@@ -27,7 +28,6 @@ function addTask(description) {
 
 	newTask2.setAttribute('type', 'button');
 	newTask2.setAttribute('value', 'X');
-	newTask2.setAttribute('onclick', 'removeTask(' + itemId + ')');
 	newTask2.setAttribute('id','taskButton');
 
 	taskLabel.setAttribute('for', description);
@@ -51,3 +51,5 @@ function removeTask(itemId){
 		//}
 	//}
 }
+
+btn.addEventListener("click", removeTask());
