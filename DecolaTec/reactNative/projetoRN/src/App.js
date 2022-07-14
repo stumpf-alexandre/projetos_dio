@@ -1,8 +1,12 @@
 import React from 'react';
-import {} from 'react-native';
+import {View, Text} from 'react-native';
 
 const App = () => {
-    return null;
+    return (
+        <View>
+            <Text>Ola mundo!!!!</Text>
+        </View>
+    );
 };
 
 export default App;
