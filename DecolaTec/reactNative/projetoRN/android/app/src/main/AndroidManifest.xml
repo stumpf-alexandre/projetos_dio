@@ -3,6 +3,14 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <queries>
+      <intent>
+        <action android:nome="android.intent.action.VIEW" />
+        <category android:nome="android.intent.category.BROWSABLE" />
+        <data android:schemas="https" />
+      </intent>
+    </queries>
+
     <application
       android:name=".MainApplication"
       android:label="@string/app_name"

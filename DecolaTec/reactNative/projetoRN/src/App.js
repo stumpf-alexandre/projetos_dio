@@ -1,13 +1,25 @@
 import React from 'react';
-import {View, Image, StyleSheet, SafeAreaView, StatusBar, Text} from 'react-native';
+import {View, Image, StyleSheet, SafeAreaView, StatusBar, Text, Pressable, Linking} from 'react-native';
 
 const colorGithub = '#010409';
 const colorFontGitHub = '#C9D1D9';
 const colorDarkFontGitHub = '#4F565E';
 
-const imageProfileGithub = 'https://avatars.githubusercontent.com/u/16006888?v=4'
+const imageProfileGithub = 'https://avatars.githubusercontent.com/u/16006888?v=4';
+
+const urlToMyGitHub = 'https://github.com/stumpf-alexandre';
 
 const App = () => {
+    //criando função de botão para acessar github
+    //o Linking tem uma função para abrir uma url
+    const handlePressGoToGithub = async () => {
+        const res = await Linking.canOpenURL(urlToMyGitHub);
+        if(res){
+            await Linking.canOpenURL(urlToMyGitHub);
+        }
+    };
+    //colocar uma verificação parapermitir abrir um link, para isso deve ir na pasta do android, app, src, main, androidManifest e em acima de aplication acressentar <queries>, <intent>, <action android:name="android.intent.action.VIEW"/>, <category android:nome="android.intent.category.BROWSABLE"/> e <data android:scheme="https"/>
+
     return (
         //protege os componentes para não sairem para locais indevidos da tela
         <SafeAreaView style = {style.container}>
@@ -23,6 +35,13 @@ const App = () => {
                 <Text accessibilityLabel='Nickname: stumpf-alexandre' style = {[style.defaultText, style.nickname]}>stumpf-alexandre</Text>
                 <Text accessibilityLabel='Descrição: Software Engineer | Data Science | Mobile Developer' style = {[style.defaultText, style.description]}>Software Engineer | Data Science | Mobile Developer</Text>
             </View>
+
+            {/*o pressable serve para tornar clickavel o botão*/}
+            <Pressable onPress = {handlePressGoToGithub}>
+                <View style = {style.button}>
+                    <Text style = {[style.defaultText, style.textButton]}>Open in Github</Text>
+                </View>
+            </Pressable>
         </SafeAreaView>
     );
 };
@@ -58,12 +77,22 @@ const style = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 24,
     },
-    nickname:{
+    nickname: {
         fontSize: 18,
         color: colorDarkFontGitHub,
     },
     description: {
         fontWeight: 'bold',
         fontSize: 14,
+    },
+    button: {
+        marginTop: 20,
+        backgroundColor: colorDarkFontGitHub,
+        borderRadius: 10,
+        padding: 20,
+    },
+    textButton: {
+        fontWeight: 'bold',
+        fontSize: 16,
     },
 });
