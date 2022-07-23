@@ -1,7 +1,10 @@
 import React from 'react';
-import {View, Image, StyleSheet, SafeAreaView, StatusBar} from 'react-native';
+import {View, Image, StyleSheet, SafeAreaView, StatusBar, Text} from 'react-native';
 
 const colorGithub = '#010409';
+const colorFontGitHub = '#C9D1D9';
+const colorDarkFontGitHub = '#4F565E';
+
 const imageProfileGithub = 'https://avatars.githubusercontent.com/u/16006888?v=4'
 
 const App = () => {
@@ -14,6 +17,11 @@ const App = () => {
             <View style = {style.content}>
                 {/*imagem vinda do avatar do git hub*/}
                 <Image accessibilityLabel='Foto do Alexandre' style = {style.avatar} source={{uri: imageProfileGithub}} />
+
+                {/*a tag style pode receber um array de estilos*/}
+                <Text accessibilityLabel='Nome: Alexandre Stumpf' style = {[style.defaultText, style.name]}>Alexandre Stumpf</Text>
+                <Text accessibilityLabel='Nickname: stumpf-alexandre' style = {[style.defaultText, style.nickname]}>stumpf-alexandre</Text>
+                <Text accessibilityLabel='Descrição: Software Engineer | Data Science | Mobile Developer' style = {[style.defaultText, style.description]}>Software Engineer | Data Science | Mobile Developer</Text>
             </View>
         </SafeAreaView>
     );
@@ -32,6 +40,7 @@ const style = StyleSheet.create({
     //estado de conteudo da pagina
     content: {
         alignItems: 'center',//centraliza a imagemView no topo
+        padding: 20,
     },
     //a imageView necessita de uma altura e largura, se não, não aparece na tela
     avatar: {
@@ -40,5 +49,21 @@ const style = StyleSheet.create({
         borderRadius: 100,
         borderColor: 'white',
         borderWidth: 2,
+    },
+    defaultText: {
+        color: colorFontGitHub,
+    },
+    name: {
+        marginTop: 20,
+        fontWeight: 'bold',
+        fontSize: 24,
+    },
+    nickname:{
+        fontSize: 18,
+        color: colorDarkFontGitHub,
+    },
+    description: {
+        fontWeight: 'bold',
+        fontSize: 14,
     },
 });
