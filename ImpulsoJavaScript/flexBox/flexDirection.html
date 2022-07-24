@@ -23,15 +23,18 @@
             text-align: center;
             margin: 5px;
         }
+        /*o row ja vem por padrão, ele alinha os itens em linha da esquerda para a direita, do menor para o maior*/        
         .row{
             flex-direction: row;
         }
+        /*o row-reverse alinha os itens em linha da direita para a esquerda, do maior para o menor*/
         .rowReverse{
             flex-direction: row-reverse;
         }
         .rowReverse li{
             background-color: red;
         }
+        /*o column alinha os elementos em coluna, do menor para o maior*/
         .column{
             float: left;
             flex-direction: column;
@@ -39,7 +42,9 @@
         .column li{
             background: orange;
         }
+        /*o column-reverse alinha os elementos em coluna, do maior para o menor*/
         .columnReverse{
+            /*o float posiciona a coluna em um lado da tela, right para o lado direito*/
             float: right;
             flex-direction: column-reverse;
         }
