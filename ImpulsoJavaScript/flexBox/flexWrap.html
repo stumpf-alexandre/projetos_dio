@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex wrap</title>
+    <style>
+        .flexContainer{
+            display: flex;
+            height: 150px;
+            border: 2px solid black;
+            max-width: 300px;
+            /*este valor ja vem por padrão no flex direction*/
+            flex-direction: row;
+        }
+        .flexContainerColumn{
+            display: flex;
+            height: 150px;
+            border: 2px solid black;
+            max-width: 300px;
+            flex-direction: column;
+        }
+        .item{
+            font-size: 24px;
+            height: 50%;
+            text-align: center;
+            min-width: 100px;
+            line-height: 50px;
+        }
+        /*por padrão o nowrap ja vem definido no flex box, ele faz com que não haja quebra de linha dos itens quando não comportado no container*/
+        .noWrap{
+            flex-wrap: nowrap;
+        }
+        /*ele faz com que haja quebra de linha dos itens quando não comportado no container*/
+        .wrap{
+            flex-wrap: wrap;
+        }
+        /*ele faz com que haja quebra de linha dos itens quando não comportado no container, mas o item quebrado vai para cima dos outros itens*/
+        .wrapReverse{
+            flex-wrap: wrap-reverse;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .green{
+            background-color: lightgreen;
+        }
+        .orange{
+            background-color: orangered;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>No wrap</h1>
+    <h2>Faz com que não haja quebra de linha dos itens quando não comportado no container</h2>
+
+    <div class="flexContainer noWrap">
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+        <div class="item yellow">4</div>
+    </div>
+
+    <h1>Wrap</h1>
+    <h2>Faz com que haja quebra de linha dos itens quando não comportado no container</h2>
+    
+    <div class="flexContainer wrap">
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+        <div class="item yellow">4</div>
+    </div>
+
+    <h1>Wrap reverse</h1>
+    <h2>Faz com que haja quebra de linha dos itens quando não comportado no container, mas o item quebrado vai para cima dos outros itens</h2>
+
+    <div class="flexContainer wrapReverse">
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+        <div class="item yellow">4</div>
+    </div>
+
+    <h1>No wrap</h1>
+    <h2>Faz com que não haja quebra de coluna dos itens quando não comportado no container</h2>
+
+    <div class="flexContainerColumn noWrap">
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+        <div class="item yellow">4</div>
+    </div>
+
+    <h1>Wrap</h1>
+    <h2>Faz com que haja quebra de coluna dos itens quando não comportado no container</h2>
+    
+    <div class="flexContainerColumn wrap">
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+        <div class="item yellow">4</div>
+    </div>
+
+    <h1>Wrap reverse</h1>
+    <h2>Faz com que haja quebra de coluna dos itens quando não comportado no container, mas o item quebrado vai para a esquerda dos outros itens</h2>
+
+    <div class="flexContainerColumn wrapReverse">
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+        <div class="item yellow">4</div>
+    </div>
+</body>
+</html>
