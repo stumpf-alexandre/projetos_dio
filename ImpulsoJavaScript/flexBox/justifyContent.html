@@ -35,24 +35,29 @@
         .spaceAround{
             justify-content: space-around;
         }
+        .column{
+            flex-direction: column;
+            min-height: 200px;
+        }
     </style>
 </head>
 <body>
-    <h1>Flex start</h1>
+    <h1>Row</h1>
+    <h2>Flex start</h2>
     <section class="container flexStart">
         <div class="item">1</div>
         <div class="item">Item 2</div>
         <div class="item">Outro item</div>
     </section>
 
-    <h1>Flex end</h1>
+    <h2>Flex end</h2>
     <section class="container flexEnd">
         <div class="item">1</div>
         <div class="item">Item 2</div>
         <div class="item">Outro item</div>
     </section>
 
-    <h1>Center</h1>
+    <h2>Center</h2>
     <section class="container center">
         <div class="item">1</div>
         <div class="item">Item 2</div>
@@ -61,7 +66,7 @@
         <div class="item">5</div>
     </section>
 
-    <h1>Space between</h1>
+    <h2>Space between</h2>
     <section class="container spaceBetween">
         <div class="item">1</div>
         <div class="item">Item 2</div>
@@ -70,8 +75,54 @@
         <div class="item">5</div>
     </section>
 
-    <h1>Space around</h1>
+    <h2>Space around</h2>
     <section class="container spaceAround">
+        <div class="item">1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Outro item</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </section>
+
+    <h1>Column</h1>
+    <h2>Flex start (Column)</h2>
+    <section class="container flexStart column">
+        <div class="item">1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Outro item</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </section>
+    
+    <h2>Flex end (Column)</h2>
+    <section class="container flexEnd column">
+        <div class="item">1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Outro item</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </section>
+
+    <h2>Center (Column)</h2>
+    <section class="container center column">
+        <div class="item">1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Outro item</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </section>
+
+    <h2>Space between (Column)</h2>
+    <section class="container spaceBetween column">
+        <div class="item">1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Outro item</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </section>
+
+    <h2>Space around (Column)</h2>
+    <section class="container spaceAround column">
         <div class="item">1</div>
         <div class="item">Item 2</div>
         <div class="item">Outro item</div>
