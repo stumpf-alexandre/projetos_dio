@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align items</title>
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            /*trata da distribuição do tamanho do conteudo*/
+            flex: 1;
+        }
+        /*o item cresce conforme o tamanho do conteudo*/
+        .center{
+            align-items: center;
+        }
+        /*os itens crescem conforme o maior conteudo*/
+        .stretch{
+            align-items: stretch;
+        }
+        .flexStart{
+            align-items: flex-start;
+        }
+        .flexEnd{
+            align-items: flex-end;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .central{
+            height: 300px;
+            justify-content: center;
+        }
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Row</h1>
+    <h2>Center</h2>
+    <section class="container center">
+        <div class="item">Item1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item3 mais algum itempara fazer paere da materia</div>
+    </section>
+
+    <h2>Stretch</h2>
+    <section class="container stretch">
+        <div class="item">Item1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item3 mais algum itempara fazer paere da materia</div>
+    </section>
+
+    <h2>Flex start</h2>
+    <section class="container flexStart">
+        <div class="item">Item1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item3 mais algum itempara fazer paere da materia</div>
+    </section>
+
+    <h2>Flex end</h2>
+    <section class="container flexEnd">
+        <div class="item">Item1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item3 mais algum itempara fazer paere da materia</div>
+    </section>
+
+    <h2>Baseline</h2>
+    <section class="container baseline">
+        <div class="item">Item1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item3 mais algum itempara fazer paere da materia</div>
+    </section>
+
+    <h1>Column</h1>
+    <h2>Flex start</h2>
+    <section class="container flexStart column">
+        <div class="item">Item1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item3 mais algum itempara fazer paere da materia</div>
+    </section>
+
+    <h2>Flex end</h2>
+    <section class="container flexEnd column">
+        <div class="item">Item1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item3 mais algum itempara fazer paere da materia</div>
+    </section>
+
+    <h2>Center</h2>
+    <section class="container center column">
+        <div class="item">Item1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item3 mais algum itempara fazer paere da materia</div>
+    </section>
+
+    <h2>Baseline</h2>
+    <section class="container baseline column">
+        <div class="item">Item1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item3 mais algum itempara fazer paere da materia</div>
+    </section>
+
+    <h1>Alinhamento central</h1>
+    <section class="container central center">
+        <div class="item">Lorem Ipsum is theerefore always free from repetition, injected humor, or non-characteristic words etc.</div>
+    </section>
+
+</body>
+</html>
