@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex shrink</title>
+    <style>
+        .flexContainer{
+            display: flex;
+            border: 1px solid black;
+            max-width: 350px;
+            margin-bottom: 15px;
+        }
+        .item{
+            background-color: orangered;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+        /*propriedade que estabelece a capacidade de redução ou compressão do tamanho de um item*/
+        .s-1{
+            flex-shrink: 1;
+        }
+        .s-0{
+            flex-shrink: 0;
+            flex-basis: 100px;
+        }
+        .s{
+            flex-shrink: 1;
+            flex-basis: 100px;
+        }
+        .s-2{
+            flex-shrink: 2;
+            flex-basis: 100px;
+        }
+        .s-3{
+            flex-shrink: 3;
+            flex-basis: 100px;
+        }
+        .fg-1{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <h2>Flex-shrink: 1</h2>
+    <div class="flexContainer">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-1 fg-1">B</div>
+        <div class="item s-1 fg-1">C</div>
+        <div class="item s-1 fg-1">D</div>
+        <div class="item s-1 fg-1">E</div>
+    </div>
+
+    <h2>Flex-shrink: 1, sem quebra de linha em um item</h2>
+    <div class="flexContainer">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-1 fg-1">Lorem Ipsum</div>
+        <div class="item s-1 fg-1">C</div>
+        <div class="item s-1 fg-1">D</div>
+    </div>
+
+    <h2>Flex-shrink: 1, com quebra de linha em um item</h2>
+    <div class="flexContainer">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-1 fg-1">Lorem Ipsum is simply dummy</div>
+        <div class="item s-1 fg-1">C</div>
+        <div class="item s-1 fg-1">D</div>
+    </div>
+
+    <h2>Flex-shrink: 0/basis: 100px</h2>
+    <div class="flexContainer">
+        <div class="item s-0 fg-1">A</div>
+        <div class="item s-0 fg-1">Lorem Ipsum is simply dummy</div>
+        <div class="item s-0 fg-1">Lorem Ipsum is simply dummy</div>
+        <div class="item s-0 fg-1">D</div>
+    </div>
+
+    <h2>Flex-shrink: 1/basis: 100px</h2>
+    <div class="flexContainer">
+        <div class="item s fg-1">A</div>
+        <div class="item s fg-1">Lorem Ipsum is simply dummy</div>
+        <div class="item s fg-1">Lorem Ipsum is simply dummy</div>
+        <div class="item s fg-1">D</div>
+    </div>
+
+    <h2>Flex-shrink: 1, 2, 3/basis: 100px</h2>
+    <div class="flexContainer">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-2 fg-1">Lorem Ipsum</div>
+        <div class="item s-2 fg-1">C</div>
+        <div class="item s-3 fg-1">D</div>
+    </div>
+</body>
+</html>
