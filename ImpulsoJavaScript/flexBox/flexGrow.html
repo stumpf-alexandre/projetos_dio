@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex grow</title>
+    <style>
+        .flexContainer{
+            display: flex;
+            border: 2px solid black;
+            max-width: 300px;
+        }
+        .item{
+            background-color: orangered;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        /*justify-content quando colocado no container não funciona caso tenha o flex grow nos itens, a menos que seja o de crescimento zero, por ser padrão, ai a funcionalidade do justify-content acaba funcionando*/
+        .fg-0{
+            /*o flex-grow por padrão vem zero*/
+            flex-grow: 0;
+        }
+        .fg-1{
+            flex-grow: 1;
+        }
+        .fg-2{
+            flex-grow: 2;
+        }
+        .fg-3{
+            flex-grow: 3;
+        }
+    </style>
+</head>
+<body>
+    <h2>Flex-grow com crescimento 0</h2>
+    <div class="flexContainer">
+        <div class="item fg-0">A</div>
+        <div class="item fg-0">B</div>
+        <div class="item fg-0">C</div>
+        <div class="item fg-0">D</div>
+    </div>
+
+    <h2>Flex-grow com crrescimento 1</h2>
+    <div class="flexContainer">
+        <div class="item fg-1">A</div>
+        <div class="item fg-1">B</div>
+        <div class="item fg-1">C</div>
+        <div class="item fg-1">D</div>
+    </div>
+
+    <h2>Flex-grow com crescimento 2</h2>
+    <div class="flexContainer">
+        <div class="item fg-2">A</div>
+        <div class="item fg-2">B</div>
+        <div class="item fg-2">C</div>
+        <div class="item fg-2">D</div>
+    </div>
+
+    <h2>Flex-grow com crescimento 3</h2>
+    <div class="flexContainer">
+        <div class="item fg-3">A</div>
+        <div class="item fg-3">B</div>
+        <div class="item fg-3">C</div>
+        <div class="item fg-3">D</div>
+    </div>
+
+    <h2>Flex-grow com diversos crescimentos</h2>
+    <div class="flexContainer">
+        <div class="item fg-0">A</div>
+        <div class="item fg-1">B</div>
+        <div class="item fg-2">C</div>
+        <div class="item fg-3">D</div>
+    </div>
+
+    <h2>Ação do flex-grow com mais conteúdo</h2>
+    <div class="flexContainer">
+        <div class="item fg-0">AA</div>
+        <div class="item fg-1">BBBBBBB</div>
+        <div class="item fg-2">CCCCC</div>
+        <div class="item fg-3">D</div>
+    </div>
+</body>
+</html>
