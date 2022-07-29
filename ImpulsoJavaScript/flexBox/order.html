@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - order</title>
+    <style>
+        .flexContainer{
+            display: flex;
+            max-width: 350px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+        }
+        .item{
+            flex: 1;
+            background: brown;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            margin: 5px;
+        }
+        .o-1{
+            order: 1;
+        }
+        .o-2{
+            order: 2;
+        }
+        .o-3{
+            order: 3;
+        }
+        .on-1{
+            order: -1;
+        }
+        .on-2{
+            order: -2;
+        }
+        .on-3{
+            order: -3;
+        }
+        .direction{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>Row</h1>
+    <h2>Order: 0</h2>
+    <div class="flexContainer">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">4n</div>
+        <div class="item">4m</div>
+    </div>
+
+    <h2>Order: diferentes</h2>
+    <div class="flexContainer">
+        <div class="item o-3">1</div>
+        <div class="item o-2">2</div>
+        <div class="item o-3">3</div>
+        <div class="item o-1">4</div>
+        <div class="item o-2">4n</div>
+        <div class="item o-1">4m</div>
+    </div>
+
+    <h2>Order: negativo</h2>
+    <div class="flexContainer">
+        <div class="item on-2">1</div>
+        <div class="item on-1">2</div>
+        <div class="item on-3">3</div>
+        <div class="item on-3">4</div>
+        <div class="item on-1">4n</div>
+        <div class="item on-2">4m</div>
+    </div>
+
+    <h2>Order: mix</h2>
+    <div class="flexContainer">
+        <div class="item o-2">1</div>
+        <div class="item on-1">2</div>
+        <div class="item on-3">3</div>
+        <div class="item o-3">4</div>
+        <div class="item o-1">4n</div>
+        <div class="item on-2">4m</div>
+    </div>
+
+    <h1>Column</h1>
+    <h2>Order: 0</h2>
+    <div class="flexContainer direction">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">4n</div>
+        <div class="item">4m</div>
+    </div>
+
+    <h2>Order: diferentes</h2>
+    <div class="flexContainer direction">
+        <div class="item o-3">1</div>
+        <div class="item o-2">2</div>
+        <div class="item o-3">3</div>
+        <div class="item o-1">4</div>
+        <div class="item o-2">4n</div>
+        <div class="item o-1">4m</div>
+    </div>
+
+    <h2>Order: negativo</h2>
+    <div class="flexContainer direction">
+        <div class="item on-2">1</div>
+        <div class="item on-1">2</div>
+        <div class="item on-3">3</div>
+        <div class="item on-3">4</div>
+        <div class="item on-1">4n</div>
+        <div class="item on-2">4m</div>
+    </div>
+
+    <h2>Order: mix</h2>
+    <div class="flexContainer direction">
+        <div class="item o-2">1</div>
+        <div class="item on-1">2</div>
+        <div class="item on-3">3</div>
+        <div class="item o-3">4</div>
+        <div class="item o-1">4n</div>
+        <div class="item on-2">4m</div>
+    </div>
+</body>
+</html>
