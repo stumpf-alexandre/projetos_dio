@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align self</title>
+    <style>
+        .flexContainer{
+            max-width: 450px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            display: flex;
+        }
+        .aligneContainer{
+            align-items: center;
+        }
+        .direction{
+            flex-direction: column;
+        }
+        .item{
+            background-color: brown;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+        /*propriedade que estabelece o alinhamento de modo individual sobre um determinado item, mas para isso o container não pode ter um aligne-item definido*/
+        .center{
+            align-self: center;
+        }
+        .start{
+            align-self: flex-start;
+        }
+        .end{
+            align-self: flex-end;
+        }
+        .baseline{
+            align-self: baseline;
+        }
+        .stretch{
+            align-self: stretch;
+        }
+        .auto{
+            align-self: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Row</h1>
+    <h2>Usando aligne items no container</h2>
+    <section class="flexContainer aligneContainer">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem Ipsum is simply dummy text of the printing</div>
+        <div class="item auto">Item 4</div>
+        <div class="item auto">DLsma</div>
+        <div class="item auto">orpsCKDJ</div>
+    </section>
+
+    <h2>Usando aligne self no item</h2>
+    <section class="flexContainer">
+        <div class="item auto">AAA</div>
+        <div class="item center">123</div>
+        <div class="item start">Lorem Ipsum is simply dummy text of the printing</div>
+        <div class="item end">Item 4</div>
+        <div class="item baseline">DLsma</div>
+        <div class="item stretch">orpsCKDJ</div>
+    </section>
+
+    <h2>Usando aligne self no item</h2>
+    <section class="flexContainer">
+        <div class="item baseline">AAA</div>
+        <div class="item start">123</div>
+        <div class="item auto">Lorem Ipsum is simply dummy text of the printing</div>
+        <div class="item stretch">Item 4</div>
+        <div class="item end">DLsma</div>
+        <div class="item center">orpsCKDJ</div>
+    </section>
+
+    <h1>Column</h1>
+    <h2>Usando aligne items no container</h2>
+    <section class="flexContainer aligneContainer direction">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem Ipsum is simply dummy text of the printing</div>
+        <div class="item auto">Item 4</div>
+        <div class="item auto">DLsma</div>
+        <div class="item auto">orpsCKDJ</div>
+    </section>
+
+    <h2>Usando aligne self no item</h2>
+    <section class="flexContainer direction">
+        <div class="item auto">AAA</div>
+        <div class="item center">123</div>
+        <div class="item start">Lorem Ipsum is simply dummy text of the printing</div>
+        <div class="item end">Item 4</div>
+        <div class="item baseline">DLsma</div>
+        <div class="item stretch">orpsCKDJ</div>
+    </section>
+
+    <h2>Usando aligne self no item</h2>
+    <section class="flexContainer direction">
+        <div class="item baseline">AAA</div>
+        <div class="item start">123</div>
+        <div class="item auto">Lorem Ipsum is simply dummy text of the printing</div>
+        <div class="item stretch">Item 4</div>
+        <div class="item end">DLsma</div>
+        <div class="item center">orpsCKDJ</div>
+    </section>
+</body>
+</html>
