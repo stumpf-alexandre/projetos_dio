@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex</title>
+    <style>
+        .flexContainer{
+            display: flex;
+            border: 1px solid black;
+            max-width: 400px;
+        }
+        .item{
+            background-color: brown;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+        /*propriedade que é um atalho para as propriedades grow, shrink, basis*/
+        .flex-1{
+            /*com esse comando é dito que o grow = 1, shrink = 1, basis = 0*/
+            flex: 1;
+        }
+        .flex-2{
+            /*com esse comando é dito que o grow = 2, shrink = 1, basis = 0*/
+            flex: 2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Flex: 1</h2>
+    <div class="flexContainer">
+        <div class="item flex-1">A</div>
+        <div class="item flex-1">BBB</div>
+        <div class="item flex-1">CC</div>
+        <div class="item flex-1">D</div>
+        <div class="item flex-1">EF</div>
+    </div>
+
+    <h2>Flex: mix</h2>
+    <div class="flexContainer">
+        <div class="item flex-1">A</div>
+        <div class="item flex-2">BBB</div>
+        <div class="item flex-2">CC</div>
+        <div class="item flex-1">D</div>
+        <div class="item flex-1">EF</div>
+    </div>
+</body>
+</html>
