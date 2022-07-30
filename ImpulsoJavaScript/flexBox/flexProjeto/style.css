@@ -11,6 +11,11 @@ ul{
 ul li a{
     text-decoration: none;
 }
+/*responsividade das imagens*/
+div img{
+    display: block;
+    width: 100%;    
+}
 .flexContainer{
     display: flex;
     max-width: 992px;
@@ -84,4 +89,7 @@ header .listItems{
     margin-right: 5px;
     background-color: #122A57;
     position: relative;
+}
+#whoWeAre img{
+    min-width: 550px;
 }
