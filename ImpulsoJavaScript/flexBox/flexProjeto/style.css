@@ -32,7 +32,33 @@ header .listItems{
     max-width: 260px;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
 }
 .listItems li a{
     color: #fff;
+}
+.presentation{
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+.presentation .presentationText{
+    min-height: 200px;
+}
+.presentationText h1{
+    color: #122A57;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.presentationText a{
+    text-decoration: none;
+    background-color: #122A57;
+    color: #fff;
+    text-align: center;
+    border-radius: 30px;
+    width: 195px;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    margin: 10px 0 10px 0;
 }
