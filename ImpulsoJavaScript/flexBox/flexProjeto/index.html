@@ -5,18 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex Turismos</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;;1,400;1,600&display=swap">
 </head>
 <body>
     <header>
-        <h1>FlexTurismos</h1>
-        <ul>
-            <li><a href="#quem-somos">Quem Somos</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#planos">Planos</a></li>
-        </ul>
+        <div  class="flexContainer menu">
+            <div>
+                <h1>FlexTurismos</h1>
+            </div>
+            <ul class="listItems">
+                <li><a href="#quem-somos">Quem Somos</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#planos">Planos</a></li>
+            </ul>
+        </div>
     </header>
 
-    <div>
+    <div class="flexContainer">
         <div>
             <h1>Flex <br>Turismos</h1>
             <p>O melhor serviço para você!</p>
@@ -24,13 +31,13 @@
         </div>
 
         <div>
-            <div><img src="./images/0-main.png" alt="banner de apresentação"></div>
+            <div><img src="./imagem/0-main.png" alt="banner de apresentação"></div>
         </div>
     </div>
 
     <div>
         <div>
-            <img src="./images/1-quem-somos.png" alt="balcão de atendimento">
+            <img src="./imagem/1-quem-somos.png" alt="balcão de atendimento">
         </div>
 
         <div>
@@ -47,19 +54,19 @@
 
         <div>
             <div>
-                <div><img src="./images/icon-2.png" alt="hospedagens"></div>
+                <div><img src="./imagem/icon-2.png" alt="hospedagens"></div>
                 <p>Hospedagens</p>
                 <a href="#">Comprar Agora</a>
             </div>
 
             <div>
-               <div><img src="./images/icon-1.png" alt="pacote de viagens"></div>
+               <div><img src="./imagem/icon-1.png" alt="pacote de viagens"></div>
                <p>Pacotes de viagens</p>
                <a href="#">Comprar Agora</a>
             </div>
 
             <div>
-                <div><img src="./images/icon-3.png" alt="roteiros personalizados"></div>
+                <div><img src="./imagem/icon-3.png" alt="roteiros personalizados"></div>
                 <p>Roteiros personalizados</p>
                 <a href="#">Comprar Agora</a>
             </div>
@@ -107,7 +114,8 @@
 
     <footer>
         <p>&copy; 2021 CSS Flexbox</p>
-        <p>Desenvolvido por: Seu nome aqui dev</p>
+        <p>Desenvolvido por: Alexandre DEV</p>
+        <p>als.stumpf@gmail.com</p>
     </footer>
 </body>
 </html>
