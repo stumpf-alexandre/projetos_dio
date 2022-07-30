@@ -62,3 +62,26 @@ header .listItems{
     line-height: 50px;
     margin: 10px 0 10px 0;
 }
+#whoWeAre{
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+#whoWeAre h2{
+    font-size: 32px;
+    color: #122A57;
+    display: flex;
+    margin-bottom: 30px;
+}
+#whoWeAre p{
+    margin-bottom: 20px;
+    width: 90%;
+}
+#whoWeAre h2::before{
+    content: "";
+    height: 50px;
+    width: 5px;
+    margin-right: 5px;
+    background-color: #122A57;
+    position: relative;
+}
