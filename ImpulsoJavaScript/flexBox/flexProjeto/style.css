@@ -234,6 +234,8 @@ footer .footer{
     .flexContainer{
         flex-direction: column;      
     }
+
+    /*apresentação responsivo*/
     .presentation{
         flex-direction: column-reverse;
     }
@@ -241,6 +243,8 @@ footer .footer{
         width: 100%;
         margin-left: 150px;
     }
+
+    /*quem somos responsivo*/
     #whoWeAre{
         flex-direction: column-reverse;
     }
@@ -251,21 +255,29 @@ footer .footer{
         margin: auto;
         width: 100%;
     }
+
+    /*serviços responsivo*/
     .servicesList{
         flex-direction: column;
+    }
+    .servicesItem{
+        margin-bottom: 50px;
     }
     .servicesItem img{
         width: 50%;
         margin: auto;
     }
+
+    /*planos responsivo*/
     .plansList{
         flex-direction: column;
         align-items: flex-start;
+        margin-bottom: 20px;
     }
     .plansList .plansItems{
         max-width: 90%;
         margin: auto;
         width: 100%;
+        margin-bottom: 20px;
     }
-
 }
