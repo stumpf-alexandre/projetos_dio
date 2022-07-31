@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;;1,400;1,600&display=swap">
 </head>
 <body>
+    <!--menu-->
     <header>
         <div  class="flexContainer menu">
             <div>
@@ -23,6 +24,7 @@
         </div>
     </header>
 
+    <!--apresentação-->
     <div class="flexContainer presentation">
         <div class="presentationText">
             <h1>Flex <br>Turismos</h1>
@@ -30,11 +32,13 @@
             <a href="">Saiba Mais!</a>
         </div>
 
+        <!--imagem apresentação-->
         <div>
             <div><img src="./imagem/0-main.png" alt="banner de apresentação"></div>
         </div>
     </div>
 
+    <!--quem somos-->
     <div  class="flexContainer" id="whoWeAre">
         <div>
             <h2>Quem somos</h2>
@@ -42,41 +46,51 @@
             <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
         </div>
 
+        <!--imagem quem somos-->
         <div>
             <img src="./imagem/1-quem-somos.png" alt="balcão de atendimento">
         </div>
     </div>
 
-    <div>
-        <div>
-            <h2>Serviços</h2>
-        </div>
-
-        <div>
+    <!--serviços-->
+    <div class="externalContainer">
+        <div class="flexContainer">
             <div>
-                <div><img src="./imagem/icon-2.png" alt="hospedagens"></div>
-                <p>Hospedagens</p>
-                <a href="#">Comprar Agora</a>
+                <h2>Serviços</h2>
             </div>
 
             <div>
-               <div><img src="./imagem/icon-1.png" alt="pacote de viagens"></div>
-               <p>Pacotes de viagens</p>
-               <a href="#">Comprar Agora</a>
-            </div>
+                <div>
+                    <div>
+                        <img src="./imagem/icon-2.png" alt="hospedagens">
+                    </div>
+                    <p>Hospedagens</p>
+                    <a href="#">Comprar Agora</a>
+                </div>
 
-            <div>
-                <div><img src="./imagem/icon-3.png" alt="roteiros personalizados"></div>
-                <p>Roteiros personalizados</p>
-                <a href="#">Comprar Agora</a>
-            </div>
+                <div>
+                    <div>
+                        <img src="./imagem/icon-1.png" alt="pacote de viagens">
+                    </div>
+                    <p>Pacotes de viagens</p>
+                    <a href="#">Comprar Agora</a>
+                </div>
 
+                <div>
+                    <div>
+                        <img src="./imagem/icon-3.png" alt="roteiros personalizados">
+                    </div>
+                    <p>Roteiros personalizados</p>
+                    <a href="#">Comprar Agora</a>
+                </div>
+
+            </div>
         </div>
     </div>
 
     <div>
 
-        <div>
+        <div class="flexContainer">
             <h3>Plano 2</h3>
             <ul>
                 <li>Suporte 24h</li>
@@ -112,6 +126,7 @@
         </div>
     </div>
 
+    <!--rodapé-->
     <footer>
         <p>&copy; 2021 CSS Flexbox</p>
         <p>Desenvolvido por: Alexandre DEV</p>
