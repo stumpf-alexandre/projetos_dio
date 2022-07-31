@@ -16,12 +16,15 @@ div img{
     display: block;
     width: 100%;    
 }
+/*estilização da tela por total*/
 .flexContainer{
     display: flex;
     max-width: 992px;
     margin: auto;
     width: 100%;
 }
+
+/*menu*/
 header{
     background-color: #122A57;
     height: 100px;
@@ -42,6 +45,8 @@ header .listItems{
 .listItems li a{
     color: #fff;
 }
+
+/*apresentação*/
 .presentation{
     height: 100vh;
     align-items: center;
@@ -55,7 +60,7 @@ header .listItems{
     font-size: 48px;
     margin-bottom: 10px;
 }
-.presentationText a{
+.btn{
     text-decoration: none;
     background-color: #122A57;
     color: #fff;
@@ -67,6 +72,8 @@ header .listItems{
     line-height: 50px;
     margin: 10px 0 10px 0;
 }
+
+/*quem somos*/
 #whoWeAre{
     flex-direction: row-reverse;
     align-items: center;
@@ -82,6 +89,7 @@ header .listItems{
     margin-bottom: 20px;
     width: 90%;
 }
+/*pseudo elemento*/
 #whoWeAre h2::before{
     content: "";
     height: 50px;
@@ -93,6 +101,8 @@ header .listItems{
 #whoWeAre img{
     width: 550px;
 }
+
+/*serviços*/
 .externalContainer{
     background-color: #122A57;
     width: 100%;
@@ -136,4 +146,66 @@ header .listItems{
 .servicesItem img{
     width: 80%;
     margin: auto;
+}
+
+/*planos*/
+#plans{
+    flex-direction: column;
+    min-height: 100vh;
+    margin-top: 50px;
+}
+#plans h2{
+    color: #122A57;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.plansList{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.plansItems{
+    flex: 1;
+    border: 5px solid #122A57;
+    margin-right: 20px;
+    padding: 10px;
+    max-width: 240px;
+}
+.plansItems .btn{
+    margin: auto;
+    margin-bottom: 20px;
+}
+.plansItems h3{
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+}
+/*pseudo elemento*/
+.plansItems h3::after{
+    content: "";
+    background-color: #122A57;
+    width: 100%;
+    height: 3px;
+    margin: 20px 0 10px;
+}
+.plansItems ul{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.plansItems ul li{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+/*pseudo elemento*/
+.plansItems ul li::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #122A57;
+    margin-right: 10px;
 }
