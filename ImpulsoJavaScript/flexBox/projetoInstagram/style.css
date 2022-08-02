@@ -96,7 +96,6 @@ body{
 }
 .download{
     display: flex;
-    flex-direction: row;
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
@@ -115,6 +114,7 @@ body{
     background-image: url('img/btn-google.png');
     background-size: 150px 55px;
 }
+/*mobile*/
 /*media queries*/
 @media (max-width: 1024px){
     .instagram-wrapper{
@@ -122,16 +122,34 @@ body{
     }
 }
 @media (max-width: 650px){
-    .body{
+    body{
         background-color: #fff;
     }
     .instagram-wrapper{
         width: 90%;
+        flex-direction: column;
     }
     .instagram-phone{
         display: none;
     }
+    .instagram-continue{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .instagram-login{
+        text-align: center;
+    }
     .group{
         border: 1px solid transparent;
+        text-align: center;
+    }
+    .download{
+        padding: 0;
+    }
+}
+@media (max-width: 319px){
+    .download{
+        flex-direction: column;
     }
 }
