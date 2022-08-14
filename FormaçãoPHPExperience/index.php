@@ -5,5 +5,11 @@
 	//$ declara uma variavel
 	$cursos = 30;
 	$paginas = "php";
-	echo "Temos $cursos cursos $paginas disponíveis";
+	echo nl2br("Temos $cursos cursos $paginas disponíveis\n");
+
+	//criando uma regra de negócio
+	if ($paginas === "php"){
+		$cursos = 15;
+		echo nl2br("Temos $cursos cursos disponiveis\n");
+	}
 ?>
