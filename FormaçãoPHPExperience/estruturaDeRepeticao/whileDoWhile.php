@@ -27,5 +27,4 @@
         echo $frutas[$i] . "\n";
         $i++;
     } while ($i < $cont);
-
 ?>
