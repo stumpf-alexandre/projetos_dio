@@ -41,7 +41,7 @@
     --character-top-image-src: url("../images/characters/inverted-world-monster.svg");
     --character-top-image-color: #000;
     --character-bottom-image-src: url("../images/characters/kids-on-the-bike.svg");
-    --character-bottom-image-color: rgba(244, 238, 238, 0.1);
+    --character-bottom-image-color: rgba(255, 255, 255, 0.144);
     --background-lamp-image: url("../images/backgrounds/lamps-inverted.png");
     --footer-background-color: #000;
 }
