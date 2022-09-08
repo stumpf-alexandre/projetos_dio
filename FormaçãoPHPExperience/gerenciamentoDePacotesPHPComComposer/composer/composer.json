@@ -1,0 +1,14 @@
+{
+    "name": "alsst/composer",
+    "description": "Estudando Composer",
+    "type": "project",
+    "authors": [
+        {
+            "name": "stumpf-alexandre",
+            "email": "als.stumpf@gmail.com"
+        }
+    ],
+    "require": {
+        "mpdf/mpdf": "^8.1"
+    }
+}
