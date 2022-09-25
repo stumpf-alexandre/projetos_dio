@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página principal</title>
+</head>
+<body>
+    <h1 id="topo">Exemplo de Matéria em um Blog</h1>
+    <hr/>
+    <h2>Índice</h2>
+
+    <ul>
+        <li><a href="#italico">Itálico</a></li>
+        <li><a href="#negrito">Negrito</a></li>
+        <li><a href="#input">Input</a></li>
+        <li><a href="#img">Img</a></li>
+        <li><a href="#titulo">H1, h2, h3...</a></li>
+        <li><a href="#lista">Lista de Itens</a></li>
+        <li><a href="#referencias">Referencias</a></li>
+    </ul>
+
+    <h2 id="italico">Itálico</h2>
+    <small><a href="#topo">(Voltar)</a></small>
+    <p> 
+        O <i>itálico</i> é quando os traços da 
+        caligrafia das palavras fica ligeiramente 
+        inclinado à direita. É usada para dar ênfase 
+        a palavra ou frases por fazer parte de um 
+        grupo de gírias, expressões estrangeiras, 
+        destacando nome de obras, entre outras.
+    </p>
+    <p>
+        A tag responsavel por transformar a palavra 
+        em <i>itálico</i> é o "i". A tag deve ser 
+        iniciada e fechada como demonstrado:
+        "&lti&gt<i>exemplo</i>&lt/i&gt"
+    </p>
+
+    <h2 id="negrito">Negrito</h2>
+    <small><a href="#topo">(Voltar)</a></small>
+    <p>
+        O <i>negrito</i> é utilizado para substituir 
+        o sublinhamento de palavras, ou seja 
+        destacar determinadas palavras dentro de 
+        um texto, dando assim uma forte importância.
+    </p>
+    <p>
+        A tag responsavel por modificar as palavras 
+        em <i>negrito</i> é o <i>strong</i>, e como 
+        o "i", a tag tem um inicio e um fechamento 
+        "&ltstrong&gt<strong>exemplo</strong>
+        &lt/strong&gt"
+    </p>
+    <p>
+        Esses dois elementos do HTML podem ser usados 
+        simultaneamente elevando ainda mais a 
+        importância da palavra em destaque: 
+        "&ltstrong&gt&lti&gt<strong><i>exemplo</i>
+        </strong>&lt/i&gt&lt/strong&gt"
+    </p>
+
+    <h2 id="input">Input</h2>
+    <small><a href="#topo">(Voltar)</a></small>
+    <p>
+        O <i>input</i> é um elemento do HTML que 
+        retorna um conjunto de dados digitados pelo 
+        usuário, na forma de Strings. Esses dados 
+        podem ser de um tipo especifico, basta 
+        acrescentar o elemento <i>"type"</i> na tag 
+        <i>"input"</i>, com os valores number para 
+        receber números, text para receber uma 
+        frase, color para receber uma cor, email 
+        para receber um endereço de e-mail, entre 
+        outros.
+    </p>
+    <p>
+        Exemplos de utilização dessas tags:
+    </p>
+    <input type="email" placeholder="E-mail"/>
+    <br/>
+    <input type="text" placeholder="Texto"/>
+    <br/>
+    <input type="color"/>
+    <br/>
+    <input type="number" placeholder="Número"/>
+
+    <h2 id="img">Img</h2>
+    <small><a href="#topo">(Voltar)</a></small>
+    <p>
+        A tag <i>img</i> representa a inserção 
+        de imagem na pagina que esta sendo criada.
+    </p>
+    <p>
+        Esta tag possui o atributo <i>src=""</i>, que 
+        é por onde nós lincamos as imagen, seja ela 
+        de uma pasta especifica do programa ou seja 
+        ela uma imagem da internet.
+    </p>
+    <figure>
+        <img src="https://static7.depositphotos.com/1008939/726/i/600/depositphotos_7264018-stock-photo-programmer.jpg" alt="Imagem de um homem programando"/>
+        <figcaption>Imagem visualizada com o link da internet</figcaption>
+    </figure>
+
+    <h2 id="titulo">H1, h2, h3...</h2>
+    <small><a href="#topo">(Voltar)</a></small>
+    <p>
+        As tags h1, h2, h3, h4, h5, h6, são elementos 
+        que representam seis níveis de titulo de 
+        seção. Sendo que h1 pode ser para representar 
+        titulos, h2 para subtitulo, h3 para 
+        intertitulos e assim sucessivamente. Um 
+        elemento de cabeçalho descreve brevemente os 
+        tópicos da seção em que ele está.
+    </p>
+    <p>
+        Exemplos de utilização dessas tags:
+    </p>
+    <h1>Cabeçalho nível 1</h1>
+    <h2>Cabeçalho nível 2</h2>
+    <h3>Cabeçalho nível 3</h3>
+    <h4>Cabeçalho nível 4</h4>
+    <h5>Cabeçalho nível 5</h5>
+    <h6>Cabeçalho nível 6</h6>
+
+    <h2 id="lista">Lista de Itens</h2>
+    <small><a href="#topo">(Voltar)</a></small>
+    <h3>Ordenada</h3>
+    <p>
+        O elemento que representa no HTML uma lista 
+        de itens ordenados é o &ltol&gt&lt/ol&gt, com 
+        pelo menos um elemento filho, representado 
+        pela tag &ltli&gt&lt/li&gt.
+    </p>
+    <p>
+        Atravez desses itens temos uma lista ordenada 
+        com uma contagem que os precede,que pode ser 
+        de qualquer tipo, como numerado, letras, 
+        algorismos romanos ou simples simbolos.
+    </p>
+    <p>
+        Exemplo simples
+    </p>
+    <ol>
+        <li>primeiro item</li>
+        <li>segundo item</li>
+        <li>terceiro item</li>
+    </ol>
+
+    <h3>Não Ordenada</h3>
+    <p>
+        O elemento que representa a lista não ordenada 
+        é a tag &ltul&gt&lt/ul&gt, seguido de pelo 
+        menos um elemento filho denominado 
+        &ltli&gt&lt/li&gt. Caracteristicamente, os 
+        itens na lista desordenada são exibidos com 
+        um marcador que pode ter varias formas, e as 
+        suas posições na lista é irrelevante.
+    </p>
+    <p>
+        Exemplo simples:
+    </p>
+    <ul>
+        <li>primeiro item</li>
+        <li>segundo item</li>
+        <li>terceiro item</li>
+    </ul>
+
+    <hr/>
+
+    <h2 id="referencias">Referencias</h2>
+    <small><a href="#topo">(Voltar)</a></small>
+    <br/>
+    <h3>Seu primeiro código HTML</h3>    
+    <iframe 
+        width="460" 
+        height="215" 
+        src="https://www.youtube.com/embed/E6CdIawPTh0" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+    <br/>
+    <h3>Tags basicas em HTML</h3>  
+    <iframe 
+        width="460" 
+        height="215" 
+        src="https://www.youtube.com/embed/EANOXuQsglo" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+    <br/>
+    <h3>Listas em HTML</h3>
+    <iframe 
+        width="460" 
+        height="215" 
+        src="https://www.youtube.com/embed/JlE0pzESf5g" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+
+</body>
+</html>
