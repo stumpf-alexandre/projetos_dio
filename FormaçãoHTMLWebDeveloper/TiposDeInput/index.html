@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input seus tipos</title>
+</head>
+<body>
+    <form>
+        <label>Text: </label><input type="text"/> <!--o campo recebe letras, números e caractéres expeciais-->
+        <br/>
+        <label>Number: </label><input type="number" min="0" max="10" step="3"/> <!--o campo recebe apenas números-->
+        <br/>
+        <label>Range: </label><input type="range" min="0" max="100" value="27"/> <!--cria um campo scrool-->
+        <br/>
+        <label>Color: </label><input type="color"/> <!--disponibiliza uma caixa de dialogo de cores-->
+        <br/>
+        <label>E-mail: </label><input type="email"/> <!--o campo aceita apenas caracteres padrões dos e-mail-->
+        <br/>
+        <label>Url: </label><input type="url"/> <!--o campo aceita apenas dados de uma url-->
+        <br/>
+        <label>Button: </label><input type="submit" value="Enviar"/> <!--o input pode virar um botão, mas semanticamente falando a tag button funciona melhor-->
+        <br/>
+        <label>Date: </label><input type="date"/>
+        <br/>
+        <labe>Week: </labe><input type="week"/> <!--no firefox não funciona-->
+        <br/>
+        <label>Month: </label><input type="month"/> <!--no firefox não funciona-->
+        <br/>
+        <label>Checkbox: </label><input type="checkbox"/><input type="checkbox"/> <!--podemos selecionar mais que um checkbox, dependendo do caso de uso-->
+        <br/>
+        <label>Radio: </label><input type="radio" name="aceita"/><input type="radio" name="aceita"/> <!--não podemos selecionar mais do que um radio, quando o name dos radios são iguais-->
+        <br/>
+        <label>Hidden: </label><input type="hidden"/> <!--fica invisivel para o usuário mas envia os dados junto com os outros para o servidor-->
+        <br/>
+        <label>File: </label><input type="file" multiple/> <!--campo para enviar arquivos, quando definimos o multiplo conseguimos enviar mais do que um arquivo-->
+        <br/>
+        <label>Search: </label><input type="search"/> <!--é um campo de texto para busca, mas no firefox ele iguinora essa fiture-->
+    </form>
+</body>
+</html>
