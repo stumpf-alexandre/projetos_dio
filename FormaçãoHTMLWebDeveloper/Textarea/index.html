@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selects</title>
+    <title>Textarea</title>
 </head>
 <body>
-    <h3>Select box</h3>
+    <h3>Textarea</h3>
     <form onsubmit="" method="post">
         <label>Nome*: </label><input type="text" name="name"><br>
         <label>Cargo*: </label>
@@ -19,24 +19,8 @@
             <option value="presidente">Presidente</option>
         </select><br>
         <label>Assunto*: </label><input type="text" name="subject"><br>
-
-        <button type="submit">Enviar</button>
-    </form>
-
-    <hr>
-
-    <h3>Select box com multiple</h3>
-    <form onsubmit="" method="post">
-        <label>Nome*: </label><input type="text" name="name"><br>
-        <label>Cargo*: </label><br>
-        <select name="role" multiple>
-            <option selected value="">Selecione o cargo</option>
-            <option value="administrativo">Administrativo</option>
-            <option value="gerente">Gerente</option>
-            <option value="diretor">Diretor</option>
-            <option value="presidente">Presidente</option>
-        </select><br>
-        <label>Assunto*: </label><input type="text" name="subject"><br>
+        <label>Menssagem*: </label>
+        <textarea rows="20" cols="50" name="message"></textarea>
 
         <button type="submit">Enviar</button>
     </form>
