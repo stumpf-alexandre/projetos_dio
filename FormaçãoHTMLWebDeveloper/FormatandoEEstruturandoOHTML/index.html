@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatando e estruturando o HTML</title>
+</head>
+<!--tag i é a italico é usado para citações ou palavras de girias de regiões-->
+<!--tag u é a anderline para sublinhar as palavras-->
+<!--tag mark é a marcação de uma cor no texto-->
+<!--tag strong e tag b é o negrito, mas a tag strong semanticamente falando é melhor de se usar pq ao usar os leitores de tela na acessibilidade o robo ao ler o trecho com o strong a voz do robo vai dar mais enfase no -->
+<!--tag sup é quando elevamos o texto ou numeros-->
+<!--tag sub é quando baixamos o texto ou numeros-->
+<!--tag blockquote libera um espaço para textos grandes para fazer citações-->
+<!--tag font altera a fonte do texto que ela envolve, mas só altera quando é colocado o tipo de atributo da tag-->
+<!--tag fieldset trabalha em conjunto com outra tag legend, é para melhorar estruturalmente seu html visualmente-->
+
+<style>
+    span{
+        color: red;
+    }
+    .row{
+        margin: 5px;
+    }
+    label{
+        width: 100px;
+        text-align: right;
+        display: inline-block;
+        padding-right: 5px;
+    }
+    fieldset{
+        margin: 15px;
+        border-radius: 10px;
+        border-color: #f9f9f9;
+    }
+</style>
+
+<body>
+    <h1>Dio<div>.</div>me</h1>
+    <h1>Dio<span>.</span>me</h1>
+    <h1><i>Programe</i> seu futuro global agora!</h1>
+    
+    <!--Estruturando o HTML-->
+    <!--a div e a span são utilizados para estruturar a pagina por não possuirem peso cemantico para utiliza-la, e são estilizadas com os atributos basicos-->
+    <div id="menuLateral">
+        <div id="links">
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <p>
+        <strong>Lorem Ipsum</strong> is <b>simply</b> 
+        dummy text of the printing and typesetting 
+        industry. <i>Lorem Ipsum has been the 
+        industry's standard dummy text ever since 
+        the 1500s</i>, when an unknown printer took 
+        a galley of type and scrambled it to make 
+        a type specimen book. <u>It has survived not 
+        only five centuries</u>, but also the leap into 
+        electronic typesetting, remaining 
+        essentially unchanged. <mark> It was popularised 
+        in the 1960s with the release of Letraset 
+        sheets containing Lorem Ipsum passages</mark>, and 
+        more recently with desktop publishing 
+        software like Aldus PageMaker including 
+        versions of Lorem Ipsum. 10<sup>2</sup>
+        <sub>3</sub>
+    </p>
+    <blockquote>
+        It was popularised in the 1960s 
+        with the release of Letraset sheets 
+        containing Lorem Ipsum passages, and more 
+        recently with desktop publishing software 
+        like Aldus PageMaker including versions of 
+        Lorem Ipsum.
+    </blockquote>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. Ipsum, esse quis. Id aut 
+        dignissimos ullam dolore dolor, labore non 
+        voluptatem totam architecto magnam beatae 
+        eius temporibus quos, eum esse cum.
+    </p>
+    <font color="red" face="Arial, Tahoma">Programe seu futuro global agora!</font><br>
+    <font color="blue" face="'Trebuchet MS">Programe seu futuro global agora!</font><br>
+    <font color="green" face="Tahoma">Programe seu futuro global agora!</font><br>
+    <font>Programe seu futuro global agora!</font>
+
+    <h1>Formulário de cadastro</h1>
+
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div class="row">
+                <label>Nome:</label><input type="text"/>
+                <label>E-mail:</label><input type="text"/>
+            </div>
+
+            <div class="row">
+                <label>Profissão:</label><input type="text"/>
+                <label>Empresa:</label><input type="text"/>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+            <div class="row">
+                <label>Endereço:</label><input type="text"/>
+                <label>Número:</label><input style="width:30px" type="text" width="10"/>
+            </div>
+
+            <div class="row">
+                <label>Bairro:</label><input type="text"/>
+            </div>
+
+            <div class="row">
+                <label>Cidade/UF:</label><input type="text"/>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações de Contato</legend>
+            <div class="row">
+                <label>Celular:</label><input type="text"/>
+                <label>Whatsapp:</label><input type="text"/>
+            </div>
+
+            <div class="row">
+                <label>Linedin:</label><input type="text"/>
+                <label>Github:</label><input type="text"/>
+            </div>
+        </fieldset>
+
+        <div class="row">
+            <button type="reset">Limpar</button>
+            <button type="submit">Enviar formulário</button>
+        </div>
+    </form>
+
+    <h1>Embeds vs Iframes</h1>
+
+    <embed src="trailer.mp4" width="300" height="250"><br>
+
+    <video controls autoplay width="300" height="250">
+        <source src="trailer.mp4">
+    </video><br>
+
+    <embed width="450" height="300" src="https://www.youtube.com/embed/6bpZXJgtYww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen><br>
+
+    <iframe width="450" height="300" src="https://www.youtube.com/embed/6bpZXJgtYww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum impedit blanditiis mollitia! Totam laboriosam cumque esse accusantium adipisci nobis? Est libero nisi rem enim aliquam ab dolor sunt, dignissimos officiis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum impedit blanditiis mollitia! Totam laboriosam cumque esse accusantium adipisci nobis? Est libero nisi rem enim aliquam ab dolor sunt, dignissimos officiis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum impedit blanditiis mollitia! Totam laboriosam cumque esse accusantium adipisci nobis? Est libero nisi rem enim aliquam ab dolor sunt, dignissimos officiis.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum impedit blanditiis mollitia! Totam laboriosam cumque esse accusantium adipisci nobis? Est libero nisi rem enim aliquam ab dolor sunt, dignissimos officiis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum impedit blanditiis mollitia! Totam laboriosam cumque esse accusantium adipisci nobis? Est libero nisi rem enim aliquam ab dolor sunt, dignissimos officiis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum impedit blanditiis mollitia! Totam laboriosam cumque esse accusantium adipisci nobis? Est libero nisi rem enim aliquam ab dolor sunt, dignissimos officiis.
+    </p>
+</body>
+</html>
