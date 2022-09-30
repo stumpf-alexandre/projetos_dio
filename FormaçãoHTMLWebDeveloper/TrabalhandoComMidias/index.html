@@ -42,8 +42,18 @@
         <source src="video.mp4"/>
         <!--neste segundo source o mesmo video está no formato webm para quando o navegador não suportar o formato mp4, mas tem o problema que sera renderisado dois videos mas só reproduzido um-->
         <!--<source src="video.webm"/>-->
+
+        <!--criar legendas no video-->
+        <!--<track src="legenda.vtt" kind="captions" srclang="en"/>-->
+        <!--<track default src="legenda-pt-br.vtt" kind="captions" srclang="pt-br">-->
+
         <!--esta menssagem é para quando o navegador não possui suporte a reprodução de video-->
         Seu navegador não tem suporte para este video
     </video>
+
+    <h1>Tags Iframe</h1>
+    <!--é uma tag que traz paginas externas para incorporar o conteudo da página-->
+    <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/HItVpuf69hY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </body>
 </html>
