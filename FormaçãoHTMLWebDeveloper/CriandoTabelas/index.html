@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Tabelas</title>
+    <style>
+        /*pinta o backgroud de cada linha numa posição par*/
+        table tr:nth-child(even){
+            background-color: burlywood;
+        }
+        /*pinta o backgroud quando o cursor do mouse passar em cima de cada linha*/
+        table tr:hover td{
+            background-color: darkgray;
+        }
+        /*estilização da segunda tabela*/
+        #tabela2{
+            -webkit-box-shadow: 12px 14px 6px 5px rgba(0,0,0,0.24);
+            box-shadow: 12px 14px 6px 5px rgba(0,0,0,0.24);
+            border: solid 1px gray;
+        }
+        #tabela2 thead th{
+            background-color: black;
+            color: white;
+        }
+        #tabela2 tfoot td{
+            background-color: lightgray;
+        }
+        #tabela2 tbody tr:nth-child(even) td{
+            background-color: #f1f1f1;
+        }
+        #tabela2 tbody tr:hover td{
+            background-color: #E9E9E9;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!--Summary é um atributo que da uma descrição para a tabela-->
+    <!--Border cria uma borda entre os elementos da tabela-->
+    <!--Cellspacing da um espaçamento entre as celulas-->
+    <!--cellpadding da uma distancia da borda para o conteúdo das celulas-->
+    <h1>Tags Table, Tr, Th e Td</h1>
+    <p>
+        Cada tr é uma linha da tabela, ja a tag 
+        table serve como container da tabela.
+    </p>
+    <p>
+        As tags th serve para o navegador 
+        identificar e formatar o cabeçalho da 
+        tabela e a tag td representa cada celula da 
+        tabela.
+    </p>
+    <table summary="Esta tabela é de idades dos alunos da turma A da DIO, que estudaram de 2020 a 2021" border="1" width="250" cellspacing="5" cellpadding="15" align="center">
+        <caption>Tabela de idade da turma A da DIO</caption> <!--a tag caption é para o título da tabela-->
+        <thead> <!--thead é a tag do cabeçalho da tabela-->
+            <tr>
+                <th title="Nome completo">Nome</th>
+                <th title="Idade">Idade</th>
+            </tr>
+        </thead>
+        <tbody> <!--tbody é a tag do corpo da tabela-->
+            <!--o id vai servir para o js identificar qual usuario esta em cada linha da tabela-->
+            <tr id="1">
+                <td>Diogo</td>
+                <td>37</td>
+            </tr>
+            <tr id="2">
+                <td>Maria</td>
+                <td>34</td>
+            </tr>
+            <tr id="3">    
+                <td>João</td>
+                <td>32</td>
+            </tr>
+            <tr id="4">
+                <td>Walter</td>
+                <td>32</td>
+            </tr>
+            <tr id="5">
+                <td>Manoela</td>
+                <td>28</td>
+            </tr>
+            <tr id="6">
+                <td>Michele</td>
+                <td>26</td>
+            </tr>
+        </tbody>
+        <tfoot> <!--tfoot é atag do rodapé da tabela-->
+            <tr>
+                <td>Total</td>
+                <td>6</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h1>Criando tabelas estilizadas</h1>
+    <table id="tabela2" summary="Esta tabela é de idades dos alunos da turma A da DIO, que estudaram de 2020 a 2021" width="350" cellspacing="0" cellpadding="5" align="center">
+        <caption>Tabela de idade da turma A da DIO</caption> <!--a tag caption é para o título da tabela-->
+        <thead> <!--thead é a tag do cabeçalho da tabela-->
+            <tr>
+                <th colspan="2">Minha Tabela</th>
+                <!--o colspan serve para mesclar as celulas das colunas, para assim virar apenas uma-->
+                <!--ja o rowspan serve para mesclar as células das linhas, para assim virar apenas uma-->
+            </tr>
+            <tr>
+                <th title="Nome completo">Nome</th>
+                <th title="Idade">Idade</th>
+            </tr>
+        </thead>
+        <tbody> <!--tbody é a tag do corpo da tabela-->
+            <!--o id vai servir para o js identificar qual usuario esta em cada linha da tabela-->
+            <tr id="1">
+                <td>Diogo</td>
+                <td>37</td>
+            </tr>
+            <tr id="2">
+                <td>Maria</td>
+                <td>34</td>
+            </tr>
+            <tr id="3">    
+                <td>João</td>
+                <td>32</td>
+            </tr>
+            <tr id="4">
+                <td>Walter</td>
+                <td>32</td>
+            </tr>
+            <tr id="5">
+                <td>Manoela</td>
+                <td>28</td>
+            </tr>
+            <tr id="6">
+                <td>Michele</td>
+                <td>26</td>
+            </tr>
+        </tbody>
+        <tfoot> <!--tfoot é atag do rodapé da tabela-->
+            <tr>
+                <td>Total</td>
+                <td>6</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
