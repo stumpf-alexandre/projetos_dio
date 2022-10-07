@@ -84,5 +84,9 @@ span {
     padding: 25px 0;
 }
 .textWho {
+    padding: 0 10px;
     justify-content: space-around;
+}
+#timeTable {
+    width: 550px;
 }
