@@ -90,3 +90,17 @@ span {
 #timeTable {
     width: 550px;
 }
+#timeTable thead th{
+    background-color: black;
+    color: white;
+}
+#timeTable tfoot td{
+    background-color: lightgray;
+}
+#timeTable tbody tr:nth-child(even) td{
+    background-color: #f1f1f1;
+}
+#timeTable tbody tr:hover td{
+    background-color: #E9E9E9;
+    cursor: pointer;
+}
