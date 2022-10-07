@@ -39,7 +39,7 @@ li {
 }
 .main .header img {
     width: 100%; 
-    height: 250px;
+    height: 100%;
 }
 .content {
     background-color: white;
@@ -76,5 +76,13 @@ span {
     color: white;
     font-size: 30px;
     padding-right: 20px;
-
+}
+.textContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 25px 0;
+}
+.textWho {
+    justify-content: space-around;
 }
