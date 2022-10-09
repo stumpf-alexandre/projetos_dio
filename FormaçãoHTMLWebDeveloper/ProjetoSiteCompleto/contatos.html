@@ -28,20 +28,74 @@
     
             <div class="content">
                 <!-- Aqui vai o seu conteúdo -->
-                Contato
-Deve ter uma imagem diferente no Header.
+                <div id="containerContato">
+                    <div id="forms">
+                        <form onsubmit="alert('formulario enviado')" action="#" method="post" target="_blank" name="forms" autocomplete="off">
+                            <label for="nome">Nome*: </label><input id="nome" type="text" name="nome"><br>
+                            <label for="email">E-mail*: </label><input id="email" type="email" name="email"/><br>
+                            <label for="tel">Tel/WattsApp*: </label><input id="tel" type="number" name="tel"/><br>
 
-Em Content deve ter:
-
-Os telefones de contato (celular e whatsapp)
-Endereço completo da clínica
-Um Iframe com o Google Maps apontando o endereço da clínica
-Um formulário de contato com:
-Nome (type="text")
-E-mail (type="email")
-Assunto (type="text")
-Mensagem (textarea)
-Botões de envias e limpar formulário
+                            <label for="assunto">Assunto*: </label>
+                            <select id="assunto" name="role">
+                                <option selected value="">Selecione um assunto</option>
+                                <option value="clinica">Clínica</option>
+                                <option value="cirurgiageral">Cirurgia geral</option>
+                                <option value="ortopedia">Ortopedia</option>
+                                <option value="cardiologia">Cardiologia</option>
+                                <option value="oftalmologia">Oftalmologia</option>
+                                <option value="gastrologia">Gastrologia</option>
+                                <option value="endocrinologia">Endocrinologia</option>
+                                <option value="nefrologia">Nefrologia</option>
+                                <option value="examelaboratorial">Exames laboratoriais</option>
+                                <option value="exameimagem">Exames de imagem</option>
+                                <option value="farmacia">Farmácia</option>
+                                <option value="petshop">Pet shop</option>
+                            </select><br>
+                            
+                            <label for="menssagem">Menssagem*: </label><br>
+                            <textarea id="menssagem" rows="12" cols="50" name="menssagem"></textarea><br>
+                            
+                            <button type="reset">Limpar</button>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                    <div id="localization">
+                        <div>
+                            <div class="contact">
+                                <div class="icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="tel">
+                                    <b>
+                                        <p><span>Telefone</span></p>
+                                        <p><span>51 3444-3333</span></p>
+                                    </b>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div class="icon">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                                <div class="tel">
+                                    <b>
+                                        <p><span>WhatsApp</span></p>
+                                        <p><span>51 9 9999-9999</span></p>
+                                    </b>
+                                </div>
+                            </div>
+                            <div class="tel">
+                                <b>
+                                    <p><span>Localização</span></p>
+                                    <p><span>R.&nbsp;Gen. Auto, 243</span></p>
+                                    <p><span>Centro Histórico</span></p>
+                                    <p><span>Porto Alegre - RS</span></p>
+                                    <p><span>90010-380</span></p>
+                                </b>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27632.360648542253!2d-51.26693802089845!3d-30.035564499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519791b32eacfbd%3A0x15fd1fb3c84397ee!2zTsO6Y2xlbyBWZXRlcmluw6FyaW8!5e0!3m2!1spt-BR!2sbr!4v1665339341213!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
     
             <div class="footer">
