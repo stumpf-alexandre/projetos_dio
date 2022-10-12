@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags HTML 5 - Estrutural</title>
+    <style>
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+        }
+        nav ul li a {
+            padding: 10px 15px;
+            color: blue;
+            text-decoration: none;
+            border-radius: 15px 0;            
+        }
+        nav ul li a:hover {
+            color: white;
+            text-decoration: none;
+            background-color: blue;
+        }
+        blockquote {
+            font-style: italic;
+            background: #f5f5f5;
+            padding: 15px;
+            margin-left: 0px;
+            border-left: royalblue solid 5px;            
+        }
+        article time {
+            font-style: italic;
+        }
+        article q {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <!--cabeçalho-->
+        Header
+        <nav>
+        <!--fica os links de navegação-->
+            <ul>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="tel:+5551999999999">Telefone</a></li> <!--link de telefone-->
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+    <!--corpo-->
+    <!--contem o assunto principal, as outras tags são estruturais,só ha um main por página-->
+        Main
+        <section>Seção 1</section> <!--a section é uma div, só que a div é generica, ja a section é semanticamente correta. Não possui limites e cada section é uma seção do assunto-->
+        <section>Seção 2</section>
+        <section>Seção 3</section>
+        <section>Seção 4</section>
+
+        <aside>
+        <!--é como se fosse a section mas sua semantica é para colocar um assunto que não tem nada haver com o assunto principal da página-->
+            Aside
+        </aside>
+        
+        <article>
+        <!--é uma tag auxiliar, serve para artigos-->
+            <h1>Descoberta de vida em outro planeta</h1>
+            <p>Artigo publicado em <time pubdate>21/01/2022 19:00</time></p>
+            <p>Segundo alunos e alunas da DIO.me, <q cite="http://dio.me/">Este é o melhor curso de HTML que já fizeram!</q></p> <!--a tag q é para citações pequenas, não quebra linha e serve para lincar sites de outras publicações-->
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse blanditiis laboriosam provident ullam soluta voluptatum, amet pariatur laudantium. Quaerat libero voluptatem ipsum ipsam veritatis architecto ex eligendi, similique alias illum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse blanditiis laboriosam provident ullam soluta voluptatum, amet pariatur laudantium. Quaerat libero voluptatem ipsum ipsam veritatis architecto ex eligendi, similique alias illum.</p>
+            <p>Lorem, ipsum dolor sit Estrela Marta amet consectetur adipisicing elit. Esse blanditiis laboriosam provident ullam soluta voluptatum, amet pariatur laudantium. Quaerat libero voluptatem ipsum ipsam veritatis architecto ex eligendi, similique alias illum.</p>
+            <blockquote cite="http://wikipedia.com">
+            <!--utilizado para fazer citações do texto em si-->
+            <!--cite é um atributo utilizado para lincar citações que esta sendo utilizada neste cite e lincala a um outro site que foi feita esta citação-->
+                <p>Estrela Marta é referencia a uma estrela bem mais velha que nosso sol</p>
+                <p>Estrela Marta é referencia a uma estrela bem mais velha que nosso sol</p>
+                <p>Estrela Marta é referencia a uma estrela bem mais velha que nosso sol</p>
+            </blockquote>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse blanditiis laboriosam provident ullam soluta voluptatum, amet pariatur laudantium. Quaerat libero voluptatem ipsum ipsam veritatis architecto ex eligendi, similique alias illum.</p>
+        </article>
+
+        <figure>
+        <!--tag que serve como container para as imagens e suas legendas ou para videos e suas legendas-->
+            <img src="imagem/imagem-carro.jpg" width="250px"/>
+            <figcaption>Descrição da imagem</figcaption> <!--tag para legenda da imagem-->
+        </figure>
+
+        <img src="imagem/imagem-carro.jpg" width="250px"/>
+        <p>Descrição da imagem</p>
+
+        <picture>
+        <!--esta tag faz a mudança da imagem conforme a especificação do tamanho da tela-->
+            <source srcset="imagem/imagem-carro.jpg" media="(min-width: 600px)">
+            <img src="imagem/imagem-carro-small.jpg"/>
+        </picture>
+    </main>
+
+    <footer>
+    <!--rodapé-->
+        <address>R. dos Pinheiros, 233</address>
+    </footer>
+</body>
+</html>
