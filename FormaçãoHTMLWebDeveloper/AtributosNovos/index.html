@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novos Atributos</title>
+</head>
+<body>
+    <h1>Novos Atributos</h1>
+    <h2>Autofocus</h2>
+    <h2>Placeholder</h2>
+    <h2>Required</h2>
+    <h2>Disabled</h2>
+    <h2>Maxlength</h2>
+    <h2>Minlength</h2>
+    <form onsubmit="alert('formulario enviado')" action="#" method="post" target="_blank" name="forms" autocomplete="off">
+        <fieldset disabled> <!--disabled desabilita todos os campos dentro do fildset que esta com disabled-->
+            <legend>Dados Pessoais</legend>
+            <label for="nome">
+                Nome*:
+                <input id="nome" type="text" name="nome" autofocus required> <!--autofocus faz com que ao carregar a pagina vai dar foco no input que voce colocou o autofocu-->
+            </label>
+            <label for="email">
+                E-mail*:
+                <input placeholder="Ex: meuemail@gmail.com" id="email" type="email" name="email" required> <!--placeholder define um texto de o que deve ser preenchido no input, que some ao preenche-lo-->
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+            <label for="endereco">
+                Endereço*:
+                <input id="endereco" type="text" name="endereco" required> <!--required obriga que o campo esteja preenchido ao clicar no botão de enviar-->
+            </label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Observações</legend>
+            <textarea minlength="10" maxlength="250" id="menssagem" rows="12" cols="50" name="menssagem"></textarea>
+            <!--com o maxlength você obriga o textarea a aceitar no maximo x números de caracteres-->
+            <!--com o minlength você obriga o textarea a aceitar no minimo x números de caracteres, é um atributo do input tmbem-->
+        </fieldset>
+
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar</button>
+    </form>
+    
+    <hr/>
+
+    <h2>Desatrelando as tags da tag form</h2>
+    <form id="form" onsubmit="alert('formulario enviado')" action="#" method="post" target="_blank" name="forms" autocomplete="off"></form
+        <fieldset disabled> <!--disabled desabilita todos os campos dentro do fildset que esta com disabled-->
+            <legend>Dados Pessoais</legend>
+            <label for="nome">
+                Nome*:
+                <input id="nome" type="text" name="nome" form="form" autofocus required> <!--autofocus faz com que ao carregar a pagina vai dar foco no input que voce colocou o autofocu-->
+            </label>
+            <label for="email">
+                E-mail*:
+                <input placeholder="Ex: meuemail@gmail.com" id="email" type="email" name="email" form="form" required> <!--placeholder define um texto de o que deve ser preenchido no input, que some ao preenche-lo-->
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+            <label for="endereco">
+                Endereço*:
+                <input id="endereco" type="text" name="endereco" form="form" required> <!--required obriga que o campo esteja preenchido ao clicar no botão de enviar-->
+            </label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Observações</legend>
+            <textarea form="form" minlength="10" maxlength="250" id="menssagem" rows="12" cols="50" name="menssagem"></textarea>
+            <!--com o maxlength você obriga o textarea a aceitar no maximo x números de caracteres-->
+            <!--com o minlength você obriga o textarea a aceitar no minimo x números de caracteres, é um atributo do input tmbem-->
+        </fieldset>
+
+        <button form="form" type="reset">Limpar</button>
+        <button form="form" type="submit">Enviar</button>
+</body>
+</html>
