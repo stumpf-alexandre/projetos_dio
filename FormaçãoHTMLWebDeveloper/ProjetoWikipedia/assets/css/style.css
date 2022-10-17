@@ -5,6 +5,9 @@ body, html {
 }
 ul { list-style: none; padding-left: 5px; }
 a { color:blue; text-decoration: none;}
+.subAncora li a{
+    padding-left: 10px;
+}
 .bar {
     background-color: #f9f9fb;
     padding:15px;
@@ -12,7 +15,7 @@ a { color:blue; text-decoration: none;}
     border-bottom: solid 1px #cdcdcd;
 }
 .content {
-    max-width: 1440px;
+    max-width: 1380px;
     margin: auto;
     grid-gap: 3rem;
     display: grid;
@@ -28,14 +31,15 @@ a { color:blue; text-decoration: none;}
 }
 .anchors {
     height: 98%;
-    text-align: center;
+    text-align: left;
     border-left: solid 1px #cdcdcd;
-    padding-left: 15px;
+    padding-left: 25px;
 }
 .sidebar {
     height: 98%;
-    text-align: center;
+    text-align: left;
     border-right: solid 1px #cdcdcd;
+    padding-left: 35px;
 }
 figure {
     text-align: center;
