@@ -15,7 +15,7 @@ a { color:blue; text-decoration: none;}
     border-bottom: solid 1px #cdcdcd;
 }
 .content {
-    max-width: 1380px;
+    max-width: 1440px;
     margin: auto;
     grid-gap: 3rem;
     display: grid;
@@ -63,4 +63,18 @@ figure {
 #elencoTable tbody tr:hover td{
     background-color: #E9E9E9;
     cursor: pointer;
+}
+.filmagem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+}
+.textFilmagem {
+    flex-basis: 50%;
+}
+.imgFilmagem {
+    flex-basis: 50%;
+    margin: 0;
+    padding: 0;
 }
