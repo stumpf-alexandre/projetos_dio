@@ -3,6 +3,9 @@ body, html {
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.logo img {
+    width: 200px;
+}
 ul { list-style: none; padding-left: 5px; }
 a { color:blue; text-decoration: none;}
 .subAncora li a{
