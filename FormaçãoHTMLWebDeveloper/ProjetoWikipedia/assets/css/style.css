@@ -53,17 +53,17 @@ figure {
 .ator {
     text-align: center;
 }
-#elencoTable thead th{
+.tables thead th{
     background-color: black;
     color: white;
 }
-#elencoTable tfoot td{
+.tables tfoot td{
     background-color: lightgray;
 }
-#elencoTable tbody tr:nth-child(even) td{
+.tables tbody tr:nth-child(even) td{
     background-color: #f1f1f1;
 }
-#elencoTable tbody tr:hover td{
+.tables tbody tr:hover td{
     background-color: #E9E9E9;
     cursor: pointer;
 }
@@ -80,4 +80,20 @@ figure {
     flex-basis: 50%;
     margin: 0;
     padding: 0;
+}
+.imgKarate {
+    flex-basis: 35%;
+}
+.imgKarate img {
+    height: 650px;
+}
+.textKarate {
+    flex-basis: 65%;
+    margin-right: 65px;
+}
+.imgCav {
+    width: 650px;
+}
+.imgSeia {
+    width: 400px;
 }
