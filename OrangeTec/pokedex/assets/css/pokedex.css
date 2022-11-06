@@ -41,12 +41,41 @@
 }
 
 .pokemon .detail .types .type {
-    background-color: #61e1ca;
-    color: #fff;
+    text-align: center;
     padding: .25rem .5rem;
     margin: .25rem 0;
     font-size: .625rem;
     border-radius: 1rem;
+}
+
+.type {
+    background: linear-gradient(#3dc7ef, #bdb9b8);
+    color: #000;
+    /*background-color: #61e1ca;*/
+}
+
+.typeGrass {
+    background: #9bcc50;
+}
+
+.typePoison {
+    background: #b97fc9;
+    color: #fff;
+}
+
+.typeFire {
+    background: #fd7d24;
+    color: #fff;
+}
+
+.typeWater {
+    background: #4592c4;
+    color: #fff;
+}
+
+.typeBug {
+    background: #729f3f;
+    color: #fff;
 }
 
 .pokemon .detail img {
