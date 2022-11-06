@@ -49,6 +49,7 @@
 }
 
 .type {
+    /*fundo com duas cores horizontalmente*/
     background: linear-gradient(#3dc7ef, #bdb9b8);
     color: #000;
     /*background-color: #61e1ca;*/
