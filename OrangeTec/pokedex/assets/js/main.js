@@ -1,20 +1,16 @@
-function convertPokemonTypeHtml(pokemonTypes) {
-    return pokemonTypes.map((typeSlot) => `<li class="type type${typeSlot.type.name}">${typeSlot.type.name}</li>`)
-}
-
 function convertPokemonHtml(pokemon) {
     const name = pokemon.name;
     const concName = name[0].toUpperCase() + name.substring(1);
 
     return `
-        <li class="pokemon">
-            <span class="number">#${pokemon.order}</span>
-            <span class="name">${concName}</span>
+        <li class="pokemon ${pokemon.type}">
+            <span class="number">#${pokemon.number}</span>
+            <span class="name">${pokemon.name}</span>
             <div class="detail">
                 <ol class="types">
-                    ${convertPokemonTypeHtml(pokemon.types).join('')}
+                    ${pokemon.types.map((type) => `<li class="type type${type}">${type}</li>`).join('')}
                 </ol>
-                <img src="${pokemon.sprites.other.dream_world.front_default}" alt="Imagem ${concName}">
+                <img src="${pokemon.photo}" alt="Imagem ${pokemon.name}">
             </div>
         </li>
     `
