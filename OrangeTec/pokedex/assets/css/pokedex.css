@@ -52,30 +52,85 @@
     /*fundo com duas cores horizontalmente*/
     background: linear-gradient(#3dc7ef, #bdb9b8);
     color: #000;
-    /*background-color: #61e1ca;*/
 }
 
-.typeGrass {
+.typeground {
+    /*fundo com duas cores horizontalmente*/
+    background: linear-gradient(#f7de3f, #ab9842);
+}
+
+.typedragon {
+    /*fundo com duas cores horizontalmente*/
+    background: linear-gradient(#53a4cf, #f16e57);
+    color: #fff;
+}
+
+.typegrass {
     background: #9bcc50;
 }
 
-.typePoison {
+.typepoison {
     background: #b97fc9;
     color: #fff;
 }
 
-.typeFire {
+.typefire {
     background: #fd7d24;
     color: #fff;
 }
 
-.typeWater {
+.typewater {
     background: #4592c4;
     color: #fff;
 }
 
-.typeBug {
+.typebug {
     background: #729f3f;
+    color: #fff;
+}
+
+.typenormal {
+    background: #97a1a7;
+}
+
+.typeelectric {
+    background: #eed535;
+}
+
+.typefairy {
+    background: #fdb9e9;
+}
+
+.typefighting {
+    background: #d56723;
+    color: #fff;
+}
+
+.typepsychic {
+    background: #f366b9;
+    color: #fff;
+}
+
+.typerock {
+    background: #a38c21;
+    color: #fff;
+}
+
+.typesteel {
+    background: #9eb7b8;
+}
+
+.typeice {
+    background: #51c4e7;
+}
+
+.typeghost {
+    background: #7b62a3;
+    color: #fff;
+}
+
+.typedark {
+    background: #707070;
     color: #fff;
 }
 
