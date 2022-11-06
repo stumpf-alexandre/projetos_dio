@@ -3,15 +3,18 @@ function convertPokemonTypeHtml(pokemonTypes) {
 }
 
 function convertPokemonHtml(pokemon) {
+    const name = pokemon.name;
+    const concName = name[0].toUpperCase() + name.substring(1);
+
     return `
         <li class="pokemon">
             <span class="number">#${pokemon.order}</span>
-            <span class="name">${pokemon.name}</span>
+            <span class="name">${concName}</span>
             <div class="detail">
                 <ol class="types">
                     ${convertPokemonTypeHtml(pokemon.types).join('')}
                 </ol>
-                <img src="${pokemon.sprites.other.dream_world.front_default}" alt="Imagem ${pokemon.name}">
+                <img src="${pokemon.sprites.other.dream_world.front_default}" alt="Imagem ${concName}">
             </div>
         </li>
     `
