@@ -3,6 +3,7 @@ const loadMoreButton = document.getElementById('loadMoreButton');
 const limit = 12;
 let offset = 0;
 const maxCard = 231;
+let offId = 0;
 
 function loadPokemonsItens(offset, limit) {
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
@@ -25,33 +26,6 @@ function loadPokemonsItens(offset, limit) {
     })
 }
 
-function selectPokemon(id) {
-    console.log(id);
-    pokeCache.getDetailPokemon(id).then((pokePopups = []) => {
-        const newPopup = pokePopups.map((pokePopup) =>
-        `
-            <div id="pokemonPopup" class="popup">
-                <button id="closeBtn" onclick="closePopup();">Fechar</button>
-                <div class="pokeball">
-                    <img src="../image/pokeball-fundo.png" alt="Imagem de fundo pokebola">
-                </div>
-                <div class="card">
-                    <img src="${pokePopup.photo}" alt="Imagem ${pokePopup.name}">
-                    <h2 class="card-title">${pokePopup.number}. ${pokePopup.name}</h2>
-                    <p><small>Altura: </small>${(pokePopup.height * 2.54).toFixed(2)} cm | <small>Peso: </small>${(pokePopup.weight / 2.205).toFixed(2)} Kg | <small>Tipo: </small>${pokePopup.types.map((type) => type).join(', ')}
-                    <p><small>HP: </small>${pokePopup.statHp} | <small>Habilidades: </small>${pokePopup.abilities.map((ability) => ability).join(', ')}
-                </div>
-            </div>
-        `).join('');
-        pokemonList.innerHTML += newPopup;
-    })
-}
-
-const closePopup = () => {
-    const popup = document.getElementById('pokemonPopup');
-    popup.parentElement.removeChild(popup.firstChild);
-}
-
 loadMoreButton.addEventListener('click', () => {
     offset += limit;
     const qtdCard = offset + limit;
@@ -65,3 +39,27 @@ loadMoreButton.addEventListener('click', () => {
 })
 
 loadPokemonsItens(offset, limit);
+
+function selectPokemon(id) {
+    pokeApi.getPokemons(0, id).then((pokePopups = []) => {
+        const newPopup = pokePopups.map((pokePopup) =>
+        `
+            <div id="pokemonPopup" class="popup ${pokePopup.type}">
+                <button id="closeBtn" onclick="closePopup();">Fechar</button>
+                <div class="card">
+                    <img src="${pokePopup.photo}" alt="Imagem do pokemon ${pokePopup.name}">
+                    <h2 class="card-title name">${pokePopup.number}. ${pokePopup.name}</h2>
+                    <p><small>Altura: </small>${(pokePopup.height / 10).toFixed(2)} m | <small>Peso: </small>${(pokePopup.weight / 10).toFixed(2)} Kg | <small>Tipo: </small>${pokePopup.types.map((type) => type).join(', ')}
+                    <p><small>Status: </small>${pokePopup.stats.map((stat) => stat).join(', ')} | <small>Habilidades: </small>${pokePopup.abilities.map((ability) => ability).join(', ')}
+                </div>
+            </div>
+        `
+        ).join('');
+        pokemonList.innerHTML += newPopup;
+    })
+}
+
+function closePopup () {
+    const popup = document.querySelector('.popup');
+    popup.parentElement.removeChild(popup);
+}

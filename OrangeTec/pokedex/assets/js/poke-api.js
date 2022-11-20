@@ -1,5 +1,4 @@
 const pokeApi = {};
-const pokeCache = {};
 
 function convertPokeApiDetailToPokemon(pokeDetail) {
     const pokemon = new Pokemon();
@@ -12,7 +11,10 @@ function convertPokeApiDetailToPokemon(pokeDetail) {
     pokemon.photo = pokeDetail.sprites.other.dream_world.front_default;
     pokemon.height = pokeDetail.height;
     pokemon.weight = pokeDetail.weight;
-    pokemon.statHp = pokeDetail.base_stat;
+    const stats = pokeDetail.stats.map((statSlot) => statSlot.stat.name);
+    const [stat] = stats;
+    pokemon.stats = stats;
+    pokemon.stat = stat;
     const abilities = pokeDetail.abilities.map((abilitySlot) => abilitySlot.ability.name);
     const [ability] = abilities;
     pokemon.abilities = abilities;
@@ -35,20 +37,4 @@ pokeApi.getPokemons = (offset = 0, limit = 12) => {
         .then((pokemons) => pokemons.map(pokeApi.getPokemonDetail))
         .then((detailRequests) => Promise.all(detailRequests))
         .then((pokemonsDetails) => pokemonsDetails)
-}
-pokeCache.getPokemon = (pokemon) => {
-    return fetch(pokemon.url)
-        .then((response) => response.json())
-        .then(convertPokeApiDetailToPokemon)
-}
-
-
-pokeCache.getDetailPokemon = (pokeId) => {
-    const url = `https://pokeapi.co/api/v2/pokemon/${pokeId}/`;
-    return fetch(url)
-        .then((response) => response.json())
-        .then((jsonLi) => jsonLi.results)
-        .then((detailPokemon) => detailPokemon.map(pokeCache.getPokemon))
-        .then((detailRequest) => Promise.all(detailRequest))
-        .then((pokeDetail) => pokeDetail)
 }
