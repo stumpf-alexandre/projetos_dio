@@ -32,6 +32,9 @@ function selectPokemon(id) {
         `
             <div id="pokemonPopup" class="popup">
                 <button id="closeBtn" onclick="closePopup();">Fechar</button>
+                <div class="pokeball">
+                    <img src="../image/pokeball-fundo.png" alt="Imagem de fundo pokebola">
+                </div>
                 <div class="card">
                     <img src="${pokePopup.photo}" alt="Imagem ${pokePopup.name}">
                     <h2 class="card-title">${pokePopup.number}. ${pokePopup.name}</h2>
