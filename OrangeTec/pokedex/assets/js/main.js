@@ -44,13 +44,13 @@ function selectPokemon(id) {
     pokeApi.getPokemons(0, id).then((pokePopups = []) => {
         const newPopup = pokePopups.map((pokePopup) =>
         `
-            <div id="pokemonPopup" class="popup ${pokePopup.type}">
+            <div id="${pokePopup.number}" class="popup ${pokePopup.type}">
                 <button id="closeBtn" onclick="closePopup();">Fechar</button>
                 <div class="card">
                     <img src="${pokePopup.photo}" alt="Imagem do pokemon ${pokePopup.name}">
                     <h2 class="card-title name">${pokePopup.number}. ${pokePopup.name}</h2>
                     <p><small>Altura: </small>${(pokePopup.height / 10).toFixed(2)} m | <small>Peso: </small>${(pokePopup.weight / 10).toFixed(2)} Kg | <small>Tipo: </small>${pokePopup.types.map((type) => type).join(', ')}
-                    <p><small>Status: </small>${pokePopup.stats.map((stat) => stat).join(', ')} | <small>Habilidades: </small>${pokePopup.abilities.map((ability) => ability).join(', ')}
+                    <p><small>Habilidades: </small>${pokePopup.abilities.map((ability) => ability).join(', ')}
                 </div>
             </div>
         `

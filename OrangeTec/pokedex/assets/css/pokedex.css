@@ -21,7 +21,12 @@
 .pokemon:hover {
     transform: scale(1.05);
     box-shadow: 1px 2px 15px 4px #000000;
- }
+}
+
+.pokemon:active {
+    transform: translateY(+1px);
+    box-shadow: none;
+}
 
 /*Tipo principal do pokemon*/
 .flying {
@@ -256,10 +261,26 @@
     box-shadow: 1px 1px 10px 2px #000000;
 }
 
+.pagination #loadMoreButton:active {
+    transform: translateY(+1px);
+    box-shadow: none;
+}
+
 #closeBtn {
+    background-color: red;
     position: absolute;
     top: 20px;
     right: 20px;
+}
+
+#closeBtn:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 2px 15px 4px #000000;
+ }
+
+ #closeBtn:active {
+    transform: translateY(+1px);
+    box-shadow: none;
 }
 
 .popup {
@@ -272,6 +293,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
   
 /*Media query*/
