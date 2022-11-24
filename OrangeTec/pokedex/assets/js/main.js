@@ -1,27 +1,31 @@
 const pokemonList = document.getElementById('pokemonList');
 const loadMoreButton = document.getElementById('loadMoreButton');
+const sectionPokemon = document.querySelector('.content');
+const openDetails = document.querySelector('.content-detail')
 const limit = 12;
 let offset = 0;
 const maxCard = 231;
-let offId = 0;
+
+function convertPokemonHtml(pokemons) {
+    return `
+        <li class="pokemon ${pokemons.type}">
+            <a class="pokemonLink" alt="card do pokemon ${pokemons.name}" onclick="selectPokemon('${pokemons.number}');">
+                <span class="number">#${pokemons.number}</span>
+                <span class="name">${pokemons.name}</span>
+                <div class="detail">
+                    <ol class="types">
+                        ${pokemons.types.map((type) => `<li class="type type${type}">${type}</li>`).join('')}
+                    </ol>
+                    <img src="${pokemons.photo}" alt="Imagem ${pokemons.name}">
+                </div>
+            </a>
+        </li>
+    `
+}
 
 function loadPokemonsItens(offset, limit) {
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
-        const newHtml = pokemons.map((pokemon) =>
-        `
-            <li class="pokemon ${pokemon.type}">
-                <a class="pokemonLink" alt="card do pokemon ${pokemon.name}" onclick="selectPokemon('${pokemon.number}');">
-                    <span class="number">#${pokemon.number}</span>
-                    <span class="name">${pokemon.name}</span>
-                    <div class="detail">
-                        <ol class="types">
-                            ${pokemon.types.map((type) => `<li class="type type${type}">${type}</li>`).join('')}
-                        </ol>
-                        <img src="${pokemon.photo}" alt="Imagem ${pokemon.name}">
-                    </div>
-                </a>
-            </li>
-        `).join('');
+        const newHtml = pokemons.map(convertPokemonHtml).join('');
         pokemonList.innerHTML += newHtml;
     })
 }
@@ -40,22 +44,35 @@ loadMoreButton.addEventListener('click', () => {
 
 loadPokemonsItens(offset, limit);
 
-function selectPokemon(id) {
-    pokeApi.getPokemons(0, id).then((pokePopups = []) => {
-        const newPopup = pokePopups.map((pokePopup) =>
-        `
-            <div id="${pokePopup.number}" class="popup ${pokePopup.type}">
-                <button id="closeBtn" onclick="closePopup();">Fechar</button>
-                <div class="card">
-                    <img src="${pokePopup.photo}" alt="Imagem do pokemon ${pokePopup.name}">
-                    <h2 class="card-title name">${pokePopup.number}. ${pokePopup.name}</h2>
-                    <p><small>Altura: </small>${(pokePopup.height / 10).toFixed(2)} m | <small>Peso: </small>${(pokePopup.weight / 10).toFixed(2)} Kg | <small>Tipo: </small>${pokePopup.types.map((type) => type).join(', ')}
-                    <p><small>Habilidades: </small>${pokePopup.abilities.map((ability) => ability).join(', ')}
-                </div>
+function convertPokeDetailsHtml(pokeDetail) {
+    openDetails.getElementsByClassName.display = 'block';
+    return `
+        <div class="popup ${pokeDetail.type}">
+            <button id="closeBtn" onclick="closePopup();">Fechar</button>
+            <div class="card">
+                <img src="${pokeDetail.gif}" alt="Imagem animada do pokemon ${pokeDetail.name}">
+                <h2 class="card-title name">${pokeDetail.number}. ${pokeDetail.name}</h2>
+                <p><small>Altura: </small>${pokeDetail.height} m | <small>Peso: </small>${pokeDetail.weight} Kg | <small>Tipo: </small>${pokeDetail.types.map((type) => type).join(', ')}
+                <p><small>Habilidades: </small>${pokeDetail.abilities.map((ability) => ability).join(', ')}
+                ${pokeDetail.stats.map((stat) => `
+                    <div class="card-details">
+                        <span class="detail-name-stat">${stat['stat']['name']}</span>
+                        <div class="card-container">         
+                            <div class="progress-bar progress-bar-${pokeDetail.type}" style="width: ${stat['base_stat']}%;"></div>
+                        </div>
+                    </div>
+                `).join(' ')}
+            
             </div>
-        `
-        ).join('');
+        </div>
+    `
+}
+
+function selectPokemon(numId) {
+    pokeApi.getDetailsPokemon(numId).then((pokeDetail = []) => {
+        const newPopup = convertPokeDetailsHtml(pokeDetail);
         pokemonList.innerHTML += newPopup;
+        sectionPokemon.classList.add("open-modal")
     })
 }
 

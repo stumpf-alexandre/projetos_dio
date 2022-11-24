@@ -285,15 +285,129 @@
 
 .popup {
     position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
+    top: 5%;
+    left: 15%;
+    margin: auto;
+    height: 90vh;
+    width: 70vw;
     opacity: 0.95;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: 100px;
+}
+
+.card-details {
+    padding: 1rem;
+    position: relative;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.detail-name-stat {
+    font-size: 0.9rem;
+    text-align: center;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: -6%;
+    z-index: 5;
+}
+
+.card-container {
+    
+    height: 1rem;
+    background-color: #ccc;
+    border-radius: 10px;
+    border: 2px solid;
+    left: 10%;
+    right: 10%;
+}
+
+ .progress-bar {
+    height: 1rem;
+    border-radius: 10px;
+    height: 100%;
+    width: 0%;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.progress-bar-flying {
+    background-color: #ff751a;
+}
+
+.progress-bar-ground {
+    background-color: #761aa3;
+}
+
+.progress-bar-dragon {
+    background-color: #ff751a;
+}
+
+.progress-bar-grass {
+    background-color: #d21aa4;
+}
+
+.progress-bar-poison {
+    background-color: #9bcc50;
+}
+
+.progress-bar-fire {
+    background-color: #51c4e7;
+}
+
+.progress-bar-water {
+    background-color: #fd7d24;
+}
+
+.progress-bar-bug {
+    background-color: #d21aa4;
+}
+
+.progress-bar-normal {
+    background-color: #d21aa4;
+}
+
+.progress-bar-electric {
+    background-color: #a31aa4;
+}
+
+.progress-bar-fairy {
+    background-color: #e0f49e;
+}
+
+.progress-bar-fighting {
+    background-color: #2ac7c3;
+}
+
+.progress-bar-psychic {
+    background-color: #fffc91;
+}
+
+.progress-bar-rock {
+    background-color: #715f97;
+}
+
+.progress-bar-steel {
+    background-color: #af7662;
+}
+
+.progress-bar-ice {
+    background-color: #f45d25;
+}
+
+.progress-bar-ghost {
+    background-color: #fdf81b;
+}
+
+.progress-bar-dark {
+    background-color: #73571d;
 }
   
 /*Media query*/
@@ -315,6 +429,24 @@
 @media screen and (min-width: 992px) {
     .pokemons { 
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .popup {
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .popup {
+        top: 3%;
+        left: 5%;
+        height: 95vh;
+        width: 90vw;
     }
 }
 /*-----------------------------------------*/
