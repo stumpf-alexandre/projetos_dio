@@ -58,8 +58,7 @@ function convertPokeDetailsHtml(pokeDetail) {
                     <div class="card-details">
                         <span class="detail-name-stat">${stat['stat']['name']}</span>
                         <div class="card-container">         
-                            <div class="progress-bar progress-bar-${pokeDetail.type}"
-                            "style="width: ${stat['base_stat']}%;"></div>
+                            <div class="progress-bar progress-bar-${pokeDetail.type}" style="width: ${stat['base_stat']}%;"></div>
                         </div>
                     </div>
                 `).join(' ')}

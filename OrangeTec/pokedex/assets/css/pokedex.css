@@ -325,15 +325,14 @@
     background-color: #ccc;
     border-radius: 10px;
     border: 2px solid;
-    left: 10%;
-    right: 10%;
+    align-items: center;
+
 }
 
  .progress-bar {
     position: absolute;
     border-radius: 10px;
     height: 100%;
-    width: 0%;
     max-width: 100%;
     animation: progress 1500ms ease-in 1;
 }
@@ -438,6 +437,7 @@
     }
 }
 
+/*media query tela com tamanho de 320px*/
 @media screen and (min-width: 320px) {
     .popup {
         top: 0;
@@ -445,8 +445,17 @@
         height: 100vh;
         width: 100vw;
     }
+    .card-details {
+        padding: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .detail-name-stat {
+        font-size: 0.9rem;
+    }
 }
 
+/*media query tela com tamanho de 768px*/
 @media screen and (min-width: 768px) {
     .popup {
         top: 3%;
