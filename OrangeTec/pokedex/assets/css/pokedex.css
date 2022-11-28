@@ -320,6 +320,7 @@
 }
 
 .card-container {
+    position: relative;
     height: 1rem;
     background-color: #ccc;
     border-radius: 10px;
@@ -329,10 +330,18 @@
 }
 
  .progress-bar {
+    position: absolute;
     border-radius: 10px;
     height: 100%;
     width: 0%;
     max-width: 100%;
+    animation: progress 1500ms ease-in 1;
+}
+
+@keyframes progress {
+    from {
+        width: 0;
+    }
 }
 
 .progress-bar-flying {
