@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Circulo de Progresso</title>
+</head>
+<body>
+    <h1>Digite aqui uma porcentagem</h1>
+    <input id="numberProgress" type="number" placeholder="Digite um número">
+    <button onclick="go()">Enviar</button>
+    <div class="box">
+        <div class="box-circle">
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle id="circleProgress" cx="70" cy="70" r="70"></circle>
+            </svg>
+        </div>
+        <div class="number">
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
