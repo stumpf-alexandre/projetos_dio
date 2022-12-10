@@ -1,7 +1,16 @@
 import React from 'react';
 import logo from '../../assets/logo-dio.png';
 import { Button } from '../Button';
-import {BuscarInputContainer, Container, Input, Menu, MenuRight, Row, UserPicture, Wrapper} from './style';
+import { 
+    BuscarInputContainer, 
+    Container, 
+    Input, 
+    Menu, 
+    MenuRight, 
+    Row, 
+    UserPicture, 
+    Wrapper, 
+} from './style';
 
 const Header = ({autenticado}) => {
     return (
@@ -24,7 +33,7 @@ const Header = ({autenticado}) => {
                         <UserPicture src="https://avatars.githubusercontent.com/u/16006888?s=400&u=58c69be463a60a18afcc191909bb162c2605de3b&v=4"/>
                     ) : (
                         <>
-                            <MenuRight href="#">Home</MenuRight>
+                            <MenuRight href="/home">Home</MenuRight>
                             <Button title="Entrar"/>
                             <Button title="Cadastrar"/>
                         </>

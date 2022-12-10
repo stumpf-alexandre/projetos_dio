@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+
 export const ButtonContainer = styled.button`
     background: #565656;
     border-radius: 22px;
@@ -12,10 +13,7 @@ export const ButtonContainer = styled.button`
         min-width: 167px;
         heigth: 33px;
         background: #e4105d;
-        &::hover {
-            opacity: 0.6;
-            cursor: pointer;
-        }
+
         &::after {
             content: '';
             position:absolute;

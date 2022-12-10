@@ -1,5 +1,11 @@
 import React from 'react';
-import { Container, NameText, Progress, UserPicture } from './style';
+import { 
+  Container, 
+  NameText, 
+  Progress, 
+  UserPicture, 
+} from './style';
+
 const UserInfo = ({nome, image, percentual}) => {
   return (
     <Container>

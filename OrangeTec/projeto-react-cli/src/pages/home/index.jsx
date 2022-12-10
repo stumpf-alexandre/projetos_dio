@@ -1,15 +1,20 @@
-/*import { userNavigate } from 'react-router-dom';*/
+import { useNavigate } from "react-router-dom";
 import bannerImage from '../../assets/banner.png';
 import { Button } from '../../components/Button';
 import { Header } from '../../components/Header';
-import { Container, TextContent, Title, TitleHighlight } from './style';
+import { 
+    Container, 
+    TextContent, 
+    Title, 
+    TitleHighlight, 
+} from './style';
 
 const Home = () => {
-    /*const navigate = userNavigate();
+    const navigate = useNavigate();
 
     const handleClickSignIn = () => {
-        navigate('/login');
-    }*/
+        navigate('/login')
+    }
 
     return (
         <>
@@ -25,7 +30,7 @@ const Home = () => {
                     <TextContent>
                         Domine as tecnologias utilizadas pelas empresas mais inovadoras domundo e encare seu novo desafio profissional, evoluindo em comunidade com os melhores experts.
                     </TextContent>
-                    <Button title="Começar agora" variant="secondary" /*onClick={handleClickSignIn}*/ />
+                    <Button title="Começar agora" variant="secondary" onClick={handleClickSignIn} />
                 </div>
                 <div>
                     <img src={bannerImage} alt='Imagem principal'/>

@@ -1,16 +1,26 @@
-/*import { userNavigate } from "react-router-dom";*/
+import { useNavigate } from "react-router-dom";
 import { MdEmail, MdLock } from 'react-icons/md';
 import { Button } from '../../components/Button';
 import { Header } from '../../components/Header';
 import { Input } from '../../components/Input';
-import { Column, Container, CriarText, EsqueciText, Row, SubTitleLogin, Title, TitleLogin, Wrapper } from './style';
+import { 
+    Column,
+    Container, 
+    CriarText, 
+    EsqueciText, 
+    Row, 
+    SubTitleLogin, 
+    Title, 
+    TitleLogin, 
+    Wrapper, 
+} from './style';
 
 const Login = () => {
-    /*const navigate = userNavigate();
+    const navigate = useNavigate()
 
     const handleClickLogout = () => {
-        navigate('/feed');
-    }*/
+        navigate('/feed')
+    }
 
     return (
         <>
@@ -28,7 +38,7 @@ const Login = () => {
                         <form>
                             <Input placeholder="E-mail" type="email" leftIcon={<MdEmail/>} />
                             <Input placeholder="Senha" type="password" leftIcon={<MdLock/>} />
-                            <Button title="Entrar" variant="secondary" /*onClick={handleClickLogout}*/ type="button"/>
+                            <Button title="Entrar" variant="secondary" onClick={handleClickLogout} type="button"/>
                         </form>
                         <Row>
                             <EsqueciText>Esqueci minha senha</EsqueciText>

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 export const CardContainer = styled.div`
     width: 100%;
     background-color: #3b4651;
@@ -42,6 +43,7 @@ export const UserInfo = styled.div`
         font-weight: 400;
         font-size: 12px;
         line-height: 16px;
+        color:#fff;
     }
 `
 

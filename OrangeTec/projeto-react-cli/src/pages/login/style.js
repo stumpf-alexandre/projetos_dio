@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled from 'styled-components';
+
 export const Container = styled.main`
     width: 100%;
     max-width: 80%;
@@ -31,7 +32,8 @@ export const Title = styled.h2`
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
-    width: 320px;
+    max-width: 90%;
+    //width: 320px;
     margin-bottom: 20px;
     line-heigth: 44px;
     color: #fff;
@@ -42,7 +44,7 @@ export const TitleLogin = styled.p`
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
-    margin-bottom: 20px;
+    //margin-bottom: 20px;
     line-heigth: 44px;
 `
 
@@ -70,5 +72,5 @@ export const CriarText = styled.p`
     font-weight: 700;
     font-size: 14px;
     line-heigth: 19px;
-    color: #e23dd7;
+    color: #23dd7a;
 `

@@ -1,9 +1,10 @@
 import styled from 'styled-components';
+
 export const InputContainer = styled.div`
     width: 100%;
     max-width: 275px;
     heigth: 30px;
-    border-bottom: 1px solid #3b3458;
+    border-bottom: 1px solid #3b3450;
     display:flex;
     align-items:center;
     margin-bottom: 20px;
@@ -16,7 +17,8 @@ export const IconContainer = styled.div`
 export const InputText = styled.input`
     background-color: transparent;
     color: #fff;
-    width:100%;
+    //width:100%;
+    flex:1;
     border: 0;
     height: 30px;
 `
