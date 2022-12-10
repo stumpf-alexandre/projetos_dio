@@ -1,6 +1,10 @@
-import { useState } from 'react';
+import { 
+    useState, 
+    useEffect, 
+} from 'react';
 
 //useState é um hook utilizamos para lida com um estado dentro de um componente
+//useEffect é um hook que vai trabalhar o ciclo de vida do meu componente, gerencia os efeitos dos componentes
 
 const Teste = () => {
     const [name, setName] = useState('Usuario');
@@ -10,6 +14,18 @@ const Teste = () => {
         //aqui podemos fazer uma validação
         setName(prev => prev === 'Usuario' ? 'Alexandre' : 'Usuario')
     }
+
+    useEffect(() => {
+        alert('renderizei')
+        //implementando aqui voce faz com que o useEffect execute uma vez
+
+        //podemos criar um return com função para quando o componente saia da tela ou arvore de componentes
+        //return () => {alert('deslogado')}
+    }, [
+        name
+        //implementando aqui voce faz com que o useEffect execute mais de uma vez
+    ]);
+
     return(
         <div>
             <p>
