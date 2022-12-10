@@ -6,7 +6,7 @@ import {
 
 //useState é um hook utilizamos para lida com um estado dentro de um componente
 //useEffect é um hook que vai trabalhar o ciclo de vida do meu componente, gerencia os efeitos dos componentes
-//useMemo é um hook que memoriza alguma coisa quando meu componente renderiza
+//useMemo é um hook que memoriza alguma coisa quando meu componente renderiza, principalmente para performance do aplicativo que precisa fazer calculos
 
 const Teste = () => {
     const [name, setName] = useState('Usuario');
