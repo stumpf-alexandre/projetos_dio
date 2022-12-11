@@ -1,11 +1,12 @@
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
-//import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { MdEmail, MdLock } from 'react-icons/md';
 import { Button } from '../../components/Button';
 import { Header } from '../../components/Header';
 import { Input } from '../../components/Input';
+import { api } from '../../services/api'
 import { 
     Column,
     Container, 
@@ -26,19 +27,28 @@ const schema = yup.object({
 }).required();
 
 const Login = () => {
-    //const navigate = useNavigate()
+    const navigate = useNavigate()
 
-    const { control, handleSubmit, formState: {errors, isValid} } = useForm({
+    const { control, handleSubmit, formState: { errors } } = useForm({
         resolver: yupResolver(schema),
         mode: 'onChange',
     });
 
-    console.log(isValid, errors);
-    const onSubmit = data => console.log(data);
+    const onSubmit = async (formData) => {
+        try {
+            const { data } = await api.get(`/users?email=${formData.email}&senha=${formData.password}`);
+            console.log('retorno api', data);
 
-    //const handleClickLogout = () => {
-        //navigate('/feed')
-    //}
+            if (data.length && data[0].id) {
+                navigate('/feed')
+                return      
+            } else {
+                alert('Email ou senha inválido.');
+            }
+        } catch {
+            alert('Houve um erro, tente novamente.');
+        }
+    };
 
     return (
         <>

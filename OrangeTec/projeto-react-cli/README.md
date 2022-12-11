@@ -79,3 +79,11 @@ yarn add @hookform/resolvers yup e copie no terminal aberto na pasta do projeto 
 
 No site react hook form pegamos o código
 yarn add yup e copie no terminal aberto na pasta do projeto e deixe ser instalado.
+
+### Instalando axios
+No site axios-http.com pegamos o código
+yarn add axios e copie no terminal aberto na pasta do projeto e deixe ser instalado.
+
+### Instalando o json-server
+No site www.npmjs.com pegamos o código
+npm install -g json-server e copie no terminal aberto na pasta do projeto e deixe ser instalado. Isso é para criar um servidor json para ativar uma API fake
