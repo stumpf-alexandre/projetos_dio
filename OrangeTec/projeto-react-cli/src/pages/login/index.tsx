@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
-
 import { useNavigate } from "react-router-dom";
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from 'yup';
 import { MdEmail, MdLock } from 'react-icons/md';
 import { Button } from '../../components/Button';
 import { Header } from '../../components/Header';
@@ -17,21 +18,27 @@ import {
     TitleLogin, 
     Wrapper, 
 } from './style';
+import { IFormData } from "./types";
+
+const schema = yup.object({
+    email: yup.string().email('E-mail não é valido').required('Campo obrigatório'),
+    password: yup.string().min(3, 'DIgite no minimo 3 caracteres').required('Campo obrigatório'),
+}).required();
 
 //implementando o react-hook-form
 
 const Login = () => {
     const navigate = useNavigate()
 
-    const { control, handleSubmit, formState: { errors } } = useForm({
-        reValidateMode: 'onChange',
+    const { control, handleSubmit, formState: { errors } } = useForm<IFormData>({
+        resolver: yupResolver(schema),
         mode: 'onChange',
     });
 
-    const onSubmit = async (formData) => {
+    const onSubmit = async (formData: IFormData) => {
         try {
-            const { data } = await api.get(`/users?email=${formData.email}&senha=${formData.senha}`);
-
+            const { data } = await api.get(`users?email=${formData.email}&&users?password=${formData.password}`);
+            console.log(data);
             if (data.length && data[0].id) {
                 navigate('/feed')
                 return      
@@ -57,10 +64,10 @@ const Login = () => {
                         <TitleLogin>Faça seu cadastro</TitleLogin>
                         <SubTitleLogin>Faça seu login e make the change._</SubTitleLogin>
                         <form onSubmit={handleSubmit(onSubmit)}>
-                            <Input name="email" control={control} placeholder="E-mail" type="email" leftIcon={<MdEmail/>} />
+                            <Input name="email" errorMessage={errors?.email?.message} control={control} placeholder="E-mail" leftIcon={<MdEmail/>} />
                             {errors.email && <span>E-mail obrigatório</span>}
-                            <Input name="senha" placeholder="Senha" type="password" leftIcon={<MdLock/>} />
-                            {errors.senha && <span>Senha obrigatória</span>}
+                            <Input name="password" errorMessage={errors?.password?.message} control={control} placeholder="Senha" leftIcon={<MdLock/>} />
+                            {errors.password && <span>Senha obrigatória</span>}
                             <Button title="Entrar" variant="secondary" type="submit"/>
                         </form>
                         <Row>

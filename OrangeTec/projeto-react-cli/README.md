@@ -87,3 +87,12 @@ yarn add axios e copie no terminal aberto na pasta do projeto e deixe ser instal
 ### Instalando o json-server
 No site www.npmjs.com pegamos o código
 npm install -g json-server e copie no terminal aberto na pasta do projeto e deixe ser instalado. Isso é para criar um servidor json para ativar uma API fake
+
+### Instalando TypeScript em um projeto
+yarn add typescript @types/node @types/react @types/react-dom @types/jest -D. O d maiusculo é de desenvolvedor. copie no terminal aberto na pasta do projeto e deixe ser instalado.
+
+### Iniciando a configuração do TypeScript
+Digite no terminal npx tsc --init. Isso vai fazer com que as configurações do typescript iniciem
+
+### Instalando dependencias do styled-componennts para o typescript
+Digite no terminal yarn add @types/styled-components -D. Isso vai fazer com que seja instalado as configurações do styled components para o typescript
