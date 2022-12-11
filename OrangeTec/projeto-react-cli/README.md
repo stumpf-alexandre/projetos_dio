@@ -68,3 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Instalando React Hook Form
+No site react hook form pegamos o código
+npm install react-hook-form e copie no terminal aberto na pasta do projeto e deixe ser instalado.
+
+### Instalando Schema Validation
+No site react hook form pegamos o código
+yarn add @hookform/resolvers yup e copie no terminal aberto na pasta do projeto e deixe ser instalado.
+
+No site react hook form pegamos o código
+yarn add yup e copie no terminal aberto na pasta do projeto e deixe ser instalado.

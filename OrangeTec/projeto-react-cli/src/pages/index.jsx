@@ -1,7 +1,7 @@
 import { 
     useState, 
     useEffect, 
-    useMemo,
+    //useMemo,
     useCallback,
 } from 'react';
 
@@ -28,8 +28,9 @@ const Teste = () => {
         const newAge = 10 * age;
         console.log('Idade atual', age, newAge)
         setAge(prev => prev === 34 ? 43 : 34)
-    },[])//sem arrey de dependencia
-      //[age] com arrey de dependencia
+    },[age])
+      //[age])//com arrey de dependencia
+      //[])//sem arrey de dependencia
 
     //const calculo = useMemo(() => {
         //alert('calculou')
