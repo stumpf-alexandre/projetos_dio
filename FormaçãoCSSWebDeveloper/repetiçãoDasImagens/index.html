@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redimencionamento de Imagens</title>
+  <style>
+    div {
+        margin-bottom:30px;
+    }
+    .exemplo {
+        width: 300px;
+        height: 300px;
+        background-image: url('./image/woman-code.png');
+        background-size: 120px;
+        border: 1px solid black;
+    }
+    .exemplo1 {
+        width: 300px;
+        height: 300px;
+        background-image: url('./image/woman-code.png');
+        background-size: 120px;
+        border: 1px solid black;
+        background-repeat: round space;
+    }
+    #repeat-x {
+        background-repeat: repeat-x;
+    }
+    #repeat-y {
+        background-repeat: repeat-y;
+    }
+    #space {
+        background-repeat: space;
+    }
+    #round {
+        background-repeat: round;
+    }
+    #no-repeat {
+        background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body>
+    <h3>Background-repeat: repeat(valor padrão)</h3>
+    <div class="exemplo">
+    </div>
+    <br>
+    <h3>Background-repeat: repeat-x</h3>
+    <div id="repeat-x" class="exemplo">
+    </div>
+    <br>
+    <h3>Background-repeat: repeat-y</h3>
+    <div id="repeat-y" class="exemplo">
+    </div>
+    <br>
+    <h3>Background-repeat: space</h3>
+    <div id="space" class="exemplo">
+    </div>
+    <br>
+    <h3>Background-repeat: round</h3>
+    <div id="round" class="exemplo">
+    </div>
+    <br>
+    <h3>Background-repeat: no-repeat</h3>
+    <div id="no-repeat" class="exemplo">
+    </div>
+    <br>
+    <h3>Background-repeat: passando 2 parametros</h3>
+    <div class="exemplo1">
+    </div>
+    <br>
+</body>
+</html>
