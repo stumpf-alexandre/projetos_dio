@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesclando o Background Image com o Background Color</title>
+  <style>
+    * {
+        font-family: Roboto;
+    }
+    div {
+        margin-bottom: 30px;
+    }
+    .exemplo {
+        width: 300px;
+        height: 300px;
+        color: white;
+        font-size: 40px;
+        font-weight: 900;
+        background-color: rgb(85, 177, 207);
+        padding: 30px;
+        background-image: url('https://www.desenhart.net/img/site/743/b/1978607.jpg');
+    }
+    #multiply {
+        background-blend-mode: multiply;
+    }
+    #lighten {
+        background-blend-mode: lighten;
+    }
+    #luminosity {
+        background-blend-mode: luminosity;
+    }
+    #overlay {
+        background-blend-mode: overlay;
+    }
+    #darken {
+        background-blend-mode: darken;
+    }
+    #color-dodge {
+        background-blend-mode: color-dodge;
+    }
+  </style>
+</head>
+<body>
+    <h3>background-blend-mode: normal</h3>
+    <div class="exemplo">
+        <h1>Trilha de CSS</h1>
+    </div>
+    <br>
+    <h3>background-blend-mode: multiply</h3>
+    <div id="multiply" class="exemplo">
+        <h1>Trilha de CSS</h1>
+    </div>
+    <br>
+    <h3>background-blend-mode: lighten</h3>
+    <div id="lighten" class="exemplo">
+        <h1>Trilha de CSS</h1>
+    </div>
+    <br>
+    <h3>background-blend-mode: luminosity</h3>
+    <div id="luminosity" class="exemplo">
+        <h1>Trilha de CSS</h1>
+    </div>
+    <br>
+    <h3>background-blend-mode: overlay</h3>
+    <div id="overlay" class="exemplo">
+        <h1>Trilha de CSS</h1>
+    </div>
+    <br>
+    <h3>background-blend-mode: darken</h3>
+    <div id="darken" class="exemplo">
+        <h1>Trilha de CSS</h1>
+    </div>
+    <br>
+    <h3>background-blend-mode: color-dodge</h3>
+    <div id="color-dodge" class="exemplo">
+        <h1>Trilha de CSS</h1>
+    </div>
+    <br>
+    <h3>background-blend-mode: contem mais estilos...</h3>
+    <br>
+</body>
+</html>
