@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento da Imagem com a Janela do Navegador</title>
+    <style>
+        body {
+            height: 200vh;
+        }
+        div {
+            margin-bottom: 30px;
+        }
+        .exemplo {
+            width: 300px;
+            height: 300px;
+            background-image: url('./image/woman-code.png');
+            background-size: cover;
+            border: 1px solid red;overflow: auto;
+        }
+        #fixed {
+            background-attachment: fixed;
+        }
+        #scroll {
+            background-attachment: scroll;
+        }
+        #local {
+            background-attachment: local;
+        }
+    </style>
+</head>
+<body>
+    <h3>background-attachment: fixed</h3>
+    <div id="fixed" class="exemplo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo explicabo molestias placeat neque blanditiis nisi perferendis nostrum commodi soluta, officia tempore laborum sapiente inventore perspiciatis nulla voluptate, fuga eveniet ducimus?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo explicabo molestias placeat neque blanditiis nisi perferendis nostrum commodi soluta, officia tempore laborum sapiente inventore perspiciatis nulla voluptate, fuga eveniet ducimus?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo explicabo molestias placeat neque blanditiis nisi perferendis nostrum commodi soluta, officia tempore laborum sapiente inventore perspiciatis nulla voluptate, fuga eveniet ducimus?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo explicabo molestias placeat neque blanditiis nisi perferendis nostrum commodi soluta, officia tempore laborum sapiente inventore perspiciatis nulla voluptate, fuga eveniet ducimus?
+    </div>
+    <br>
+    <h3>background-attachment: scroll</h3>
+    <div id="scroll" class="exemplo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo explicabo molestias placeat neque blanditiis nisi perferendis nostrum commodi soluta, officia tempore laborum sapiente inventore perspiciatis nulla voluptate, fuga eveniet ducimus?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo explicabo molestias placeat neque blanditiis nisi perferendis nostrum commodi soluta, officia tempore laborum sapiente inventore perspiciatis nulla voluptate, fuga eveniet ducimus?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo explicabo molestias placeat neque blanditiis nisi perferendis nostrum commodi soluta, officia tempore laborum sapiente inventore perspiciatis nulla voluptate, fuga eveniet ducimus?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo explicabo molestias placeat neque blanditiis nisi perferendis nostrum commodi soluta, officia tempore laborum sapiente inventore perspiciatis nulla voluptate, fuga eveniet ducimus?
+    </div>
+    <br>
+    <h3>background-attachment: local</h3>
+    <div id="local" class="exemplo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo explicabo molestias placeat neque blanditiis nisi perferendis nostrum commodi soluta, officia tempore laborum sapiente inventore perspiciatis nulla voluptate, fuga eveniet ducimus?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo explicabo molestias placeat neque blanditiis nisi perferendis nostrum commodi soluta, officia tempore laborum sapiente inventore perspiciatis nulla voluptate, fuga eveniet ducimus?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo explicabo molestias placeat neque blanditiis nisi perferendis nostrum commodi soluta, officia tempore laborum sapiente inventore perspiciatis nulla voluptate, fuga eveniet ducimus?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo explicabo molestias placeat neque blanditiis nisi perferendis nostrum commodi soluta, officia tempore laborum sapiente inventore perspiciatis nulla voluptate, fuga eveniet ducimus?
+    </div>
+    <br>
+</body>
+</html>
