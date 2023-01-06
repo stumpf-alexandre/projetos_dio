@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estilizando a Espessura da Fontes</title>
+  <style>
+    #normal {
+        font-weight: normal;
+    }
+    #bold {
+        font-weight: bold;
+    }
+    #valor {
+        font-weight: 600;
+    }
+    div {
+        font-weight: 100;
+    }
+    div p {
+        font-weight: lighter;
+    }
+    /*se usar o lighter o elemento filho vai ficar com a grossura menor que o do elemento pai*/
+    /*se usar o bolder o elemento filho vai ficar com a grossura maior que o do elemento pai*/
+  </style>
+</head>
+<body>
+    <h1>Propriedade <code>font-weight</code></h1>
+    <p id="tamanho">Define qual a espessura que a fonte deve ter(normal, bold)</p>
+
+    <code>font-weight: normal;</code>
+    <p id="normal">normal</p>
+
+    <code>font-weight: bold;</code>
+    <p id="bold">bold</p>
+
+    <code>font-weight: valor de 100 a 900;</code>
+    <p id="valor">valores</p>
+
+    <hr>
+
+    <div>
+        Elemento pai
+        <p>Elemento filho</p>
+    </div>
+</body>
+</html>
