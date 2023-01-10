@@ -12,6 +12,15 @@
         color: black;
         background-color: chartreuse;
     }
+    .exemplo4 {
+        width:200px;
+        color: black;
+        background-color: chartreuse;
+    }
+    p {
+        white-space: nowrap;
+        overflow: hidden;
+    }
     #exemplo1 {
         writing-mode: horizontal-tb;/*texto flua horizontalmente da esquerda para a direita*/
     }
@@ -20,6 +29,15 @@
     }
     #exemplo3 {
         writing-mode: vertical-lr;/*texto flua verticalmente da esquerda para a direita*/
+    }
+    #exemplo5 {
+        text-overflow: clip;/*quebra o texto e não mostra mais nada*/
+    }
+    #exemplo6 {
+        text-overflow: ellipsis;/*quebra o texto e acrescenta reticências*/
+    }
+    #exemplo7 {
+        text-overflow: 'Ver mais >';/*quebra o texto e acrescenta uma string, mas só funciona no navegador do firefox*/
     }
   </style>
 </head>
@@ -39,6 +57,25 @@
     </p>
     <code>writing-mode: vertical-lr;</code>
     <p id="exemplo3" class="exemplo">
+        Chega de saudade
+        A realidade é que sem ela não há paz
+    </p>
+    <hr>
+    <h2>Propriedade <code>text-overflow</code></h2>
+    <p>Mostra ao usuario que possui mais texto do que ele esta vendo</p>
+    <i>Exemplo:</i>
+    <code>text-overflow: clip;</code>
+    <p id="exemplo5" class="exemplo4">
+        Chega de saudade
+        A realidade é que sem ela não há paz
+    </p>
+    <code>text-overflow: ellipsis;</code>
+    <p id="exemplo6" class="exemplo4">
+        Chega de saudade
+        A realidade é que sem ela não há paz
+    </p>
+    <code>text-overflow: string;</code>
+    <p id="exemplo7" class="exemplo4">
         Chega de saudade
         A realidade é que sem ela não há paz
     </p>
