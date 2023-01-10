@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplicando transparência aos elementos</title>
+  <style>
+    .exemplo {
+        background-color: purple;
+        border: 5px solid orange;
+        color: white;
+        padding: 20px;
+        margin: 20px;
+    }
+    .exemplo img {
+        width: 50%;
+    }
+    #ex1 {
+        opacity: .5;/*aqui toda a div com seus filhos, incluindo a imagem ficam transparante*/
+    }
+    #ex2 {
+        opacity: .3;/*aqui somente a imagem fica transparente*/
+    }
+    #ex3 {
+        background-color: rgba(0, 0, 0, .5);/*aqui somente o background fica transparente sem prejudicar os outros elementos*/
+    }
+  </style>
+</head>
+<body>
+    <h2>Propriedade <code>opacity</code></h2>
+    <p>Define o nível de opacidade (transparência) de um elemento.</p>
+    <i>Exemplo:</i>
+    <div id="ex1" class="exemplo">
+        <h3>Trilha de CSS</h3>
+        <p>Conhecendo as propriedades CSS uma a uma!</p>
+        <img src="./image/logo.png" alt="logo CSS">
+    </div>
+    <div class="exemplo">
+        <h3>Trilha de CSS</h3>
+        <p>Conhecendo as propriedades CSS uma a uma!</p>
+        <img id="ex2" src="./image/logo.png" alt="logo CSS">
+    </div>
+    <div id="ex3" class="exemplo">
+        <h3>Trilha de CSS</h3>
+        <p>Conhecendo as propriedades CSS uma a uma!</p>
+        <img src="./image/logo.png" alt="logo CSS">
+    </div>
+</body>
+</html>
