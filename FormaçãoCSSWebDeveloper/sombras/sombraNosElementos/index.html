@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sombras nos elementos</title>
+  <style>
+    div {
+        width: 200px;
+        height: 200px;
+        border: 10px solid #8f382e;
+        margin: 20px auto;
+        background: #fa8072;
+    }
+    img {
+        width: 600px;
+        height: 150px;
+        margin: 20px auto;
+    }
+    #ex1 {
+        box-shadow: 10px 10px 5px -7px red;/*(sombra de sobreposição) cria uma sombra de 10px na horizontal e 10px na vertical, 5px é o desfoque, -7px é a propagação da sombra e o ultimo elemento é a cor da sombra que por padrão é preto*/
+    }
+    #ex2 {
+        box-shadow: 30px 30px 9px 7px;/*(sombra de sobreposição) cria uma sombra de 30px na horizontal e 30px na vertical, 9px é o desfoque, 7px é a propagação da sombra e o ultimo elemento é a cor da sombra que por padrão é preto*/
+    }
+    #ex3 {
+        box-shadow: inset 10px 10px 10px 3px;/*inset cria uma sombra dentro do container(sombra de profundidade),uma sombra de 10px na horizontal e 10px na vertical, 10px é o desfoque, 3px é a propagação da sombra e o ultimo elemento é a cor da sombra que por padrão é preto*/
+    }
+    #ex4 {
+        box-shadow: 10px 10px 10px red, 20px 20px 10px black;/*uma sombra em cima de outra*/
+    }
+    #ex5 {
+        box-shadow: inset 10px 10px 10px red, 20px 20px 10px black;/*uma sombra interna do container e outra sombra externa do container*/
+    }
+    #ex6 {
+        background-color: red;
+        box-shadow: 10px 10px 5px gray;/*sombreia o container*/
+    }
+    #ex7 {
+        filter: drop-shadow(10px 10px 5px gray);/*identifica a palavra e sombreia as letras*/
+    }
+  </style>
+</head>
+<body>
+    <h1>Propriedade <code>Box-shadow</code></h1>
+    <div id="ex1"></div>
+    <div id="ex2"></div>
+    <div id="ex3"></div>
+    <div id="ex4"></div>
+    <div id="ex5"></div>
+    <img id="ex6" src="./image/dio-logo.png" alt="logo dio">
+    <img id="ex7" src="./image/dio-logo.png" alt="logo dio">
+</body>
+</html>
