@@ -6,16 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Estilizando se uma palavra deve ter uma quebra ou não</title>
   <style>
-    .exemplo {
-        width: 100px;
+    .exemplo, .exemplo2 {
+        width: 120px;
         color: black;
         background-color: blueviolet;
     }
+    .exemplo2 {
+        background-color: aquamarine;
+    }
     #normal {
-        word-wrap: normal;/*termina de escrever a palavra, não respeitando o container, e após quebra a linha*/
+        word-wrap: normal;/*termina de escrever a palavra, não respeitando o container, e após quebra a linha apenas no espaço em branco*/
     }
     #break-word {
         word-wrap: break-word;/*quebra de linha na palavra*/
+    }
+    #break-all {
+        word-break: break-all;/*quebra de linha na palavra, não respeitando a divisão da palavra e nem o espaço em branco para quebra de linha*/
+    }
+    #keep-all {
+        word-break: keep-all;/*respeita linguas que não podem ser quebradas*/
     }
   </style>
 </head>
@@ -31,6 +40,23 @@
     <code>word-wrap: break-word;</code>
     <p id="break-word" class="exemplo">
         Trilha de CSS TrilhadeCSSTudoJunto Trilha de CSS
+    </p>
+    <hr>
+    <h2>Propriedade <code>word-break</code></h2>
+    <p>
+        Define quando o nosso texto deve ter uma quebra de linha.
+    </p>
+    <code>word-break: normal;</code>
+    <p class="exemplo2">
+        Trilha de CSS TrilhadeCSSTudoJunto Trilha de CSS
+    </p>
+    <code>word-break: break-all;</code>
+    <p id="break-all" class="exemplo2">
+        Trilha de CSS TrilhadeCSSTudoJunto Trilha de CSS
+    </p>
+    <code>word-break: keep-all;</code>
+    <p id="keep-all" class="exemplo2">
+        Trilha de CSS TrilhadeCSSTudoJunto Trilha de CSS ニューモノウルトラマイクロスコーピックシリコヴォルケーノコニオシス
     </p>
 </body>
 </html>
