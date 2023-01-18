@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bordas com imagens</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    * {
+        font-family: Roboto;
+    }
+    .ex {
+        background-color: black;
+        width: 200px;
+        height: 200px;
+        margin: 80px;
+        border: 30px solid;
+    }
+    #ex1 {
+        border-image-source: url('./image/estrelinhas.png');
+    }
+    #ex2 {
+        border-image-source: linear-gradient(red, blue);
+    }
+    #ex3 {
+        border-image-source: url('./image/star.png');
+        border-image-repeat: repeat;
+        border-image-slice: 169;
+    }
+    #ex4 {
+        border-image-source: url('./image/star.png');
+        border-image-repeat: repeat;
+        border-image-slice: 169 fill;
+    }
+    #ex5 {
+        border-image-source: linear-gradient(red, blue);
+        border-image-slice: 10;
+    }
+    #ex6 {
+        border-image-source: url('./image/star.png');
+        border-image-repeat: repeat;
+        border-image-slice: 169;
+        border-image-width: 10px;
+    }
+    #ex7 {
+        border-image-source: url('./image/star.png');
+        border-image-repeat: repeat;
+        border-image-slice: 169;
+        border-image-width: 10px 20px;
+    }
+    #ex8 {
+        border-image-source: url('./image/star.png');
+        border-image-repeat: repeat;
+        border-image-slice: 169;
+        border-image-width: 10px 20px 30px;
+    }
+    #ex9 {
+        border-image-source: url('./image/star.png');
+        border-image-repeat: repeat;
+        border-image-slice: 169;
+        border-image-width: 10px 20px 30px 40px;
+    }
+    #ex10 {
+        border-image-source: url('./image/star.png');
+        border-image-repeat: repeat;
+        border-image-slice: 169;
+        border-image-width: auto;
+    }
+    #ex11 {
+        border-image-source: url('./image/star.png');
+        border-image-slice: 169;
+        border-image-repeat: stretch;
+        width: 300px;
+    }
+    #ex12 {
+        border-image-source: url('./image/star.png');
+        border-image-slice: 169;
+        border-image-repeat: round;
+        width: 300px;
+    }
+    #ex13 {
+        border-image-source: url('./image/star.png');
+        border-image-slice: 169;
+        border-image-repeat: space;
+        width: 300px;
+    }
+    #ex14 {
+        border-image-source: url('./image/star.png');
+        border-image-slice: 169;
+        border-image-repeat: repeat;
+        width: 300px;
+    }
+    #ex15 {
+        border-image-source: url('./image/star.png');
+        border-image-repeat: round;
+        border-image-slice: 169;
+        border-image-outset: 0px;
+    }
+    #ex16 {
+        border-image-source: url('./image/star.png');
+        border-image-repeat: round;
+        border-image-slice: 169;
+        border-image-outset: 5px;
+    }
+    #ex17 {
+        border-image-source: url('./image/star.png');
+        border-image-repeat: round;
+        border-image-slice: 169;
+        border-image-outset: 1;
+    }
+    #ex18 {
+        border-image-source: url('./image/star.png');
+        border-image-repeat: round;
+        border-image-slice: 169;
+        border-image-outset: 2;
+    }
+    #ex19 {
+        border-image-source: url('./image/star.png');
+        border-image-repeat: round;
+        border-image-slice: 169;
+        border-image-outset: 1 2;
+    }
+    #ex20 {
+        border-image-source: url('./image/star.png');
+        border-image-repeat: round;
+        border-image-slice: 169;
+        border-image-outset: 1 2 3;
+    }
+    #ex21 {
+        border-image-source: url('./image/star.png');
+        border-image-repeat: round;
+        border-image-slice: 169;
+        border-image-outset: 1 2 3 4;
+    }
+    #ex22 {
+        border-image-source: url('./image/star.png');
+        border-image-repeat: round;
+        border-image-slice: 169;
+        border-image-outset: 1;
+    }
+    #ex23 {
+        border-image: url('./image/star.png') 169 / 10px / 0.1 round;/*source slice / width / outset repeat*/
+    }
+  </style>
+</head>
+<body>
+    <h1>Bordas com Imagens</h1>
+    <code>border-image-source</code>
+    <div id="ex1" class="ex"></div>
+    <div id="ex2" class="ex"></div>
+
+    <code>border-image-width</code>
+    <div id="ex6" class="ex"></div>
+    <div id="ex7" class="ex"></div>
+    <div id="ex8" class="ex"></div>
+    <div id="ex9" class="ex"></div>
+    <div id="ex10" class="ex"></div>
+
+    <code>border-image-repeat</code>
+    <div id="ex11" class="ex"></div>
+    <div id="ex12" class="ex"></div>
+    <div id="ex13" class="ex"></div>
+    <div id="ex14" class="ex"></div>
+
+    <code>border-image-outset</code>
+    <div id="ex15" class="ex"></div>
+    <div id="ex16" class="ex"></div>
+    <div id="ex17" class="ex"></div>
+    <div id="ex18" class="ex"></div>
+    <div id="ex19" class="ex"></div>
+    <div id="ex20" class="ex"></div>
+    <div id="ex21" class="ex"></div>
+    <div id="ex22" class="ex"></div>
+
+    <code>border-image-slice</code>
+    <div id="ex3" class="ex"></div>
+    <div id="ex4" class="ex"></div>
+    <div id="ex5" class="ex"></div>
+
+    <code>border-image</code> com todos os elementos
+    <div id="ex23" class="ex"></div>
+</body>
+</html>

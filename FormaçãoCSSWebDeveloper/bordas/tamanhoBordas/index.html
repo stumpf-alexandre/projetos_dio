@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tamanho das bordas</title>
+  <style>
+    body {
+        font-family: Roboto, sans-serif;
+    }
+    #ex {
+        background-color: palevioletred;
+        width: 200px;
+        height: 200px;    
+        border-style: solid;/*faz aparecer a borda com seu estilo*/
+        margin: 20px;
+    }
+    .ex1 {
+        border-width: 10px;
+    }
+    .ex2 {
+        border-width: thin;/*borda fina*/
+    }
+    .ex3 {
+        border-width: medium;/*borda media*/
+    }
+    .ex4 {
+        border-width: thick;/*borda grossa*/
+    }
+    .ex5 {
+        border-width: 10px 20px;/*tamanho da borda na horizontal e na vertical*/
+    }
+    .ex6 {
+        border-width: 10px 20px 30px;/*tamanho das bordas de cima dos lados e de baixo*/
+    }
+    .ex7 {
+        border-width: 10px 20px 30px 40px;/*tamanho das bordas de cima, da direita, de baixo e da esquerda*/
+    }
+  </style>
+</head>
+<body>
+    <h1>Bordas</h1>
+    <p>Podemos definir as configurações das bordas através das propriedades:</p>
+    <ul>
+        <li><code>border-width</code><p>Define a espessura da borda</p></li>
+        <li><code>border-style</code></li>
+        <li><code>border-color</code></li>
+    </ul>
+    <h2>Exemplo:</h2>
+    <div id="ex" class="ex1"></div>
+    <div id="ex" class="ex2"></div>
+    <div id="ex" class="ex3"></div>
+    <div id="ex" class="ex4"></div>
+    <div id="ex" class="ex5"></div>
+    <div id="ex" class="ex6"></div>
+    <div id="ex" class="ex7"></div>
+</body>
+</html>

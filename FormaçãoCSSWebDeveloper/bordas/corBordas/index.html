@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cor das bordas</title>
+  <style>
+    body {
+        font-family: Roboto, sans-serif;
+    }
+    #ex {
+        background-color: palevioletred;
+        width: 200px;
+        height: 200px;
+        border-width: 8px;
+        margin: 20px;
+        border-style: solid;
+    }
+    .ex1 {
+        border-color: aqua;
+    }
+    .ex2 {
+        border-color: #ee58ff;
+    }
+    .ex3 {
+        border-color: hsla(0, 80%, 50%, .8);;
+    }
+    .ex4 {
+        border-color: hsl(45, 35%, 80%);
+    }
+    .ex5 {
+        border-color: #0000ff80;
+    }
+    .ex6 {
+        border-color: rgba(120, 200, 121, 0.5);
+    }
+    .ex7 {
+        border-color: rgb(165, 120, 255);
+    }
+  </style>
+</head>
+<body>
+    <h1>Bordas</h1>
+    <p>Podemos definir as configurações das bordas através das propriedades:</p>
+    <ul>
+        <li><code>border-width</code></li>
+        <li><code>border-style</code></li>
+        <li><code>border-color</code><p>Define a cor da borda</p></li>
+    </ul>
+    <h2>Exemplo:</h2>
+    <div id="ex" class="ex1"></div>
+    <div id="ex" class="ex2"></div>
+    <div id="ex" class="ex3"></div>
+    <div id="ex" class="ex4"></div>
+    <div id="ex" class="ex5"></div>
+    <div id="ex" class="ex6"></div>
+    <div id="ex" class="ex7"></div>
+</body>
+</html>
