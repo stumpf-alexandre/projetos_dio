@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unidade de medida em x rem x %</title>
+  <style>
+    body {
+        margin: 20px;
+    }
+    .ex1 {
+        background-color: yellow;
+    }
+    .ex2 {
+        background-color: pink;
+    }
+    .ex3 {
+        background-color: aquamarine;
+    }
+    #elemento-pai {
+        width: 500px;
+        font-size: 40px;
+        border: 5px solid black;
+    }
+    .ex-pixel {
+        font-size: 30px;
+        background-color: lightblue;
+        width: 300px;
+    }
+    .ex-porcentagem {
+        font-size: 30px;
+        background-color: lightpink;
+        width: 50%;
+    }
+    .borda {
+        border: 3px solid black;
+    }
+    .ex-1 {
+        font-size: 30px;
+        background-color: yellow;
+    }
+    .ex-2 {
+        font-size: 30px;
+        background-color: pink;
+    }
+    .ex-3 {
+        font-size: 30px;
+        background-color: aquamarine;
+    }
+    .paifilho1 {
+        padding: 10px;
+    }
+    .ex-pai1 {
+        background-color: yellow;
+        width: 300px;
+        box-sizing: border-box;
+    }
+    .ex-filho1 {
+        background-color: palevioletred;
+        box-sizing: border-box;
+        width: calc(100% - 30px);
+    }
+    .paifilho2 {
+        padding: 10px;
+    }
+    .ex-pai2 {
+        background-color: yellow;
+        width: 300px;
+        box-sizing: border-box;
+    }
+    .ex-filho2 {
+        background-color: palevioletred;
+        box-sizing: border-box;
+        width: calc(100% + 50px);
+    }
+    .paifilho3 {
+        padding: 10px;
+    }
+    .ex-pai3 {
+        background-color: yellow;
+        width: 400px;
+        box-sizing: border-box;
+    }
+    .ex-filho3 {
+        background-color: palevioletred;
+        box-sizing: border-box;
+        width: calc(100% * 2);
+    }
+    .paifilho4 {
+        padding: 10px;
+    }
+    .ex-pai4 {
+        background-color: yellow;
+        width: 400px;
+        box-sizing: border-box;
+    }
+    .ex-filho4 {
+        background-color: palevioletred;
+        box-sizing: border-box;
+        width: calc(2rem + 30px);
+    }
+  </style>
+</head>
+<body>
+    <h1>Unidade de medida em x rem</h1>
+    <p style="font-size: 2rem;">
+        font-size: 2rem;
+    </p>
+    <p>O rem tem funcionamento semelhante à unidade de medida em, porém a diferença é que, enquanto o em utiliza o elemento pai como referencia, o rem está relacionado ao tamanho da fonte do elemento raíz, chamado root, que no caso, é a tag html.</p>
+
+    <p style="font-size: 2em;">
+        font-size: 2em;
+    </p>
+    <p>A unidade de medida em, quando utilizada para definir o tamanho de fonte de um elemento, vai utilizar como referencia o valor da propriedade font-size do elemento pai no qual está inserido.</p>
+    <p>Caso seja utilizada a unidade de medida em para outras propriedades que não seja o tamanho da fonte do elemento, o resultado será em relação ao tamanho da fonte do próprio elemento em que está sendo definida a propriedade.</p>
+
+    <p style="font-size: 200%;">
+        font-size: 200%;
+    </p>
+
+    <hr><hr>
+
+    <div class="ex1" style="font-size: 2rem;">
+        font-size: 2rem;
+        <div class="ex2" style="font-size: 2em;">
+            font-size: 2em;
+            <div class="ex3" style="font-size: 200%;">
+                font-size: 200%;
+            </div>
+        </div>
+    </div>
+
+    <hr><hr>
+
+    <div class="ex1" style="font-size: 2rem;">
+        font-size: 2rem;
+        <div class="ex2" style="font-size: 2em;">
+            font-size: 2em;
+            <div class="ex3" style="font-size: 200%;">
+                font-size: 200%;
+            </div>
+        </div>
+    </div>
+
+    <hr><hr>
+
+    <p>Por que utilizar a unidade de medida rem?</p>
+    <ul>
+        <li>Tamanho consistente, sem herança</li>
+        <li>Melhor experiência do usuário</li>
+    </ul>
+
+    <hr><hr>
+
+    <p>Por que utilizar a unidade de medida em?</p>
+    <ul>
+        <li>Contexto dos elementos</li>
+    </ul>
+
+    <hr><hr>
+
+    <p>Por que utilizar a unidade de medida %?</p>
+    <ul>
+        <li>Unudade de medida que irá utilizar como referencia o elemento pai para se basear, podendo alterar os resultados de acordo com o lugar em que está inserido.</li>
+    </ul>
+
+    <h2>Pixel x Porcentagem</h2>
+    <div class="ex-pixel">
+        width: 300px;
+    </div>
+    <div class="ex-porcentagem">
+        width: 50%
+    </div>
+
+    <br/><br/>
+
+    <div id="elemento-pai">
+        <div class="ex-pixel">
+            width: 300px;
+        </div>
+        <div class="ex-porcentagem">
+            width: 50%;
+        </div>
+    </div>
+
+    <hr><hr>
+
+    <h2>Viewport Unit</h2>
+    <p>É a área visível de uma página web, podendo variar de dispositivo para dispositivo. As unidades de medida viewport, vão ser calculadas em relação ao tamanho da área em que o usuário está vendo sua página.</p>
+    <ul>
+        <li><h3>Viewport Width vw</h3></li>
+        <li><p>indica o tamanho da largura da área visível da página.</p></li>
+    </ul>
+    <ul>
+        <li><h3>Viewport Height vh</h3></li>
+        <li><p>indica o tamanho da altura da área visível da página.</p></li>
+    </ul>
+
+    <br/><br/>
+
+    <div class="ex-1" style="width: 50%;">
+        width: 50%;
+    </div>
+    <div class="ex-2" style="width: 50vw;">
+        width: 50vw;
+    </div>
+    <div class="ex-3" style="width: 50vh;">
+        width: 50vh;
+    </div>
+
+    <br/><br/>
+
+    <div class="borda" style="width: 300px;">
+        <div class="ex-1" style="width: 50%;">
+            width: 50%;
+        </div>
+        <div class="ex-2" style="width: 50vw;">
+            width: 50vw;
+        </div>
+        <div class="ex-3" style="width: 50vh;">
+            width: 50vh;
+        </div>
+    </div>
+
+    <br/><br/>
+
+    <div class="ex-1" style="width: 10vmin;">
+       width: 10vmin; 
+    </div>
+    <div class="ex-2" style="width: 10vmax;">
+        width: 10vmax;
+    </div>
+
+    <hr><hr>
+
+    <h2>Unidades de medidas relativas não comumentes usadas</h2>
+    <h3>ex</h3>
+    <p>
+        A unidade de medida ex irá usar o tamanho da altura do caracter X (em minúsculo) da fonte do elemento.
+    </p>
+    <p>
+        O valor especificado altera quando a fonte for completamente alterada.
+    </p>
+    <br/>
+    <h3>ch</h3>
+    <p>
+        O ch é uma unidade de medida que possui como referência o caractere 0 da fonte que está sendo utilizada no elemento.
+    </p>
+    <p>
+        Caso a fonte do elemento seja uma fonte mono-espaçada, ao utilizar a unidade de medida ch, estamos definindo quantos caracteres devem caber no elemento.
+    </p>
+
+    <hr><hr>
+
+    <h2>Função calc()</h2>
+    
+    <div class="ex-pai1 paifilho1">
+        Elemento pai
+        <div class="ex-filho1 paifilho1">
+            Elemento filho
+        </div>
+    </div>
+    
+    <br/>
+
+    <div class="ex-pai2 paifilho2">
+        Elemento pai
+        <div class="ex-filho2 paifilho2">
+            Elemento filho
+        </div>
+    </div>
+
+    <br/>
+
+    <div class="ex-pai3 paifilho3">
+        Elemento pai
+        <div class="ex-filho3 paifilho3">
+            Elemento filho
+        </div>
+    </div>
+
+    <br/>
+
+    <div class="ex-pai4 paifilho4">
+        Elemento pai
+        <div class="ex-filho4 paifilho4">
+            Elemento filho
+        </div>
+    </div>
+</body>
+</html>
