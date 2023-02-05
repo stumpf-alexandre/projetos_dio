@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propriedade Display</title>
+  <style>
+    body {
+        font-family: Roboto, sans-serif;
+    }
+    .inline {
+        display: inline;
+        background-color: palevioletred;
+    }
+    .inline-block {
+        display: inline-block;
+        background-color: palevioletred;
+        width: 200px;
+        height: 250px;
+    }
+    .inline-block2 {
+        display: inline-block;
+        background-color: palevioletred;
+        width: 200px;
+        margin: 25px;
+        padding: 35px;
+    }
+    #margin {
+        margin: 15px;
+    }
+    #padding {
+        padding: 15px;
+    }
+  </style>
+</head>
+<body>
+    <h1>Propriedade Display</h1>
+    <p>
+        A propriedade display vai determinar como essas caixinhas retangulares irão se comportar na hora de serem exibidas na tela.
+    </p>
+
+    <ul>
+        <li>border-width</li>
+        <li>border-style</li>
+        <li>border-color</li>
+    </ul>
+
+    <h2>Exemplo:</h2>
+    <code>display: inline-block;</code>
+    <p>
+        Os elementos inline-block são parecidos com os elementos inlin, mas agora a largura e a altura dos elementos podem ser alterados
+    </p>
+
+    <br><br>
+
+    <h2><code>display: inline;</code></h2>
+
+    <span class="inline">Exemplo Inline 1</span>
+    <span class="inline">Exemplo Inline 2</span>
+    <em class="inline">Exemplo Inline 3</em>
+    <b class="inline">Exemplo Inline 4</b>
+
+    <br><br>
+
+    <h2><code>display: inline-block;</code></h2>
+
+    <span class="inline-block">Exemplo Inline 1</span>
+    <span class="inline-block">Exemplo Inline 2</span>
+    <em class="inline-block">Exemplo Inline 3</em>
+    <b class="inline-block">Exemplo Inline 4</b>
+
+    <br><br>
+
+    <p>Além das altura e largura podemos aplicar margens aos elementos</p>
+
+    <span class="inline-block" id="margin">Exemplo Inline 1</span>
+    <span class="inline-block" id="padding">Exemplo Inline 2</span>
+    <em class="inline-block" id="margin">Exemplo Inline 3</em>
+    <b class="inline-block" id="padding">Exemplo Inline 4</b>
+
+    <br><br>
+
+    <p>
+        Lorem ipsum dolor sit, amet <b class="inline-block2">consectetur adipisicing</b> elit. Illo consectetur ipsum nulla magnam modi iste eaque necessitatibus maiores eligendi at sed cumque suscipit, alias quia, quaerat saepe distinctio harum dolores!
+    </p>
+</body>
+</html>

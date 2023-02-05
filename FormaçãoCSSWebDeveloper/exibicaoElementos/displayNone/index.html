@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propriedade Display</title>
+  <style>
+    body {
+        font-family: Roboto, sans-serif;
+    }
+    .display {
+        background-color: palevioletred;
+    }
+    .none {
+        display: none;
+    }
+  </style>
+</head>
+<body>
+    <h1>Propriedade Display</h1>
+    <p>
+        A propriedade display vai determinar como essas caixinhas retangulares irão se comportar na hora de serem exibidas na tela.
+    </p>
+
+    <ul>
+        <li>border-width</li>
+        <li>border-style</li>
+        <li>border-color</li>
+    </ul>
+
+    <h2>Exemplo:</h2>
+    <code>display: none;</code>
+    <p>
+        O display: none esconde o elemento completamente da página, até mesmo os elementos filhos de uma tag
+    </p>
+
+    <br><br>
+
+    <h2><code>display: none;</code></h2>
+
+    <p>Codigo sem o elemento <code>display: none</code></p>
+
+    <span class="display">Exemplo elemento 1, tag <code>span</code></span>
+    <span class="display">Exemplo elemento 2, tag <code>span</code></span>
+    <em class="display">Exemplo elemento 3, tag <code>em</code></em>
+    <em class="display">Exemplo elemento 4, tag <code>em</code></em>
+    <b class="display">Exemplo elemento 5, tag <code>b</code></b>
+    <b class="display">Exemplo elemento 6, tag <code>b</code></b>
+
+    <br><br>
+
+    
+    <p>Codigo com o elemento <code>display: none</code></p>
+
+    <span class="display">Exemplo elemento 1, tag <code>span</code></span>
+    <span class="display none">Exemplo elemento 2, tag <code>span</code></span>
+    <em class="display">Exemplo elemento 3, tag <code>em</code></em>
+    <em class="display none">Exemplo elemento 4, tag <code>em</code></em>
+    <b class="display">Exemplo elemento 5, tag <code>b</code></b>
+    <b class="display none">Exemplo elemento 6, tag <code>b</code></b>
+
+    <br><br>
+
+    <p>Classes filhas sem o <code>display: none</code></p>
+    <div>
+        <span class="display">Exemplo elemento 1, tag <code>span</code></span>
+        <span class="display">Exemplo elemento 2, tag <code>span</code></span>
+        <em class="display">Exemplo elemento 3, tag <code>em</code></em>
+        <em class="display">Exemplo elemento 4, tag <code>em</code></em>
+        <b class="display">Exemplo elemento 5, tag <code>b</code></b>
+        <b class="display">Exemplo elemento 6, tag <code>b</code></b>
+    </div>
+
+    <br><br>
+
+    <p>Classes filhas com o <code>display: none</code></p>
+    <div class="none">
+        <span class="display">Exemplo elemento 1, tag <code>span</code></span>
+        <span class="display">Exemplo elemento 2, tag <code>span</code></span>
+        <em class="display">Exemplo elemento 3, tag <code>em</code></em>
+        <em class="display">Exemplo elemento 4, tag <code>em</code></em>
+        <b class="display">Exemplo elemento 5, tag <code>b</code></b>
+        <b class="display">Exemplo elemento 6, tag <code>b</code></b>
+    </div>
+</body>
+</html>

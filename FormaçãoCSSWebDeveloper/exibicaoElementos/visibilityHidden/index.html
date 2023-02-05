@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propriedade Display</title>
+  <style>
+    body {
+        font-family: Roboto, sans-serif;
+    }
+    .ex {
+        background-color: palevioletred;
+    }
+    .visibility {
+        visibility: hidden;
+    }
+    .none {
+        display: none;
+    }
+  </style>
+</head>
+<body>
+    <h1>Propriedade Visibility</h1>
+    <p>
+        A propriedade visibility é muito parecida com a propriedade display: none, mas por uma peculiaridade ela mantem o espaçamento da caixa que ela faz desaparecer na tela.
+    </p>
+
+    <ul>
+        <li>border-width</li>
+        <li>border-style</li>
+        <li>border-color</li>
+    </ul>
+
+    <h2>Exemplo: <code>visibility: hidden;</code></h2>
+
+    <span class="ex">Exemplo elemento 1, tag <code>span</code></span>
+    <span class="ex visibility">Exemplo elemento 2, tag <code>span</code></span>
+    <em class="ex">Exemplo elemento 3, tag <code>em</code></em>
+    <em class="ex visibility">Exemplo elemento 4, tag <code>em</code></em>
+    <b class="ex">Exemplo elemento 5, tag <code>b</code></b>
+    <b class="ex visibility">Exemplo elemento 6, tag <code>b</code></b>
+
+    <br><br>
+    
+    <h2>Exemplo: <code>display: none;</code></h2>
+
+    <span class="ex">Exemplo elemento 1, tag <code>span</code></span>
+    <span class="ex none">Exemplo elemento 2, tag <code>span</code></span>
+    <em class="ex">Exemplo elemento 3, tag <code>em</code></em>
+    <em class="ex none">Exemplo elemento 4, tag <code>em</code></em>
+    <b class="ex">Exemplo elemento 5, tag <code>b</code></b>
+    <b class="ex none">Exemplo elemento 6, tag <code>b</code></b>
+</body>
+</html>

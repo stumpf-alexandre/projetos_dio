@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propriedade Display</title>
+  <style>
+    body {
+        font-family: Roboto, sans-serif;
+    }
+    .ex {
+        background-color: palevioletred;
+    }
+    #width {
+        width: 500px;
+    }
+    #heigth {
+        height: 500px;
+    }
+    #margin {
+        margin: 15px;
+    }
+    #padding {
+        padding: 15px;
+    }
+  </style>
+</head>
+<body>
+    <h1>Propriedade Display</h1>
+    <p>
+        A propriedade display vai determinar como essas caixinhas retangulares irão se comportar na hora de serem exibidas na tela.
+    </p>
+
+    <ul>
+        <li>border-width</li>
+        <li>border-style</li>
+        <li>border-color</li>
+    </ul>
+
+    <h2>Exemplo:</h2>
+    <code>display: inline;</code>
+    <p>
+        Os elementos são colocados lado a lado na mesma linha e cada elemanto vai ter o tamanho do seu conteudo no seu interior.
+        Exemplo de tags que possuem o display inline por padrão: <code>span, em, b</code> 
+    </p>
+
+    <br><br>
+
+    <span class="ex">Exemplo Inline 1</span>
+    <span class="ex">Exemplo Inline 2</span>
+    <em class="ex">Exemplo Inline 3</em>
+    <b class="ex">Exemplo Inline 4</b>
+
+    <br><br>
+
+    <p>
+        O elemento display inline não aceita os elementos width e heigth, ou seja não altera a largura e altura do bloco, o elemento margin só aceita as margens da esquerda e da direita no bloco e o padding ira alterar a área do elemento, mas a modificação do conteúdo só se dara da esquerda e da direita.
+    </p>
+
+    <br>
+
+    <p>Lorem ipsum <b class="ex" id="width">dolor sit amet</b> consectetur adipisicing elit.</p>
+    <p>Lorem ipsum <b class="ex" id="heigth">dolor sit amet</b> consectetur adipisicing elit.</p>
+    <p>Lorem ipsum <b class="ex" id="margin">dolor sit amet</b> consectetur adipisicing elit.</p>
+    <p>Lorem ipsum <b class="ex" id="padding">dolor sit amet</b> consectetur adipisicing elit.</p>
+</body>
+</html>
