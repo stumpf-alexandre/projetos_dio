@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionando os elementos em tela</title>
+    <style>
+        body {
+            font-family: Roboto, sans-serif;
+            height: 200vh;
+        }
+        .ex {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 4px;
+            position: absolute;
+        }
+        #elemento1 {
+            background-color: orange;
+            left: 310px;
+            top: 210px;
+        }
+        #elemento2 {
+            background-color: palevioletred;
+            left: 320px;
+            top: 220px;
+        }
+        #elemento3 {
+            background-color: palegreen;
+            left: 330px;
+            top: 230px;
+        }
+        #elemento4 {
+            background-color: paleturquoise;
+            left: 340px;
+            top: 240px;
+        }
+        #elemento5 {
+            background-color: violet;
+            left: 350px;
+            top: 250px;
+        }
+        #elemento6 {
+            background-color: blueviolet;
+            left: 360px;
+            top: 260px;
+        }
+        #elemento11 {
+            background-color: orange;
+            left: 10px;
+            top: 210px;
+            z-index: 5;
+        }
+        #elemento22 {
+            background-color: palevioletred;
+            left: 20px;
+            top: 220px;
+            z-index: 4;
+        }
+        #elemento33 {
+            background-color: palegreen;
+            left: 30px;
+            top: 230px;
+            z-index: 3;
+        }
+        #elemento44 {
+            background-color: paleturquoise;
+            left: 40px;
+            top: 240px;
+            z-index: 2;
+        }
+        #elemento55 {
+            background-color: violet;
+            left: 50px;
+            top: 250px;
+            z-index: 1;
+        }
+        #elemento66 {
+            background-color: blueviolet;
+            left: 60px;
+            top: 260px;
+            z-index: 0;
+        }
+        #elemento111 {
+            background-color: orange;
+            left: 630px;
+            top: 230px;
+            z-index: 2;
+        }
+        #elemento222 {
+            background-color: palevioletred;
+            left: 660px;
+            top: 260px;
+            z-index: 5;
+        }
+        #elemento333 {
+            background-color: palegreen;
+            left: 610px;
+            top: 210px;
+            z-index: 0;
+        }
+        #elemento444 {
+            background-color: paleturquoise;
+            left: 650px;
+            top: 250px;
+            z-index: 4;
+        }
+        #elemento555 {
+            background-color: violet;
+            left: 620px;
+            top: 220px;
+            z-index: 1;
+        }
+        #elemento666 {
+            background-color: blueviolet;
+            left: 640px;
+            top: 240px;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade z-index</h1>
+    <p>
+        Esta propriedade mexe com os elementos no eixo z, posicionando qual fica por cima de qual e é utilizado em todas as positions, exeto na static.
+    </p>
+    <div>
+        <div id="elemento1" class="ex">Elemento 1</div>
+        <div id="elemento2" class="ex">Elemento 2</div>
+        <div id="elemento3" class="ex">Elemento 3</div>
+        <div id="elemento4" class="ex">Elemento 4</div>
+        <div id="elemento5" class="ex">Elemento 5</div>
+        <div id="elemento6" class="ex">Elemento 6</div>
+    </div>
+
+    <div>
+        <div id="elemento11" class="ex">Elemento 1</div>
+        <div id="elemento22" class="ex">Elemento 2</div>
+        <div id="elemento33" class="ex">Elemento 3</div>
+        <div id="elemento44" class="ex">Elemento 4</div>
+        <div id="elemento55" class="ex">Elemento 5</div>
+        <div id="elemento66" class="ex">Elemento 6</div>
+    </div>
+
+    <div>
+        <div id="elemento111" class="ex">Elemento 1</div>
+        <div id="elemento222" class="ex">Elemento 2</div>
+        <div id="elemento333" class="ex">Elemento 3</div>
+        <div id="elemento444" class="ex">Elemento 4</div>
+        <div id="elemento555" class="ex">Elemento 5</div>
+        <div id="elemento666" class="ex">Elemento 6</div>
+    </div>
+</body>
+</html>

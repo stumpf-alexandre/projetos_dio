@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionando os elementos em tela</title>
+    <style>
+        body {
+            font-family: Roboto, sans-serif;
+            height: 200vh;
+        }
+        .inline {
+            display: inline-block;
+        }
+        .ex {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        #elemento1 {
+            background-color: orange;
+        }
+        #elemento2 {
+            background-color: palevioletred;
+            position: absolute;
+            top: 325px;
+            left: 70px;
+        }
+        #elemento3 {
+            background-color: palegreen;
+        }
+        #elemento4 {
+            background-color: paleturquoise;
+        }
+        #elemento5 {
+            background-color: violet;
+            position: absolute;
+            bottom: 50px;
+            left: 90px;
+        }
+        #elemento6 {
+            background-color: blueviolet;
+        }
+        #elemento-pai {
+            box-sizing: border-box;
+            height: 300px;
+            padding: 10px;
+            border: 1px solid red;
+            position: relative;
+        }
+        #elemento-filho {
+            background-color: aquamarine;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 0;
+        }
+        .container {
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            position: relative;
+        }
+        .container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .container h3 {
+            font-size: 40px;
+            font-weight: 900;
+            margin: 0;
+            position: absolute;
+            top: 3%;
+            left: 6%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Posicionando os elementos em tela</h1>
+
+    <p>
+        A propriedade position vai nos ajudar a manipular a localização/posição do elemento na página.
+    </p>
+
+    <ul>
+        <li><code>position: static</code></li>
+        <li><code>position: relative</code></li>
+        <li><code>position: absolute</code></li>
+        <li><code>position: fixed</code></li>
+        <li><code>position: sticky</code></li>
+    </ul>
+
+    <h3>Exemplo:</h3>
+
+    <p>
+        A propriedade <code>position: absolute</code>, faz com que o elemento saia do fluxo normal do que foi declarado no html. O elemento com a posição absoluta vai ignorar todos os elementos ao redor dele e conseguimos também mexer nas 4 propriedades (top, bottom, left, right).
+    </p>
+    <p>
+        O elemento 2 acaba ficando por cima dos outros elementos apenas recebendo a variavel position: absolute;
+    </p>
+
+    <div id="elemento1" class="ex inline">Elemento 1</div>
+    <div id="elemento2" class="ex inline">Elemento 2</div>
+    <div id="elemento3" class="ex inline">Elemento 3</div>
+
+    <hr>
+
+    <div id="elemento4" class="ex">Elemento A</div>
+    <div id="elemento5" class="ex">Elemento B</div>
+    <div id="elemento6" class="ex">Elemento C</div>
+    <p>
+        O elemento B também acaba ficando por cima dos outros elementos e pode ser posicionado conforme a propriedade que recebe.
+    </p>
+
+    <hr>
+
+    <p>
+        O elemento filho ira ficar dentro do quadrado do elemento pai por que o elemento pai recebeu a <code> position: relative;</code>, ja o filho recebeu a <code>position: absolute;</code>.E a posição que ele assumira dependerá das propriedades que forem incluida no elemento.
+    </p>
+
+    <div id="elemento-pai">
+        <div id="elemento-filho" class="ex"></div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <img src="https://www.collinsdictionary.com/images/full/breakfast_169364927.jpg">
+        <h3>BREAKFAST</h3>
+    </div>
+</body>
+</html>

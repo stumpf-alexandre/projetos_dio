@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionando os elementos em tela</title>
+    <style>
+        body {
+            font-family: Roboto, sans-serif;
+            height: 200vh;
+        }
+        .inline {
+            display: inline-block;
+        }
+        .ex {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        #elemento1 {
+            background-color: orange;
+        }
+        #elemento2 {
+            background-color: palevioletred;
+        }
+        #elemento3 {
+            background-color: palegreen;
+        }
+        #elemento4 {
+            background-color: paleturquoise;
+        }
+        #elemento5 {
+            background-color: violet;
+        }
+        #elemento6 {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Posicionando os elementos em tela</h1>
+
+    <p>
+        A propriedade position vai nos ajudar a manipular a localização/posição do elemento na página.
+    </p>
+
+    <ul>
+        <li><code>position: static</code></li>
+        <li><code>position: relative</code></li>
+        <li><code>position: absolute</code></li>
+        <li><code>position: fixed</code></li>
+        <li><code>position: sticky</code></li>
+    </ul>
+
+    <h3>Exemplo:</h3>
+
+    <p>
+        A propriedade <code>position: static</code>, vai ser padrão na codificação das tags, como demonstra os elementos abaixo.
+    </p>
+
+    <div id="elemento1" class="ex inline">Elemento 1</div>
+    <div id="elemento2" class="ex inline">Elemento 2</div>
+    <div id="elemento3" class="ex inline">Elemento 3</div>
+
+    <hr>
+
+    <div id="elemento4" class="ex">Elemento A</div>
+    <div id="elemento5" class="ex">Elemento B</div>
+    <div id="elemento6" class="ex">Elemento C</div>
+</body>
+</html>
