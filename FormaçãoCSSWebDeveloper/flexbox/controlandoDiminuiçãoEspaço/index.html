@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controlando Diminuição do Item Caso Necessario</title>
+    <style>
+        .container {
+            background: blueviolet;
+            padding: 10px;
+            margin-bottom: 20px;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            gap: 10px;
+        }
+        .item {
+            
+            background: yellow;
+            min-width: 20px;
+            min-height: 20px;
+            width: 50px;
+            height: 50px;
+            flex-shrink: 2;
+        }
+        #container1 {
+            flex-flow: row nowrap;
+        }
+        #container2 {
+            flex-flow: column nowrap;
+        }
+        .item3 {
+            flex-shrink: 2;
+        }
+        .item5 {flex-shrink: 2;}
+    </style>
+</head>
+<body>
+    <h1>Controlando Diminuição do Item Caso Necessario <code>flex-shrink</code></h1>
+
+    <p>
+        A propriedade <code>flex-shrink</code> vai controlar o quanto esse item vai diminuir, caso seja necessário. Se o container não possuir espaço suficiente para acomodar os elementos, eles irão diminuir para caber.
+    </p>
+    <p>
+        Quanto maior o <code>flex-shrink</code>, menor é o tamanho da área do item.
+    </p>
+
+    <h2>Linha</h2>
+    <h3>Exemplo:</h3>
+    <div class="container" id="container1">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item item3">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item item5">Item 05</div>
+        <div class="item">Item 06</div>
+    </div>
+
+    <h2>Coluna</h2>
+    <h3>Exemplo:</h3>
+    <div class="container" id="container2">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item item3">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item item5">Item 05</div>
+        <div class="item">Item 06</div>
+        <div class="item">Item 07</div>
+        <div class="item">Item 08</div>
+        <div class="item">Item 09</div>
+        <div class="item">Item 10</div>
+    </div>
+</body>
+</html>

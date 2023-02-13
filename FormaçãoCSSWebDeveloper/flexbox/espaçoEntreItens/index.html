@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controlando Espaçamento Entre Itens</title>
+    <style>
+        .container {
+            background: palegoldenrod;
+            margin: 20px;
+            width: 300px;
+            height: 250px;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .ex1 {
+            row-gap: 10px;
+            column-gap: 20px;
+        }
+        .ex2 {
+            gap: 30px 40px;/*valor linha / valor coluna*/
+        }
+        .item {
+            background: orange;
+        }
+        #container1 {
+            flex-direction: row;
+        }
+        #container2 {
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>Controlando os Espaçamentos Entre os Itens com <code>gap</code></h1>
+    <h2>Linha</h2>
+    <h3><code>row-gap: ;</code>valor do espaçamento</h3>
+    <p>
+        Esta propriedade ira fornecer espaçamento de linha entre um item e outro mas não entre o item e a borda do container, ja que ele não funciona como a propriedade <code>margin</code>.
+    </p>
+    <div class="container ex1" id="container1">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <h3><code>column-gap: ;</code>valor do espaçamento</h3>
+    <p>
+        Esta propriedade ira fornecer espaçamento de coluna entre um item e outro mas não entre o item e a borda do container, ja que ele não funciona como a propriedade <code>margin</code>.
+    </p>
+    <div class="container ex1" id="container2">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <br>
+
+    <h2>Linha</h2>
+    <h3><code>gap: ;</code>valor do espaçamento</h3>
+    <p>
+        Esta propriedade ira fornecer espaçamento de linha entre um item e outro mas não entre o item e a borda do container, ja que ele não funciona como a propriedade <code>margin</code>.
+    </p>
+    <div class="container ex2" id="container1">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <h3><code>gap: ;</code>valor do espaçamento</h3>
+    <p>
+        Esta propriedade ira fornecer espaçamento de coluna entre um item e outro mas não entre o item e a borda do container, ja que ele não funciona como a propriedade <code>margin</code>.
+    </p>
+    <div class="container ex2" id="container2">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+    </div>
+</body>
+</html>

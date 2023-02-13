@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhando As Linhas No Container</title>
+    <style>
+        .container {
+            background: palegreen;
+            margin: 20px;
+            width: 300px;
+            height: 250px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .container1 {
+            align-content: normal;
+        }
+        .container2 {
+            align-content: flex-start;
+        }
+        .container3 {
+            align-content: flex-end;
+        }
+        .container4 {
+            align-content: center;
+        }
+        .container5 {
+            align-content: stretch;
+        }
+        .container6 {
+            align-content: space-between;
+        }
+        .container7 {
+            align-content: space-around;
+        }
+        .item {
+            background: orange;
+            height: 40px;
+            width: 40px;
+        }
+        #container1 {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        #container2 {
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alinhando as Linhas no Container</h1>
+
+    <h2>Linha</h2>
+    <h3><code>align-content: normal;</code></h3>
+    <p>
+        A propriedade align-content tem por padrão o valor normal, no qual os itens são embalados em sua posição padrão como se nenhum valor tivesse sido definido.
+    </p>
+    <div class="container container1" id="container1">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <h3><code>align-content: normal;</code></h3>
+    <p>
+        A propriedade align-content tem por padrão o valor normal, no qual os itens são embalados em sua posição padrão como se nenhum valor tivesse sido definido.
+    </p>
+    <div class="container container1" id="container2">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <br>
+
+    <h2>Linha</h2>
+    <h3><code>align-content: flex-start;</code></h3>
+    <p>
+        Com os itens em linha a propriedade align-content tem o valor flex-start, no qual os itens são embalados uns aos outros contra a borda superior do container no eixo horizontal.
+    </p>
+    <div class="container container2" id="container1">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <h3><code>align-content: flex-start;</code></h3>
+    <p>
+        Com os itens em coluna a propriedade align-content tem o valor flex-star, no qual os itens são embalados uns aos outros contra a borda lateral do lado esquerdo do container no eixo vertical.
+    </p>
+    <div class="container container2" id="container2">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <br>
+
+    <h2>Linha</h2>
+    <h3><code>align-content: flex-end;</code></h3>
+    <p>
+        Com os itens em linha a propriedade align-content tem o valor flex-end, no qual os itens são embalados uns aos outros contra a borda inferior do container no eixo horizontal.
+    </p>
+    <div class="container container3" id="container1">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <h3><code>align-content: flex-end;</code></h3>
+    <p>
+        Com os itens em coluna a propriedade align-content tem o valor flex-end, no qual os itens são embalados uns aos outros contra a borda lateral do lado direito do container no eixo vertical.
+    </p>
+    <div class="container container3" id="container2">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <br>
+
+    <h2>Linha</h2>
+    <h3><code>align-content: center;</code></h3>
+    <p>
+        Com os itens em linha a propriedade align-content tem o valor center, no qual os itens são embalados uns aos outros e são posicionado no centro de um eixo horizontal do container.
+    </p>
+    <div class="container container4" id="container1">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <h3><code>align-content: center;</code></h3>
+    <p>
+        Com os itens em coluna a propriedade align-content tem o valor center, no qual os itens são embalados uns aos outros e são posicionado no centro de um eixo vertical do container.
+    </p>
+    <div class="container container4" id="container2">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <br>
+
+    <h2>Linha</h2>
+    <h3><code>align-content: stretch;</code></h3>
+    <p>
+        Com os itens em linha a propriedade align-content tem o valor stretch, no qual as linhas se esticam para ocupar o espaço restante do container.
+    </p>
+    <div class="container container5" id="container1">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <h3><code>align-content: stretch;</code></h3>
+    <p>
+        Com os itens em coluna a propriedade align-content tem o valor stretch, no qual as colunas se esticam para ocupar o espaço restante do container.
+    </p>
+    <div class="container container5" id="container2">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <br>
+
+    <h2>Linha</h2>
+    <h3><code>align-content: space-between;</code></h3>
+    <p>
+        Com os itens em linha a propriedade align-content tem o valor space-between, as linhas são divididas, sendo metade vai para a borda superior e a outra metade para a borda inferior do container.
+    </p>
+    <div class="container container6" id="container1">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <h3><code>align-content: space-between;</code></h3>
+    <p>
+        Com os itens em coluna a propriedade align-content tem o valor space-between, as colunas são divididas, sendo metade vai para a borda esquerda e a outra metade para a borda direita do container.
+    </p>
+    <div class="container container6" id="container2">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <br>
+
+    <h2>Linha</h2>
+    <h3><code>align-content: space-around;</code></h3>
+    <p>
+        Com os itens em linha a propriedade align-content tem o valor space-around, que divide as linhas com espaçamento de tamanho igual entre as mesmas.
+    </p>
+    <div class="container container7" id="container1">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <h3><code>align-content: space-around;</code></h3>
+    <p>
+        Com os itens em coluna a propriedade align-content tem o valor space-around, que divide as colunas com espaçamento de tamanho igual entre as mesmas.
+    </p>
+    <div class="container container7" id="container2">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+    </div>
+</body>
+</html>

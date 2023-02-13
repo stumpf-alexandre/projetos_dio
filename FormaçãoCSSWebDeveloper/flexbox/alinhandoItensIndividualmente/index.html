@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhando os Itens Individualmente</title>
+    <style>
+        .container {
+            background: blueviolet;
+            padding: 10px;
+            margin-bottom: 20px;
+            width: 300px;
+            height: 200px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .item {
+            background: yellow;
+            text-align: center;
+            flex: 1 ;
+        }
+        #container1 {
+            flex-direction: row;
+        }
+        #container2 {
+            flex-direction: column;
+        }
+        .item2 {
+            align-self: flex-end;
+        }
+        .item3 {
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alinhando os Itens Individualmente com <code>align-self</code></h1>
+    <p>
+        A propriedade <code>align-self</code> permite que nós possamos sobrescrever o alinhamento padrão aplicado em todos os itens de forma geral que foi definido pela propriedade <code>align-items</code>.
+    </p>
+
+    <h2>Linha</h2>
+    <div class="container" id="container1">
+        <div class="item">Item 01</div>
+        <div class="item item2">Item 02</div>
+        <div class="item">Item 03</div>
+    </div>
+
+    <div class="container" id="container1">
+        <div class="item">Curto</div>
+        <div class="item item2">Texto médio</div>
+        <div class="item">Meu texto looooooooooooongo</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <div class="container" id="container2">
+        <div class="item">Item 01</div>
+        <div class="item item2">Item 02</div>
+        <div class="item">Item 03</div>
+    </div>
+
+    <div class="container" id="container2">
+        <div class="item">Curto</div>
+        <div class="item item2">Texto médio</div>
+        <div class="item">Meu texto looooooooooooongo</div>
+    </div>
+
+    <br>
+
+    <h2>Linha</h2>
+    <div class="container" id="container1">
+        <div class="item">Item 01</div>
+        <div class="item item3">Item 02</div>
+        <div class="item">Item 03</div>
+    </div>
+
+    <div class="container" id="container1">
+        <div class="item">Curto</div>
+        <div class="item item3">Texto médio</div>
+        <div class="item">Meu texto looooooooooooongo</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <div class="container" id="container2">
+        <div class="item">Item 01</div>
+        <div class="item item3">Item 02</div>
+        <div class="item">Item 03</div>
+    </div>
+
+    <div class="container" id="container2">
+        <div class="item">Curto</div>
+        <div class="item item3">Texto médio</div>
+        <div class="item">Meu texto looooooooooooongo</div>
+    </div>
+</body>
+</html>

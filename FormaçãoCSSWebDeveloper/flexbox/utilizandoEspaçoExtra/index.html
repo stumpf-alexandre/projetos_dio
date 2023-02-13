@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocupando Espaçamento Extra Pelo Item</title>
+    <style>
+        .container {
+            background: blueviolet;
+            padding: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            height: 200px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        #container1 {
+            flex-direction: row;
+        }
+        #container2 {
+            flex-direction: column;
+        }
+        .item {
+            padding: 8px;
+            background: yellow;
+            flex-grow: 1;
+        }
+        .item2 {
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ocupando Espaçamento Extra Pelo Item Com <code>flex-grow</code></h1>
+    <p>
+        A propriedade <code>flex-grow</code> fará com que esse espaço extra seja usado por esses itens, dando a eles a capacidade para o item de crescer, ao longo do eixo principal, caso for necessário.
+    </p>
+
+    <h2>Linha</h2>
+    <h3>Exemplo: <code>flex-grow;</code></h3>
+    <div class="container" id="container1">
+        <div class="item item1">Item 01</div>
+        <div class="item item2">Item 02</div>
+        <div class="item item3">Item 03</div>
+    </div>
+
+    <div class="container" id="container1">
+        <div class="item item1">DIO</div>
+        <div class="item item2">Bem-vindo</div>
+        <div class="item item3">Trilha de CSS</div>
+    </div>
+
+    <div class="container" id="container1">
+        <div class="item item1">Item 01</div>
+        <div class="item item2">Item 02</div>
+        <div class="item item3">Item 03</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <h3>Exemplo: <code>flex-grow;</code></h3>
+    <div class="container" id="container2">
+        <div class="item item1">Item 01</div>
+        <div class="item item2">Item 02</div>
+        <div class="item item3">Item 03</div>
+    </div>
+
+    <div class="container" id="container2">
+        <div class="item item1">DIO</div>
+        <div class="item item2">Bem-vindo</div>
+        <div class="item item3">Trilha de CSS</div>
+    </div>
+
+    <div class="container" id="container2">
+        <div class="item item1">Item 01</div>
+        <div class="item item2">Item 02</div>
+        <div class="item item3">Item 03</div>
+    </div>
+</body>
+</html>

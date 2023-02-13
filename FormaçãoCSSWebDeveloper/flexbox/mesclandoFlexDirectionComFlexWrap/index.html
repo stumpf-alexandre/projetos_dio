@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclando Flex-direction com Flex-wrap, para a nova propriedade Flex-flow</title>
+    <style>
+        .container {
+            background: palegreen;
+            padding: 20px;
+            margin: 20px 0 70px 0;
+            display: flex;
+            width: 300px;
+        }
+        .item {
+            background: orange;
+            margin: 10px;
+        }
+        #container1 {
+            flex-flow: row nowrap;
+        }
+        #container2 {
+            flex-flow: column nowrap;
+            height: 300px;
+        }
+        #container3 {
+            flex-flow: row-reverse nowrap;
+        }
+        #container4 {
+            flex-flow: column-reverse nowrap;
+            height: 300px;
+        }
+        #container5 {
+            flex-flow: row wrap;
+        }
+        #container6 {
+            flex-flow: column wrap;
+            height: 300px;
+        }
+        #container7 {
+            flex-flow: row-reverse wrap;
+        }
+        #container8 {
+            flex-flow: column-reverse wrap;
+            height: 300px;
+        }
+        #container9 {
+            flex-flow: row wrap-reverse;
+        }
+        #container10 {
+            flex-flow: column wrap-reverse;
+            height: 300px;
+        }
+        #container11 {
+            flex-flow: row-reverse wrap-reverse;
+        }
+        #container12 {
+            flex-flow: column-reverse wrap-reverse;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclando Flex-direction com Flex-wrap, para a nova propriedade Flex-flow</h1>
+    <h3>Exemplo: <code>flex-flow: row nowrap;</code></h3>
+    <p>
+        Por padrão a propriedade flex flow vem com o valor row e nowrap, que organiza os elementos em linhas, da esquerda para a direita e não organiza os itens no container.
+    </p>
+    <div class="container" id="container1">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+        <div class="item">Item 07</div>
+        <div class="item">Item 08</div>
+        <div class="item">Item 09</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <h3>Exemplo: <code>flex-flow: column nowrap;</code></h3>
+    <p>
+        A propriedade flex flow vem com o valor column e nowrap, que organiza os elementos em colunas, de cima para baixo e não organiza os itens no container.
+    </p>
+    <div class="container" id="container2">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+        <div class="item">Item 07</div>
+        <div class="item">Item 08</div>
+        <div class="item">Item 09</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <h3>Exemplo: <code>flex-flow: row-reverce nowrap;</code></h3>
+    <p>
+        A propriedade flex flow vem com o valor row-reverce e nowrap, que organiza os elementos em linhas, da direita para a esquerda e não organiza os itens no container.
+    </p>
+    <div class="container" id="container3">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+        <div class="item">Item 07</div>
+        <div class="item">Item 08</div>
+        <div class="item">Item 09</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <h3>Exemplo: <code>flex-flow: column-reverce nowrap;</code></h3>
+    <p>
+        A propriedade flex flow vem com o valor column-reverce e nowrap, que organiza os elementos em colunas, de baixo para cima e não organiza os itens no container.
+    </p>
+    <div class="container" id="container4">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+        <div class="item">Item 07</div>
+        <div class="item">Item 08</div>
+        <div class="item">Item 09</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <h3>Exemplo: <code>flex-flow: row wrap;</code></h3>
+    <p>
+        A propriedade flex flow vem com o valor row wrap, que organiza os elementos em linhas, da esquerda para a direita e faz a quebra de linha de cima para baixo.
+    </p>
+    <div class="container" id="container5">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+        <div class="item">Item 07</div>
+        <div class="item">Item 08</div>
+        <div class="item">Item 09</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <h3>Exemplo: <code>flex-flow: column wrap;</code></h3>
+    <p>
+        A propriedade flex flow vem com o valor column wrap, que organiza os elementos em colunas, de cima para baixo e faz a quebra de coluna da esquerda para a direita.
+    </p>
+    <div class="container" id="container6">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+        <div class="item">Item 07</div>
+        <div class="item">Item 08</div>
+        <div class="item">Item 09</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <h3>Exemplo: <code>flex-flow: row-reverce wrap;</code></h3>
+    <p>
+        A propriedade flex flow vem com o valor row-reverce wrap, que organiza os elementos em linhas, da direita para a esquerda e faz a quebra de linha de cima para baixo.
+    </p>
+    <div class="container" id="container7">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+        <div class="item">Item 07</div>
+        <div class="item">Item 08</div>
+        <div class="item">Item 09</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <h3>Exemplo: <code>flex-flow: column wrap;</code></h3>
+    <p>
+        A propriedade flex flow vem com o valor column-reverce wrap, que organiza os elementos em colunas, de baixo para cima e faz a quebra de coluna da esquerda para a direita.
+    </p>
+    <div class="container" id="container8">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+        <div class="item">Item 07</div>
+        <div class="item">Item 08</div>
+        <div class="item">Item 09</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <h3>Exemplo: <code>flex-flow: row wrap-reverse;</code></h3>
+    <p>
+        A propriedade flex flow vem com o valor row wrap-reverce, que organiza os elementos em linhas, da esquerda para a direita e faz a quebra de linha de baixo para cima.
+    </p>
+    <div class="container" id="container9">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+        <div class="item">Item 07</div>
+        <div class="item">Item 08</div>
+        <div class="item">Item 09</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <h3>Exemplo: <code>flex-flow: column wrap-reverce;</code></h3>
+    <p>
+        A propriedade flex flow vem com o valor column wrap-reverce, que organiza os elementos em colunas, de cima para baixo e faz a quebra de coluna da direita para a esquerda.
+    </p>
+    <div class="container" id="container10">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+        <div class="item">Item 07</div>
+        <div class="item">Item 08</div>
+        <div class="item">Item 09</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <h3>Exemplo: <code>flex-flow: row-reverce wrap-reverce;</code></h3>
+    <p>
+        A propriedade flex flow vem com o valor row-reverce wrap-reverce, que organiza os elementos em linhas, da direita para a esquerda e faz a quebra de linha de baixo para cima.
+    </p>
+    <div class="container" id="container11">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+        <div class="item">Item 07</div>
+        <div class="item">Item 08</div>
+        <div class="item">Item 09</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <h3>Exemplo: <code>flex-flow: column-reverce wrap-reverce;</code></h3>
+    <p>
+        A propriedade flex flow vem com o valor column-reverce wrap-reverce, que organiza os elementos em colunas, de baixo para cima e faz a quebra de coluna da direita para a esquerda.
+    </p>
+    <div class="container" id="container12">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+        <div class="item">Item 07</div>
+        <div class="item">Item 08</div>
+        <div class="item">Item 09</div>
+        <div class="item">Item 10</div>
+    </div>
+</body>
+</html>

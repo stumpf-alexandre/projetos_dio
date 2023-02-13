@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhando Elementos no Eixo Principal</title>
+    <style>
+        .container1 {
+            background: palegreen;
+            padding: 20px;
+            margin: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+        .container2 {
+            flex-direction: column;
+            height: 300px;
+        }
+        .item {
+            background: orange;
+            margin: 10px;
+        }
+        #container1 {
+            justify-content: flex-start;
+        }
+        #container2 {
+            justify-content: flex-end;
+        }
+        #container3 {
+            justify-content: center;
+        }
+        #container4 {
+            justify-content: space-between;
+        }
+        #container5 {
+            justify-content: space-around;
+        }
+        #container6 {
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alinhando Elementos no Eixo Principal com <code>justify-content</code></h1>
+
+    <h2>Linha</h2>
+    <h3>Exemplo: <code>justify-content: flex-start;</code></h3>
+    <p>
+        Com os itens em linha a propriedade justify-content conseguimos alinhar os elementos no eixo principal do container e o valor definido padrão flex-start, faz com que os espaços entre elementos sejam minimos e os mesmos sejam jogados para a esquerda do container.
+    </p>
+    <div class="container1" id="container1">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <h3>Exemplo: <code>justify-content: flex-start;</code></h3>
+    <p>
+        Com os itens em coluna a propriedade justify-content conseguimos alinhar os elementos no eixo principal do container e o valor definido padrão flex-start, faz com que os espaços entre elementos sejam minimos e os mesmos sejam jogados para cima do container.
+    </p>
+    <div class="container1 container2" id="container1">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+    </div>
+
+    <br>
+
+    <h2>Linha</h2>
+    <h3>Exemplo: <code>justify-content: flex-end;</code></h3>
+    <p>
+        Com os itens em linha a propriedade justify-content conseguimos alinhar os elementos no eixo principal do container e o valor flex-end, faz com que os espaços entre elementos sejam minimos e os mesmos sejam jogados para a direita do container.
+    </p>
+    <div class="container1" id="container2">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <h3>Exemplo: <code>justify-content: flex-end;</code></h3>
+    <p>
+        Com os itens em coluna a propriedade justify-content conseguimos alinhar os elementos no eixo principal do container e o valor flex-end, faz com que os espaços entre elementos sejam minimos e os mesmos sejam jogados para baixo do container.
+    </p>
+    <div class="container1 container2" id="container2">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+    </div>
+
+    <br>
+
+    <h2>Linha</h2>
+    <h3>Exemplo: <code>justify-content: center;</code></h3>
+    <p>
+        Com a propriedade justify-content conseguimos alinhar os elementos no eixo principal do container e o valor center, faz com que os espaços entre elementos sejam minimos e os mesmos sejam centralizados na horizontal no container.
+    </p>
+    <div class="container1" id="container3">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <h3>Exemplo: <code>justify-content: center;</code></h3>
+    <p>
+        Com a propriedade justify-content conseguimos alinhar os elementos no eixo principal do container e o valor center, faz com que os espaços entre elementos sejam minimos e os mesmos sejam centralizados na vertical no container.
+    </p>
+    <div class="container1 container2" id="container3">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+    </div>
+
+    <br>
+
+    <h2>Linha</h2>
+    <h3>Exemplo: <code>justify-content: space-between;</code></h3>
+    <p>
+        Com a propriedade justify-content conseguimos alinhar os elementos no eixo principal do container e o valor space-between, faz com que os elementos das pontas fique proximo a margem do container, sem espaçamento, e o restante do espaçamento seja dividido entre os itens restantes no eixo horizontal.
+    </p>
+    <div class="container1" id="container4">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <h3>Exemplo: <code>justify-content: space-between;</code></h3>
+    <p>
+        Com a propriedade justify-content conseguimos alinhar os elementos no eixo principal do container e o valor space-between, faz com que os elementos das pontas fique proximo a margem do container, sem espaçamento, e o restante do espaçamento seja dividido entre os itens restantes no eixo vertical.
+    </p>
+    <div class="container1 container2" id="container4">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+    </div>
+
+    <br>
+
+    <h2>Linha</h2>
+    <h3>Exemplo: <code>justify-content: space-around;</code></h3>
+    <p>
+        Com a propriedade justify-content conseguimos alinhar os elementos no eixo principal do container e o valor space-around, faz com que os espaços entrea margem do container e os elementos das pontas fique com a metade do valor do espaçamento entre itens, e este seja igualmente dividido entre os itens no container no eixo horizontal.
+    </p>
+    <div class="container1" id="container5">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <h3>Exemplo: <code>justify-content: space-around;</code></h3>
+    <p>
+        Com a propriedade justify-content conseguimos alinhar os elementos no eixo principal do container e o valor space-around, faz com que os espaços entrea margem do container e os elementos das pontas fique com a metade do valor do espaçamento entre itens, e este seja igualmente dividido entre os itens no container no eixo vertical.
+    </p>
+    <div class="container1 container2" id="container5">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+    </div>
+
+    <br>
+
+    <h2>Linha</h2>
+    <h3>Exemplo: <code>justify-content: space-evenly;</code></h3>
+    <p>
+        Com a propriedade justify-content conseguimos alinhar os elementos no eixo principal do container e o valor space-evenly, faz com que os espaços entre os itens sejam divididos por igual no eixo horizontal.
+    </p>
+    <div class="container1" id="container6">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <h3>Exemplo: <code>justify-content: space-evenly;</code></h3>
+    <p>
+        Com a propriedade justify-content conseguimos alinhar os elementos no eixo principal do container e o valor space-evenly, faz com que os espaços entre os itens sejam divididos por igual no eixo vertical.
+    </p>
+    <div class="container1 container2" id="container6">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox, Eixo Principal (main axis)</title>
+    <style>
+        .container {
+            background: palegreen;
+            padding: 20px;
+            margin: 20px;
+            display: flex;
+            height: 300px;
+        }
+        .item {
+            background: orange;
+            margin: 10px;
+        }
+        #container1 {
+            flex-direction: row;
+        }
+        #container2 {
+            flex-direction: column;
+        }
+        #container3 {
+            flex-direction: row-reverse;
+        }
+        #container4 {
+            flex-direction: column-reverse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox (Flexible Box Module)</h1>
+    <h2>Eixo Principal (main axis)</h2>
+    <p>
+        Define a direção em que o nosso container vai organizar os nossos itens: horizontalmente (em linhas), ou verticalmente (em colunas).
+    </p>
+
+    <h2>Eixo transversal (cross axis)</h2>
+    <p>
+        O eixo transversal é perpendicular (atravessa) ao eixo principal.
+    </p>
+
+    <h3>Exemplo: <code>flex-direction: row;</code></h3>
+    <p>
+        Por padrão a propriedade flex direction vem com o valor row, que organiza os elementos em linhas, da esquerda para a direita.
+    </p>
+    <div class="container" id="container1">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+    </div>
+
+    <h3>Exemplo: <code>flex-direction: column;</code></h3>
+    <p>
+        A propriedade flex direction vem com o valor column, que organiza os elementos em colunas, de cima para baixo.
+    </p>
+    <div class="container" id="container2">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+    </div>
+
+    <h3>Exemplo: <code>flex-direction: row-reverse;</code></h3>
+    <p>
+        A propriedade flex direction vem com o valor row-reverse, que organiza os elementos em linhas, da direita para a esquerda.
+    </p>
+    <div class="container" id="container3">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+    </div>
+
+    <h3>Exemplo: <code>flex-direction: column-reverse;</code></h3>
+    <p>
+        A propriedade flex direction vem com o valor column-reverse, que organiza os elementos em colunas, de baixo para cima.
+    </p>
+    <div class="container" id="container4">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+    </div>
+</body>
+</html>

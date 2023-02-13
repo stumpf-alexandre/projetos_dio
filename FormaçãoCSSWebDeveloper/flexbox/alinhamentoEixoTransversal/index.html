@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhando Elementos no Eixo Transversal</title>
+    <style>
+        .container {
+            background: palegreen;
+            margin: 20px;
+            width: 600px;
+            height: 300px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .container1 {
+            align-items: flex-start;
+        }
+        .container2 {
+            align-items: flex-end;
+        }
+        .container3 {
+            align-items: center;
+        }
+        .container4 {
+            align-items: stretch;
+        }
+        .container5 {
+            align-items: baseline;
+        }
+        .item {
+            background: orange;
+            margin: 10px;
+        }
+        #container1 {
+            flex-direction: row;
+        }
+        #container2 {
+            flex-direction: column;
+        }
+        .item1 {
+            width: 50px;
+            height: 50px;
+        }
+        .item2 {
+            width: 80px;
+            height: 80px;
+        }
+        .item3 {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alinhando Elementos no Eixo Transversal com <code>align-items</code></h1>
+
+    <h2>Linha</h2>
+    <h3>Exemplo: <code>align-items: flex-start;</code></h3>
+    <p>
+        Com os itens em linha a propriedade align-items conseguimos alinhar os elementos no eixo transversal do container e o valor flex-start, os itens são alinhados no topo do container no eixo horizontal.
+    </p>
+    <div class="container container1" id="container1">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item item1">Item 04</div>
+        <div class="item item2">Item 05</div>
+        <div class="item item3">Item 06</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <h3>Exemplo: <code>align-items: flex-start;</code></h3>
+    <p>
+        Com os itens em coluna a propriedade align-items conseguimos alinhar os elementos no eixo transversal do container e o valor flex-start, os itens são alinhados no lado esquerdo do container no eixo vertical.
+    </p>
+    <div class="container container1" id="container2">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item item1">Item 04</div>
+        <div class="item item2">Item 05</div>
+        <div class="item item3">Item 06</div>
+    </div>
+
+    <br>
+
+    <h2>Linha</h2>
+    <h3>Exemplo: <code>align-items: flex-end;</code></h3>
+    <p>
+        Com os itens em linha a propriedade align-items conseguimos alinhar os elementos no eixo transversal do container e o valor flex-end, os itens são alinhados no lado de baixo do container no eixo horizontal.
+    </p>
+    <div class="container container2" id="container1">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item item1">Item 04</div>
+        <div class="item item2">Item 05</div>
+        <div class="item item3">Item 06</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <h3>Exemplo: <code>align-items: flex-end;</code></h3>
+    <p>
+        Com os itens em coluna a propriedade align-items conseguimos alinhar os elementos no eixo transversal do container e o valor flex-end, os itens são alinhados no lado direito do container no eixo vertical.
+    </p>
+    <div class="container container2" id="container2">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item item1">Item 04</div>
+        <div class="item item2">Item 05</div>
+        <div class="item item3">Item 06</div>
+    </div>
+
+    <br>
+
+    <h2>Linha</h2>
+    <h3>Exemplo: <code>align-items: center;</code></h3>
+    <p>
+        Com os itens em linha a propriedade align-items conseguimos alinhar os elementos no eixo transversal do container e o valor center, os itens são alinhados no centro do container no eixo horizontal.
+    </p>
+    <div class="container container3" id="container1">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item item1">Item 04</div>
+        <div class="item item2">Item 05</div>
+        <div class="item item3">Item 06</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <h3>Exemplo: <code>align-items: center;</code></h3>
+    <p>
+        Com os itens em coluna a propriedade align-items conseguimos alinhar os elementos no eixo transversal do container e o valor center, os itens são alinhados no centro do container no eixo vertical.
+    </p>
+    <div class="container container3" id="container2">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item item1">Item 04</div>
+        <div class="item item2">Item 05</div>
+        <div class="item item3">Item 06</div>
+    </div>
+
+    <br>
+
+    <h2>Linha</h2>
+    <h3>Exemplo: <code>align-items: stretch;</code></h3>
+    <p>
+        Com os itens em linha a propriedade align-items conseguimos alinhar os elementos no eixo transversal do container e o valor definido padrão stretch, faz com que quando o item não possuam valor de tamanho (width ou height), a área do mesmos ocupe o tamanho total do container no eixo vertical.
+    </p>
+    <div class="container container4" id="container1">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item item1">Item 04</div>
+        <div class="item item2">Item 05</div>
+        <div class="item item3">Item 06</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <h3>Exemplo: <code>align-items: stretch;</code></h3>
+    <p>
+        Comos itens em coluna a propriedade align-items conseguimos alinhar os elementos no eixo transversal do container e o valor definido padrão stretch, faz com que quando o item não possuam valor de tamanho (width ou height), a área do mesmos ocupe o tamanho total do container no eixo no eixo horizontal.
+    </p>
+    <div class="container container4" id="container2">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item item1">Item 04</div>
+        <div class="item item2">Item 05</div>
+        <div class="item item3">Item 06</div>
+    </div>
+
+    <br>
+
+    <h2>Linha</h2>
+    <h3>Exemplo: <code>align-items: baseline;</code></h3>
+    <p>
+        Com os itens em linha a propriedade align-items conseguimos alinhar os elementos no eixo transversal do container e o valor baseline, alinha na base do conteúdo presente dentro dos itens no eixo horizontal.
+    </p>
+    <div class="container container5" id="container1">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item item1">Item 04</div>
+        <div class="item item2">Item 05</div>
+        <div class="item item3">Item 06</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <h3>Exemplo: <code>align-items: baseline;</code></h3>
+    <p>
+        Com os itens em coluna a propriedade align-items conseguimos alinhar os elementos no eixo transversal do container e o valor baseline, alinha na base do conteúdo presente dentro dos itens no eixo vertical.
+    </p>
+    <div class="container container5" id="container2">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item item1">Item 04</div>
+        <div class="item item2">Item 05</div>
+        <div class="item item3">Item 06</div>
+    </div>
+</body>
+</html>

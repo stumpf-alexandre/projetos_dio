@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorthand Flex</title>
+    <style>
+        .container {
+            background: blueviolet;
+            padding: 10px;
+            margin-bottom: 20px;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .item {
+            background: yellow;
+            text-align: center;
+            flex: 1 1 auto;/*flex-grow  flex-shrink  flex-basis*/
+        }
+        #container1 {
+            flex-direction: row;
+        }
+        #container2 {
+            flex-direction: column;
+        }
+        .item1 {
+            background: yellow;
+            text-align: center;
+            flex: initial;/*flex-grow: 0  flex-shrink: 1  flex-basis: auto*/
+        }
+        .item2 {
+            background: yellow;
+            text-align: center;
+            flex: auto;/*flex-grow: 1  flex-shrink: 1  flex-basis: auto*/
+        }
+        .item3 {
+            background: yellow;
+            text-align: center;
+            flex: none;/*flex-grow: 0  flex-shrink: 0  flex-basis: auto*/
+        }
+        .item4 {
+            background: yellow;
+            text-align: center;
+            flex: 1;/*flex-grow: 1  flex-shrink: 0  flex-basis: 0*/
+        }
+        .item5 {
+            flex: 2;/*flex-grow: 2  flex-shrink: 0  flex-basis: 0*/
+        }
+        .item6 {
+            flex: 80px;/*flex-grow: 1  flex-shrink: 1  flex-basis: 80px*/
+        }
+        .item7 {
+            flex: 0 50%;/*flex-grow: 0  flex-shrink: 1  flex-basis: 50%*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Shorthand Flex</h1>
+    <p>
+        Normalmente, as propriedades <code>flex-grow, flex-shrink e flex-basis</code> não são usadas de forma individual, mas sim através da propriedade abreviada <code>flex</code>. Os valores de <code>flex-grow, flex-shrink e flex-basis</code>, são definidos, respectivamente, através da propriedade <code>flex</code>.
+    </p>
+
+    <h2>Linha</h2>
+    <div class="container" id="container1">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+    </div>
+
+    <div class="container" id="container1">
+        <div class="item">Curto</div>
+        <div class="item">Meu texto médio</div>
+        <div class="item">Meu texto loooooongo</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <div class="container" id="container2">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+    </div>
+
+    <div class="container" id="container2">
+        <div class="item">Curto</div>
+        <div class="item">Meu texto médio</div>
+        <div class="item">Meu texto loooooongo</div>
+    </div>
+
+    <br>
+
+    <h2>Linha</h2>
+    <div class="container" id="container1">
+        <div class="item1">Item 01</div>
+        <div class="item1">Item 02</div>
+        <div class="item1">Item 03</div>
+    </div>
+
+    <div class="container" id="container1">
+        <div class="item1">Curto</div>
+        <div class="item1">Meu texto médio</div>
+        <div class="item1">Meu texto loooooongo</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <div class="container" id="container2">
+        <div class="item1">Item 01</div>
+        <div class="item1">Item 02</div>
+        <div class="item1">Item 03</div>
+    </div>
+
+    <div class="container" id="container2">
+        <div class="item1">Curto</div>
+        <div class="item1">Meu texto médio</div>
+        <div class="item1">Meu texto loooooongo</div>
+    </div>
+
+    <br>
+
+    <h2>Linha</h2>
+    <div class="container" id="container1">
+        <div class="item2">Item 01</div>
+        <div class="item2">Item 02</div>
+        <div class="item2">Item 03</div>
+    </div>
+
+    <div class="container" id="container1">
+        <div class="item2">Curto</div>
+        <div class="item2">Meu texto médio</div>
+        <div class="item2">Meu texto loooooongo</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <div class="container" id="container2">
+        <div class="item2">Item 01</div>
+        <div class="item2">Item 02</div>
+        <div class="item2">Item 03</div>
+    </div>
+
+    <div class="container" id="container2">
+        <div class="item2">Curto</div>
+        <div class="item2">Meu texto médio</div>
+        <div class="item2">Meu texto loooooongo</div>
+    </div>
+
+    <br>
+
+    <h2>Linha</h2>
+    <div class="container" id="container1">
+        <div class="item3">Item 01</div>
+        <div class="item3">Item 02</div>
+        <div class="item3">Item 03</div>
+    </div>
+
+    <div class="container" id="container1">
+        <div class="item3">Curto</div>
+        <div class="item3">Meu texto médio</div>
+        <div class="item3">Meu texto loooooongo</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <div class="container" id="container2">
+        <div class="item3">Item 01</div>
+        <div class="item3">Item 02</div>
+        <div class="item3">Item 03</div>
+    </div>
+
+    <div class="container" id="container2">
+        <div class="item3">Curto</div>
+        <div class="item3">Meu texto médio</div>
+        <div class="item3">Meu texto loooooongo</div>
+    </div>
+
+    <br>
+
+    <h2>Linha</h2>
+    <div class="container" id="container1">
+        <div class="item4">Item 01</div>
+        <div class="item4">Item 02</div>
+        <div class="item4">Item 03</div>
+    </div>
+
+    <div class="container" id="container1">
+        <div class="item4">Curto</div>
+        <div class="item4">Meu texto médio</div>
+        <div class="item4">Meu texto loooooongo</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <div class="container" id="container2">
+        <div class="item4">Item 01</div>
+        <div class="item4">Item 02</div>
+        <div class="item4">Item 03</div>
+    </div>
+
+    <div class="container" id="container2">
+        <div class="item4">Curto</div>
+        <div class="item4">Meu texto médio</div>
+        <div class="item4">Meu texto loooooongo</div>
+    </div>
+
+    <br>
+
+    <h2>Linha</h2>
+    <div class="container" id="container1">
+        <div class="item4">Item 01</div>
+        <div class="item4 item5">Item 02</div>
+        <div class="item4">Item 03</div>
+    </div>
+
+    <div class="container" id="container1">
+        <div class="item4">Curto</div>
+        <div class="item4 item5">Meu texto médio</div>
+        <div class="item4">Meu texto loooooongo</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <div class="container" id="container2">
+        <div class="item4">Item 01</div>
+        <div class="item4 item5">Item 02</div>
+        <div class="item4">Item 03</div>
+    </div>
+
+    <div class="container" id="container2">
+        <div class="item4">Curto</div>
+        <div class="item4 item5">Meu texto médio</div>
+        <div class="item4">Meu texto loooooongo</div>
+    </div>
+
+    <br>
+
+    <h2>Linha</h2>
+    <div class="container" id="container1">
+        <div class="item4">Item 01</div>
+        <div class="item4 item6">Item 02</div>
+        <div class="item4">Item 03</div>
+    </div>
+
+    <div class="container" id="container1">
+        <div class="item4">Curto</div>
+        <div class="item4 item6">Meu texto médio</div>
+        <div class="item4">Meu texto loooooongo</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <div class="container" id="container2">
+        <div class="item4">Item 01</div>
+        <div class="item4 item6">Item 02</div>
+        <div class="item4">Item 03</div>
+    </div>
+
+    <div class="container" id="container2">
+        <div class="item4">Curto</div>
+        <div class="item4 item6">Meu texto médio</div>
+        <div class="item4">Meu texto loooooongo</div>
+    </div>
+
+    <br>
+
+    <h2>Linha</h2>
+    <div class="container" id="container1">
+        <div class="item4">Item 01</div>
+        <div class="item4 item6">Item 02</div>
+        <div class="item4">Item 03</div>
+    </div>
+
+    <div class="container" id="container1">
+        <div class="item4">Curto</div>
+        <div class="item4 item6">Meu texto médio</div>
+        <div class="item4">Meu texto loooooongo</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <div class="container" id="container2">
+        <div class="item4">Item 01</div>
+        <div class="item4 item6">Item 02</div>
+        <div class="item4">Item 03</div>
+    </div>
+
+    <br>
+    
+    <div class="container" id="container2">
+        <div class="item4">Curto</div>
+        <div class="item4 item6">Meu texto médio</div>
+        <div class="item4">Meu texto loooooongo</div>
+    </div>    <br>
+
+    <h2>Linha</h2>
+    <div class="container" id="container1">
+        <div class="item4">Item 01</div>
+        <div class="item4 item7">Item 02</div>
+        <div class="item4">Item 03</div>
+    </div>
+
+    <div class="container" id="container1">
+        <div class="item4">Curto</div>
+        <div class="item4 item7">Meu texto médio</div>
+        <div class="item4">Meu texto loooooongo</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <div class="container" id="container2">
+        <div class="item4">Item 01</div>
+        <div class="item4 item7">Item 02</div>
+        <div class="item4">Item 03</div>
+    </div>
+
+    <div class="container" id="container2">
+        <div class="item4">Curto</div>
+        <div class="item4 item7">Meu texto médio</div>
+        <div class="item4">Meu texto loooooongo</div>
+    </div>
+</body>
+</html>

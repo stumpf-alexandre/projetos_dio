@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamanho inicial dos itens</title>
+    <style>
+        .container {
+            background: blueviolet;
+            padding: 10px;
+            margin-bottom: 20px;
+            height: 200px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .item {
+            background: yellow;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+        }
+        #container1 {
+            flex-direction: row;
+        }
+        #container2 {
+            flex-direction: column;
+        }
+        .item2 {
+            flex-basis: 300px;
+        }
+        .iten2 {
+            flex-basis: auto;
+        }
+        .ite2 {
+            flex-basis: 0;
+        }
+        .it2 {
+            flex-basis: min-content;
+        }
+        .i2 {
+            flex-basis: max-content;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tamanho inicial dos itens usando <code>flex-basis</code></h1>
+    <p>
+        A propriedade <code>flex-basis</code> define qual o tamanho inicial dos itens do nosso flexbox, antes que o espaço que de sobra seja redistribuido no container, de acordo com sua dimensão. Pode ter um valor absoluto ou relativo para essa propriedade.
+    </p>
+
+    <h2>Linha</h2>
+    <div class="container" id="container1">
+        <div class="item item1">Item 01</div>
+        <div class="item item2">Item 02</div>
+        <div class="item item3">Item 03</div>
+    </div>
+
+    <div class="container" id="container1">
+        <div class="item item1">Curto</div>
+        <div class="item item2">Texto médio</div>
+        <div class="item item3">Meu texto looooongo</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <div class="container" id="container2">
+        <div class="item item1">Item 01</div>
+        <div class="item item2">Item 02</div>
+        <div class="item item3">Item 03</div>
+     </div>
+
+     <div class="container" id="container2">
+        <div class="item item1">Curto</div>
+        <div class="item item2">Texto médio</div>
+        <div class="item item3">Meu texto looooongo</div>
+     </div>
+
+     <br>
+
+     <p>
+        Caso seja aplicado <code>flex-basis: auto</code>, o espaço extra será distribuido com base no que definimos na propriedade.
+     </p>
+     <h2>Linha</h2>
+    <div class="container" id="container1">
+        <div class="item item1">Item 01</div>
+        <div class="item iten2">Item 02</div>
+        <div class="item item3">Item 03</div>
+    </div>
+
+    <div class="container" id="container1">
+        <div class="item item1">Curto</div>
+        <div class="item iten2">Texto médio</div>
+        <div class="item item3">Meu texto looooongo</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <div class="container" id="container2">
+        <div class="item item1">Item 01</div>
+        <div class="item iten2">Item 02</div>
+        <div class="item item3">Item 03</div>
+     </div>
+
+     <div class="container" id="container2">
+        <div class="item item1">Curto</div>
+        <div class="item iten2">Texto médio</div>
+        <div class="item item3">Meu texto looooongo</div>
+     </div>
+
+     <br>
+
+     <p>
+        Se definirmos como <code>flex-basis: 0</code>, o espaço extra em volta do conteúdo não será considerado.
+     </p>
+     <h2>Linha</h2>
+    <div class="container" id="container1">
+        <div class="item item1">Item 01</div>
+        <div class="item ite2">Item 02</div>
+        <div class="item item3">Item 03</div>
+    </div>
+
+    <div class="container" id="container1">
+        <div class="item item1">Curto</div>
+        <div class="item ite2">Texto médio</div>
+        <div class="item item3">Meu texto looooongo</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <div class="container" id="container2">
+        <div class="item item1">Item 01</div>
+        <div class="item ite2">Item 02</div>
+        <div class="item item3">Item 03</div>
+     </div>
+
+     <div class="container" id="container2">
+        <div class="item item1">Curto</div>
+        <div class="item ite2">Texto médio</div>
+        <div class="item item3">Meu texto looooongo</div>
+     </div>
+
+     <br>
+
+     <p>
+        Se definirmos como <code>flex-basis: min-content</code>
+     </p>
+     <h2>Linha</h2>
+    <div class="container" id="container1">
+        <div class="item item1">Item 01</div>
+        <div class="item it2">Item 02</div>
+        <div class="item item3">Item 03</div>
+    </div>
+
+    <div class="container" id="container1">
+        <div class="item item1">Curto</div>
+        <div class="item it2">Texto médio</div>
+        <div class="item item3">Meu texto looooongo</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <div class="container" id="container2">
+        <div class="item item1">Item 01</div>
+        <div class="item it2">Item 02</div>
+        <div class="item item3">Item 03</div>
+     </div>
+
+     <div class="container" id="container2">
+        <div class="item item1">Curto</div>
+        <div class="item it2">Texto médio</div>
+        <div class="item item3">Meu texto looooongo</div>
+     </div>
+
+     <br>
+
+     <p>
+        Se definirmos como <code>flex-basis: max-content</code>
+     </p>
+     <h2>Linha</h2>
+    <div class="container" id="container1">
+        <div class="item item1">Item 01</div>
+        <div class="item i2">Item 02</div>
+        <div class="item item3">Item 03</div>
+    </div>
+
+    <div class="container" id="container1">
+        <div class="item item1">Curto</div>
+        <div class="item i2">Texto médio</div>
+        <div class="item item3">Meu texto looooongo</div>
+    </div>
+
+    <br>
+
+    <h2>Coluna</h2>
+    <div class="container" id="container2">
+        <div class="item item1">Item 01</div>
+        <div class="item i2">Item 02</div>
+        <div class="item item3">Item 03</div>
+     </div>
+
+     <div class="container" id="container2">
+        <div class="item item1">Curto</div>
+        <div class="item i2">Texto médio</div>
+        <div class="item item3">Meu texto looooongo</div>
+     </div>
+</body>
+</html>

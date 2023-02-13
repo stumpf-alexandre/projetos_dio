@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-wrap</title>
+    <style>
+        .container {
+            background: palegreen;
+            padding: 20px;
+            margin: 20px;
+            display: flex;
+            width: 400px;
+            flex-wrap: nowrap;
+        }
+        .container1 {
+            flex-wrap: wrap;
+        }
+        .container2 {
+            flex-wrap: wrap-reverse;
+        }
+        .item {
+            background: orange;
+            margin: 10px;
+        }
+        #container1 {
+            flex-direction: row;
+        }
+        #container2 {
+            flex-direction: column;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quebra de Linha e de Coluna</h1>
+    <p>
+        Quando o container não consegue organizar seus itens em uma linha, fazendo com que os itens estravaze do container é utilizado comando para poder quebrar a linha e/ou a coluna, para assim organizar melhor os itens no container.
+    </p>
+
+    <h3>Exemplo: <code>flex-wrap: wrap;</code></h3>
+    <p>
+        Quando a propriedade flex-wrap vem com o valor wrap os itens do container são organizados para caberem no mesmo.
+    </p>
+
+    <code>flex-wrap: wrap;</code>
+    <p>
+        Em ordem, as linhas são posicionadas da esquerda para a direita, quebrando para uma nova coluna de cima para baixo
+    </p>
+    <div class="container container1" id="container1">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+        <div class="item">Item 07</div>
+        <div class="item">Item 08</div>
+        <div class="item">Item 09</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <code>flex-wrap: wrap;</code>
+    <p>
+        Em ordem, as colunas são posicionadas de cima para baixo, quebrando para uma nova linha da esquerda para a direita.
+    </p>
+    <div class="container container1" id="container2">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+        <div class="item">Item 07</div>
+        <div class="item">Item 08</div>
+        <div class="item">Item 09</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <h3>Exemplo: <code>flex-wrap: wrap-reverse;</code></h3>
+    <p>
+        Quando a propriedade flex-wrap vem com o valor wrap-reverse os itens do container são organizados para caberem no mesmo.
+    </p>
+
+    <code>flex-wrap: wrap-reverse;</code>
+    <p>
+        Em ordem, as linhas são posicionadas da esquerda para a direita, quebrando para uma nova coluna de baixo para cima
+    </p>
+    <div class="container container2" id="container1">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+        <div class="item">Item 07</div>
+        <div class="item">Item 08</div>
+        <div class="item">Item 09</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <code>flex-wrap: wrap-reverse;</code>
+    <p>
+        Em ordem, as colunas são posicionadas de cima para baixo, quebrando para uma nova linha da direita para a esquerda.
+    </p>
+    <div class="container container2" id="container2">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+        <div class="item">Item 07</div>
+        <div class="item">Item 08</div>
+        <div class="item">Item 09</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <h3>Exemplo: <code>flex-wrap: nowrap;</code></h3>
+    <p>
+        A propriedade flex-wrap vem com o valor por padão nowrap os itens do container não são organizados, por isso os mesmos podem sair da área do container.
+    </p>
+
+    <code>flex-wrap: nowrap;</code>
+    <div class="container" id="container1">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+        <div class="item">Item 07</div>
+        <div class="item">Item 08</div>
+        <div class="item">Item 09</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <code>flex-wrap: nowrap;</code>
+    <div class="container" id="container2">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+        <div class="item">Item 07</div>
+        <div class="item">Item 08</div>
+        <div class="item">Item 09</div>
+        <div class="item">Item 10</div>
+    </div>
+</body>
+</html>

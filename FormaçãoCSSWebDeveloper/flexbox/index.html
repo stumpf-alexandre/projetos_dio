@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            background: palegreen;
+            padding: 20px;
+            display: flex;
+        }
+        .container1 {
+            background: palegreen;
+            padding: 20px;
+            display: inline-flex;
+        }
+        .item {
+            background: orange;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox (Flexible Box Module)</h1>
+    <p>
+        O flexbox é uma forma de organizar os elementos dentro de containers e de forma dinâmica, organizando os elementos em uma dimensão, ou eixo principal (main axis): define a direção em que o nosso container vai organizar os nossos itens, ou horizontalmente (em linhas), ou verticalmente (em colunas). Eixo transversal (cross axis) é perpendicular (atravessa) ao eixo principal.
+    </p>
+    <p>
+        Os elementos dentro do container ou elemento pai são conhecidos como itens ou elementos filhos.
+    </p>
+    <p>
+        O flexbox oferece uma maneira mais eficiente de organizar, alinhar e distribuir o espaço entre os itens do container, mesmo que o tamanho seja dinâmico.
+    </p>
+    <p>
+        Permite trazer para o container a possibilidade de alterar a largura/altura; ordem dos itens e aproveitar o espaço disponível dentro do elemento da melhor forma.
+    </p>
+
+    <h3>Exemplo: <code>display: flex;</code></h3>
+    <div class="container">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+    </div>
+
+    <div class="container">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+    </div>
+
+    <hr>
+
+    <h3>Exemplo: <code>display: inline-flex;</code></h3>
+    <div class="container1">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+    </div>
+
+    <div class="container1">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+    </div>
+</body>
+</html>
