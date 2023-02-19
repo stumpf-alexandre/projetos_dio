@@ -1,6 +1,6 @@
 package edu.alexandre.metodos;
 
-public class metodos {
+public class Metodos {
     // Métodos
     // Todas as ações das aplicações são consideradas
     // métodos.

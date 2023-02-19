@@ -2,7 +2,7 @@ package edu.alexandre.operadores;
 
 import java.util.Date;
 
-public class operadores {
+public class Operadores {
     // Operadores
     // Símbolos especiais que tem um significado próprio
     // para a linguagem e estão associados a determinadas
