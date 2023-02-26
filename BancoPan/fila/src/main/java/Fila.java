@@ -11,13 +11,14 @@ public class Fila {
     }
 
     // função que introduz um novo elemento na fila
-    public void enqueue(No novoNo) {
+    public void enqueue(Object obj) { // (public void No novoNo) {
+        No novoNo = new No(obj); // nova refatoração
         novoNo.setRefNo(refNoEntradaFila);
         refNoEntradaFila = novoNo;
     }
 
     // função que mostra qual o primeiro elemento na fila
-    public No first() {
+    public Object first() { // public No first() {
         if (!this.isEmpty()) {
             No primeiroNo = refNoEntradaFila;
             while (true) {
@@ -27,12 +28,13 @@ public class Fila {
                     break;
                 }
             }
+            return primeiroNo.getObj(); // return primeiroNo;
         }
         return null;
     }
 
     // função que tira um elemento da fila
-    public No dequeue() {
+    public Object dequeue() { // public No dequeue() {
         if (!this.isEmpty()) {
             No primeiroNo = refNoEntradaFila;
             No noAux = refNoEntradaFila;
@@ -45,7 +47,7 @@ public class Fila {
                     break;
                 }
             }
-            return primeiroNo;
+            return primeiroNo.getObj(); // return primeiroNo;
         }
         return null;
     }
