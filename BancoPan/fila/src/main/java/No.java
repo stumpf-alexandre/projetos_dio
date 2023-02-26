@@ -1,11 +1,11 @@
-public class No {
-    private Object obj;
-    private No refNo;
+public class No<T> { // public class No {
+    private T obj; // private Object obj;
+    private No<T> refNo; // private No refNo;
 
     public No() {
     }
 
-    public No(Object obj) {
+    public No(T obj) { // public No(Object obj) {
         this.refNo = null;
         this.obj = obj;
     }
@@ -14,7 +14,7 @@ public class No {
         return obj;
     }
 
-    public void setObj(Object obj) {
+    public void setObj(T obj) { // public void setObj(Object obj) {
         this.obj = obj;
     }
 

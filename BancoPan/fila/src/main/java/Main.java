@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        Fila minhaFila = new Fila();
+        // especificando uma fila de strings
+        Fila<String> minhaFila = new Fila<>(); // Fila minhaFila = new Fila();
 
         /**
          * minhaFila.enqueue(new No("primeiro"));
@@ -30,5 +31,9 @@ public class Main {
         minhaFila.dequeue();
 
         System.out.println(minhaFila);
+
+        // aqui apresenta um erro pq foi refatorado para generics para aceitar apenas
+        // strings
+        // minhaFila.enqueue(1);
     }
 }
