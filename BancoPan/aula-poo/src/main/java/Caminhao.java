@@ -1,25 +1,30 @@
-public class Carro extends Veiculo { // exercicio para criar a classe carro
-    // atributos responsavel por definir as estruturas de dados da classe
-    // métodos sub-rotinas disponibilizadas pela classe
-    // objeto é a representação de um conceito/entidade do mundo real
-
-    // atributos da classe carro
+public class Caminhao extends Veiculo {
+    // atributo
     String montadora;
     String cor;
     String modelo;
     int capacidadeTanque;
 
     // construtor
-    public Carro() {
+    public Caminhao() {
     }
 
-    public Carro(String cor, String modelo, int capacidadeTanque) {
+    public Caminhao(String montadora, String cor, String modelo, int capacidadeTanque) {
+        this.montadora = montadora;
         this.cor = cor;
         this.modelo = modelo;
         this.capacidadeTanque = capacidadeTanque;
     }
 
     // get e set
+    public String getMontadora() {
+        return montadora;
+    }
+
+    public void setMontadora(String montadora) {
+        this.montadora = montadora;
+    }
+
     public String getCor() {
         return cor;
     }
@@ -42,10 +47,5 @@ public class Carro extends Veiculo { // exercicio para criar a classe carro
 
     public void setCapacidadeTanque(int capacidadeTanque) {
         this.capacidadeTanque = capacidadeTanque;
-    }
-
-    // metodo para encher o tanque
-    double totalValorTanque(double valorComburtivel) {
-        return capacidadeTanque * valorComburtivel;
     }
 }
