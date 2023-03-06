@@ -1,7 +1,4 @@
 public class Carro extends Veiculo { // exercicio para criar a classe carro
-    // atributos responsavel por definir as estruturas de dados da classe
-    // métodos sub-rotinas disponibilizadas pela classe
-    // objeto é a representação de um conceito/entidade do mundo real
 
     // atributos da classe carro
     String montadora;

@@ -1,4 +1,13 @@
 public class Main {
+    /**
+     * Atributos responsavel por definir as estruturas de dados da classe.
+     * Métodos sub-rotinas disponibilizadas pela classe.
+     * Objeto é a representação de um conceito/entidade do mundo real.
+     * Herança é o relacionamento entre classes, quando uma classe pai se extende a
+     * uma classe filha.
+     * Polimorfismo é a mesma ação se comportando de maneira diferente.
+     * Sobrescrita é a mesma ação, podendo se comportar diferente.
+     */
     public static void main(String[] args) {
         // criando um objeto do tipo da classe vazio
         Carro carro = new Carro();
