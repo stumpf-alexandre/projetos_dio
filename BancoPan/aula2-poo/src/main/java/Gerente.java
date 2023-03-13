@@ -6,6 +6,6 @@ public class Gerente extends Funcionario {
 
     @Override
     void metodo2() {
-        System.out.println("Método2 da Classe FIlho2");
+        System.out.println("Método2 da Classe Filho2");
     }
 }
