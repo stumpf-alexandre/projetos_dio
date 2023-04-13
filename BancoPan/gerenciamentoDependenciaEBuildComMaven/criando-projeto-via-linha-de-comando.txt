@@ -1,0 +1,23 @@
+linha de comando para criar projeto via cmd:
+mvn archetype:generate -DgroupId=one.digitalinnovation -DartifactId=quick-start-maven -Darchetype=maven-archetype-quickstart -DinteractiveMode=false
+
+comandos para compilar o software:
+mvn compile
+
+comandos para testar a aplicação:
+mvn test
+
+comando para empacotar o software:
+mvn package
+
+apagar a pasta target (limpar diretório de trabalho):
+mvn clean
+
+
+
+Para gerar um novo projeto a partir desse arquétipo, digite:
+pesquisando um archetypos na internet 
+"https://maven.apache.org/archetypes/"
+"https://mvnrepository.com/search?q=archetypes"
+
+mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-webapp -DarchetypeVersion=1.4
