@@ -1,5 +1,3 @@
-package tratamentoExecoesErros.src.main.java;
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;

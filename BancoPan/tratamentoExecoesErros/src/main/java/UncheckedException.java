@@ -1,8 +1,6 @@
-package tratamentoExecoesErros.src.main.java;
-
 import javax.swing.JOptionPane;
 
-//fazer a fdivisão de 2 valores inteiros
+//fazer a divisão de 2 valores inteiros
 public class UncheckedException {
     public static void main(String[] args) {
         boolean continueLooping = true;

@@ -1,5 +1,3 @@
-package tratamentoExecoesErros.src.main.java;
-
 import javax.swing.JOptionPane;
 
 public class ExceptionCustomizada2 {
