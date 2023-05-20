@@ -1,0 +1,123 @@
+#container {
+    height: 56px;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+
+#start {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100px;
+}
+
+#center {
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 0 1 528px;
+    min-width: 0px;
+}
+
+#buttonMicrophone {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    background-color: white;
+}
+
+#buttonMicrophone:hover {
+    background-color: #c7cacc;
+}
+
+.fa-microphone {
+    font-size: 28px;
+    flex: 1;
+}
+
+#end {
+    width: 300px;
+    height: 100%;
+    border: 1px solid red;
+}
+
+#searchForm {
+    max-width:450px;
+    height: 40px;
+    flex: 1;
+    flex-basis: 0.000000001px;
+    display: flex;
+    flex-direction: row;
+}
+
+form input[type=text] {
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid grey;
+    border-radius: 40px 0 0 40px;
+    float: left;
+    width: 80%;
+    height: auto;
+    background: #f1f1f1;
+    outline: none;
+  }
+
+  form input:focus {
+    border: 2px solid #565758;
+  }
+  
+  form button {
+    float: left;
+    height: 40px;
+    width: 64px;
+    margin: 0;   
+    border-radius: 0 40px 40px 0;
+    background: #c7cacc;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background: #565758;
+  }
+
+#menu {
+    vertical-align: middle;
+    color: inherit;
+    outline: none;
+    background: none;
+    margin: 0 40px 0 0;
+    border: none;
+    padding: 0;
+    width: 23%;
+    height: 100%;
+    line-height: 0;
+    cursor: pointer;
+}
+
+#logo {
+    pointer-events: none;
+    display: block;
+    width: 77%;
+    height: 100%;
+}
+
+.hamburguer {
+    width: 35px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+img {
+    width: 200px;
+}
