@@ -1,0 +1,158 @@
+.container {
+    background: yellow;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 2fr 1fr;/*a fração necessita de um numero para calcular por isso usamos o height para o fr poder ser calculado*/
+    /*grid-template-rows: 200px 300px 200px 100px 500px;*//*define o tamanho e a quantidade de linhas no grid*/
+    /*grid-template-columns: 200px 200px 100px;*//*define o tamanho e a quantidade de colunas no grid*/
+}
+
+.container2 {
+    background: yellow;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 200px 400px 100px 10%;
+    grid-template-rows: 200px 300px 200px 100px;
+}
+
+.container3 {
+    background: yellow;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+    display: grid;
+    /*função repear*/
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(2, 1fr 2fr);
+}
+
+.container4 {
+    background: yellow;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+    display: grid;
+    /*função repear*/
+    /*auto-fill*/
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.container5 {
+    background: yellow;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+    display: grid;
+    /*função repear*/
+    /*auto-fit*/
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.container6 {
+    background: yellow;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: min-content;
+    /*vai respeitar o tamanho do maior conteudo*/
+}
+
+.container7 {
+    background: yellow;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    /*vai respeitar o tamanho total do maior conteudo*/
+}
+
+.container8 {
+    background: yellow;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: auto auto 1fr 1fr;
+}
+
+.item {
+    border: 1px solid black;
+}
+
+.item1 {
+    background: palevioletred;
+}
+
+.item2 {
+    background: cornflowerblue;
+}
+
+.item3 {
+    background: palegreen;
+}
+
+.item4 {
+    background: orange;
+}
+
+.item5 {
+    background: cadetblue;
+}
+
+.item6 {
+    background: aqua;
+}
+
+.item7 {
+    background: palevioletred;
+}
+
+.item8 {
+    background: cornflowerblue;
+}
+
+.item9 {
+    background: palegreen;
+}
+
+.item10 {
+    background: orange;
+}
+
+.item11 {
+    background: cadetblue;
+}
+
+.item12 {
+    background: aqua;
+}
+
+.item13 {
+    background: palevioletred;
+}
+
+.item14 {
+    background: cornflowerblue;
+}
+
+.item15 {
+    background: palegreen;
+}
+
+.item16 {
+    background: orange;
+}
+
+.item17 {
+    background: cadetblue;
+}
+
+.item18 {
+    background: aqua;
+}
