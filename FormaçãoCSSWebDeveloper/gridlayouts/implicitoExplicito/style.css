@@ -1,0 +1,80 @@
+.container {
+    background: yellow;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    /*define o tamanho do elemento criado de forma explicida*/
+    grid-template-columns: repeat(3, 1fr);
+    /*define o tamanho do elemento criado de forma explicida*/
+    grid-auto-rows: 2fr;/*define o tamanho do elemento criado de forma implicida*/
+}
+
+.container1 {
+    background: yellow;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    /*define o tamanho do elemento criado de forma explicida*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: column;
+}
+
+.container2 {
+    background: yellow;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    /*define o tamanho do elemento criado de forma explicida*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: row;
+}
+
+.container3 {
+    background: yellow;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    /*define o tamanho do elemento criado de forma explicida*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: dense;
+}
+
+.item {
+    border: 1px solid black;
+}
+
+.item1 {
+    background: palevioletred;
+}
+
+.item2 {
+    background: cornflowerblue;
+}
+
+.item3 {
+    background: palegreen;
+}
+
+.item4 {
+    background: orange;
+}
+
+.item5 {
+    background: cadetblue;
+}
+
+.item6 {
+    background: aqua;
+}
+
+.item7 {
+    background: violet;
+}
