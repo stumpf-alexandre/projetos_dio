@@ -1,0 +1,46 @@
+body {
+    display: grid;
+    border: 3px solid red;
+    grid-template: repeat(3, 200px) / repeat(3, 1fr);
+    /*Antes*/
+    /*column-gap: 10px;*//*espaço entre os itens*/
+    /*row-gap: 20px;*//*espaço entre os itens*/
+    /*Depois*/
+    gap: 20px 10px;/*valor das linhas e colunas*/
+}
+
+.item1 {
+    background-color: palegoldenrod;
+}
+
+.item2 {
+    background-color: paleturquoise;
+}
+
+.item3 {
+    background-color: palegreen;
+}
+
+.item4 {
+    background-color: palevioletred;
+}
+
+.item5 {
+    background-color: lightseagreen;
+}
+
+.item6 {
+    background-color: lightslategrey;
+}
+
+.item7 {
+    background-color: lightgreen;
+}
+
+.item8 {
+    background-color: lightcoral;
+}
+
+.item9 {
+    background-color: lightskyblue;
+}
