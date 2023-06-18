@@ -1,0 +1,90 @@
+.container1 {
+    display: grid;
+    border: 1px solid red;
+    /*Antes*/
+    /*grid-template-rows: 100px 300px;
+    grid-template-columns: 3fr 1fr;*/
+    /*Depois*/
+    grid: 100px 300px / 3fr 1fr;
+}
+
+.container2 {
+    display: grid;
+    border: 1px solid red;
+    /*Antes*/
+    /*grid-auto-flow: row;*//*vai alocar os itens que não conseguerem ser alocados na grid em uma linha*/
+    /*grid-template-columns: 200px 1fr;*/
+    /*Depois*/
+    grid: auto-flow / 200px 1fr;
+}
+
+.container3 {
+    display: grid;
+    border: 1px solid red;
+    /*Antes*/
+    /*grid-auto-flow: row dense;
+    grid-auto-rows: 100px 100px;grid-template-columns: 1fr 2fr;*/
+    /*Depois*/
+    grid: auto-flow dense 100px / 1fr 2fr;
+}
+
+.container4 {
+    display: grid;
+    border: 1px solid red;
+    /*Antes*/
+    /*grid-template-rows: 100px 300px;
+    grid-auto-flow: column;
+    grid-auto-columns: 200px;*/
+    /*Depois*/
+    grid: 100px 300px / auto-flow 200px;
+}
+
+.container5 {
+    display: grid;
+    border: 1px solid red;
+    /*Antes*/
+    /*grid-template-areas: 
+        "header header header"
+        "footer footer footer";
+    grid-template-rows: 1fr 25px;
+    grid-template-columns: auto 50px auto;*/
+    /*Depois*/
+    grid: "header header header" 1fr
+          "footer footer footer" 25px / auto 50px auto;
+}
+
+.item1 {
+    background-color: palegoldenrod;
+}
+
+.item2 {
+    background-color: paleturquoise;
+}
+
+.item3 {
+    background-color: palegreen;
+}
+
+.item4 {
+    background-color: palevioletred;
+}
+
+.item5 {
+    background-color: lightseagreen;
+}
+
+.item6 {
+    background-color: lightslategrey;
+}
+
+.item7 {
+    background-color: lightgreen;
+}
+
+.item8 {
+    background-color: lightcoral;
+}
+
+.item9 {
+    background-color: lightskyblue;
+}
