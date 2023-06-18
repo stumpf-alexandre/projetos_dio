@@ -1,0 +1,88 @@
+.container {
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 4fr repeat(2, 1fr);
+    grid-template-rows: 50px 100px 200px;
+}
+.item {
+    text-align: center;
+    background-color: orange;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.container2 {
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 4fr repeat(2, 1fr);
+    grid-template-rows: 50px 100px 200px;
+}
+.item2 {
+    text-align: center;
+    background-color: deepskyblue;
+    /*grid-column-start: 1;
+    grid-column-end: span 3;*//*o span verifica quantos espaçõs o item vai ocupar*/
+    /*grid-row-start: 2;
+    grid-row-end: span2;*//*o span verifica quantos espaçõs o item vai ocupar*/
+
+    grid-column: 1 / span3;
+    grid-row: 2 / span2;
+}
+
+.container3 {
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 150px);
+}
+.item3 {
+    text-align: center;
+    background-color: deeppink;
+    
+}
+
+.selected {
+    background-color: aqua;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.container4 {
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 150px);
+}
+.item4 {
+    text-align: center;
+    background-color: dodgerblue;
+    
+}
+
+.selected1 {
+    background-color: aquamarine;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.container5 {
+    border: 1px solid red;
+    display: grid;
+    /*outra forma de determinar os tamanhos de linhas e colunas*/
+    grid-template-columns: [primeira-linha-col] 1fr [segunda-linha-col] 1fr [terceira-linha-col] 1fr [quarta-linha-col];
+    grid-template-rows: [linha-inicio] 150px [linha-meio] 150px [linha-final] 150px;
+}
+.item5 {
+    text-align: center;
+    background-color: chartreuse;
+    
+}
+
+.selected2 {
+    background-color: cornflowerblue;
+    /*outra forma de posicionar o item no grid layout*/
+    grid-column: segunda-linha-col / terceira-linha-col;
+    grid-row: linha-meio / linha-final;
+}
