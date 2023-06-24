@@ -1,0 +1,150 @@
+.container {
+    display: grid;
+    border: 3px solid red;
+    background-color: khaki;
+    height: 80vh;
+    grid-template: repeat(3, 1fr) / repeat(3, auto);
+    gap: 15px;
+    place-items: center;
+}
+
+.item01 {
+    justify-self: start;
+}
+
+.item02 {
+    justify-self: end;
+}
+
+.item03 {
+    justify-self: center;
+}
+
+.item04 {
+    justify-self: stretch;
+}
+
+.item05 {
+    align-self: start;
+}
+
+.item06 {
+    align-self: end;
+}
+
+.item07 {
+    align-self: center;
+}
+
+.item08 {
+    align-self: stretch;
+}
+
+.item09 {
+    place-self: start;/*align-self justfiny-self*/
+}
+
+.item010 {
+    place-self: start end;/*align-self justfiny-self*/
+}
+
+.item011 {
+    place-self: start center;/*align-self justfiny-self*/
+}
+
+.item012 {
+    place-self: start stretch;/*align-self justfiny-self*/
+}
+
+.item013 {
+    place-self: end start;/*align-self justfiny-self*/
+}
+
+.item014 {
+    place-self: end;/*align-self justfiny-self*/
+}
+
+.item015 {
+    place-self: end center;/*align-self justfiny-self*/
+}
+
+.item016 {
+    place-self: end stretch;/*align-self justfiny-self*/
+}
+
+.item017 {
+    place-self: center start;/*align-self justfiny-self*/
+}
+
+.item018 {
+    place-self: center end;/*align-self justfiny-self*/
+}
+
+.item019 {
+    align-self: center;/*align-self justfiny-self*/
+}
+
+.item020 {
+    align-self: center stretch;/*align-self justfiny-self*/
+}
+
+.item021 {
+    place-self: stretch start;/*align-self justfiny-self*/
+}
+
+.item022 {
+    place-self: stretch end;/*align-self justfiny-self*/
+}
+
+.item023 {
+    place-self: stretch center;/*align-self justfiny-self*/
+}
+
+.item024 {
+    place-self: stretch;/*align-self justfiny-self*/
+}
+
+.item1 {
+    border: 1px solid black;
+    background: palevioletred;
+}
+
+.item2 {
+    border: 1px solid black;
+    background: cornflowerblue;
+}
+
+.item3 {
+    border: 1px solid black;
+    background: palegreen;
+}
+
+.item4 {
+    border: 1px solid black;
+    background: orange;
+}
+
+.item5 {
+    border: 1px solid black;
+    background: cadetblue;
+}
+
+.item6 {
+    border: 1px solid black;
+    background: aqua;
+}
+
+.item7 {
+    border: 1px solid black;
+    background: palevioletred;
+}
+
+.item8 {
+    border: 1px solid black;
+    background: cornflowerblue;
+}
+
+.item9 {
+    border: 1px solid black;
+    background: palegreen;
+}
