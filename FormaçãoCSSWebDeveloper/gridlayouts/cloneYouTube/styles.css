@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 99.8%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, auto);
+    /*nomeando todas as grids de um layout*/
+    grid-template-areas: 
+        "header header header header header header header header"
+        "aside main main main main main main main";
+}
+
+header {
+    height: 8vh;
+    background-color: #fff;
+    grid-area: header;
+}
+
+main {
+    height: 500px;
+    background-color: deepskyblue;
+    grid-area: main;
+}
+
+aside {
+    height: 500px;
+    background-color: lightcoral;
+    grid-area: aside;
+}
+
+nav {
+    height: 100%;
+    display: grid;
+    grid-template: repeat(1, 1fr) / repeat(3, 1fr);
+}
+
+#start {
+    display: grid;
+    grid-template: repeat(1, 1fr) / repeat(2, 90px auto);
+    place-items: center;
+}
+
+#menu {
+    cursor: pointer;
+}
+
+.hamburguer {
+    width: 24px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+}
+
+#logo {
+    justify-self: start;
+}
+
+#center {
+    display: grid;
+    place-content: center;
+}
+
+#searchForm {
+    width:400px;
+    display: grid;
+    grid-template-columns: 11fr 1fr;
+    grid-template-rows: repeat(1, 35px);
+}
+
+form input {
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+    border: 1px solid grey;
+    background: #f1f1f1;
+}
+
+form input:focus {
+    border: 2px solid #565758;
+}
+  
+form button {
+    width: 35px;
+    background: #c7cacc;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+  
+form button:hover {
+    background: #565758;
+}
+
+.bi-search {
+    color: black;
+}
+
+#end {
+    padding: 0 24px 0 290px;
+    display: grid;
+    grid-template: repeat(1, 1fr) / repeat(3, 1fr);
+    place-items: center end;
+    column-gap: 24px;
+}
+
+.severalButton {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    background-color: white;
+}
+
+.button {
+    margin: 0;
+}
+
+.severalButton:hover {
+    background-color: #c7cacc;
+}
+
+.button-right {
+    font-size: 20px;
+}
+
+#avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50px;
+    border: none;
+}
