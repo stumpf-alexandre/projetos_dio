@@ -1,8 +1,4 @@
 body {
-    margin: 0;
-    padding: 0;
-    width: 99.8%;
-    height: 100%;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(2, auto);
@@ -19,9 +15,16 @@ header {
 }
 
 main {
-    height: 500px;
-    background-color: deepskyblue;
+    padding: 40px;
+    height: auto;
+    background-color: #f9f9f9;
     grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 aside {
@@ -151,4 +154,52 @@ aside {
 
 .bi {
     margin: 0 20px 0 0;
+}
+
+.video {
+    width: 282px;
+    height: 262px;
+    border: 1px solid red;
+    display: grid;
+}
+
+.video img {
+    width: 250px;
+    height: 140px;
+    margin: 15px;
+}
+
+.video-details {
+    display: grid;
+    grid-template-columns: 55px auto;
+    border: 1px solid red;
+}
+
+.video-details img {
+    width: 42px;
+    height: 42px;
+    margin: 0 10px auto 15px;
+}
+
+.text {
+    margin-left: 15px;
+}
+
+.title {
+    margin-top: 7px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.sub-title {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
 }
