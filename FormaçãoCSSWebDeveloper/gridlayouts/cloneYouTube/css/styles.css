@@ -159,8 +159,6 @@ aside {
 .video {
     width: 282px;
     height: 262px;
-    border: 1px solid red;
-    display: grid;
 }
 
 .video img {
@@ -172,7 +170,6 @@ aside {
 .video-details {
     display: grid;
     grid-template-columns: 55px auto;
-    border: 1px solid red;
 }
 
 .video-details img {
