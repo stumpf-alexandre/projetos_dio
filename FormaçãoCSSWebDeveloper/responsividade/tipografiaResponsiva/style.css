@@ -1,0 +1,14 @@
+html {
+    font-size: 1em;
+}
+
+h1 {
+    /*font-size: 2rem;*/
+    font-size: calc(1.5rem + 3vw);/*para utilizar a medida de view width para dar zoom da fonte pelo navegador do usuario*/
+}
+
+@media screen and (max-width: 680px) {
+    h1 {
+        font-size: 4rem;
+    }
+}

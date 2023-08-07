@@ -1,0 +1,10 @@
+body {
+    font-family: Arial;
+}
+
+.container {
+    /*column-count: 3;*//*expecifica o numero de colunas de um texto no layout*/
+    column-width: 200px;/*expecifica a largura de uma coluna */
+    column-rule: 1px solid gray;/*coloca uma listra vertical entre as colunas*/
+    column-gap: 100px;/*expecifica um espaço entre as colunas*/
+}
