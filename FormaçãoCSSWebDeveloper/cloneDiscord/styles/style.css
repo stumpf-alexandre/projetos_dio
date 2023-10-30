@@ -1,6 +1,6 @@
 header {
     background: url(../assets/HeaderBackground.png), lightgray 50% / cover no-repeat;
-    width: 148.8rem;
+    width: 147rem;
     height: 45.9rem;
     flex-shrink: 0;
 }
@@ -78,22 +78,99 @@ ul > li > a {
     color: #fff;
 }
 
+/*section {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 15.5rem;
+    gap: 1.6rem;
+}*/
+
 section {
+    width: 147rem;
+    height: 44.8rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1.6rem;
+    flex-shrink: 0;
 }
 
 .sectionImage {
     width: 60.7rem;
     height: 39.4rem;
-    background: url(../assets/SectionImage.png), lightgray 50% / cover no-repeat;
+    flex-shrink: 0;
 }
 
 .sectionText {
     width: 34.8rem;
     height: 37.4rem;
+}
+
+.sectionText > h2 {
+    width: 34.8rem;
+    color: #23272a;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.sectionText > p {
+    width: 34.8rem;
+    color: #23272a;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.colorSection {
+    flex-direction: row-reverse;
+    background: #f6f6f6;
+}
+
+.colorSection2 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f6f6f6;
+    padding: 4rem 0;
+    gap: 1.6rem;
+}
+
+.title {
+    width: 60.8rem;
+    color: #23272A;
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text {
+    width: 80.2rem;
+    color: #23272A;
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+footer {
+    width: 147rem;
+    height: 13.4rem;
+    background: #23272a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 3.5rem 0 3.6rem 0;
 }
 
 /*Media queri*/
