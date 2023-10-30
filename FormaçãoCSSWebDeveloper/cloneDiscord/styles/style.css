@@ -78,14 +78,6 @@ ul > li > a {
     color: #fff;
 }
 
-/*section {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin: 4rem 15.5rem;
-    gap: 1.6rem;
-}*/
-
 section {
     width: 147rem;
     height: 44.8rem;
@@ -171,6 +163,108 @@ footer {
     align-items: center;
     flex-shrink: 0;
     padding: 3.5rem 0 3.6rem 0;
+}
+
+@media screen and (max-width: 42.8rem) {
+    header {
+        background: url(../assets/Header-Background.png), lightgray -71.1152rem 0 / 343.529% 100% no-repeat;
+        width: 42.8rem;
+        height: 50.6rem;
+    }
+
+    .contentHeader {
+        width: 42.8rem;
+        align-items: flex-start;
+        padding: 0 2.4rem;
+    }
+
+    h1 {
+        width: 27.8rem;
+        font-size: 3.2rem;
+        text-align: start;
+    }
+    
+    p {
+        width: 38.1rem;
+        text-align: start;
+    }
+    
+    
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .windows {
+        width: 38.1rem;
+        height: 5.4rem;
+    }
+    
+    .navegador {
+        width: 38.1rem;
+        height: 5.4rem;
+    }
+    
+    section {
+        width: 42.8rem;
+        height: auto;
+        padding: 4rem 2.4rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.7rem;
+    }
+    
+    .sectionImage {
+        width: 37.9rem;
+        height: 25.2rem;
+    }
+    
+    .sectionText {
+        width: 37.8rem;
+        height: auto;
+    }
+
+    .sectionText > h2 {
+        width: 37rem;
+        font-size: 2.4rem;
+        padding-bottom: 2.7rem;
+    }
+    
+    .sectionText > p {
+        width: 37.8rem;
+    }
+
+    .colorSection {
+        flex-direction: column;
+    }
+
+    .colorSection2 {
+        width: 42.8rem;
+        align-items: flex-start;
+        padding: 4rem 2.4rem;
+        gap: 2.7rem;
+    }
+    
+    .title {
+        width: 37.6rem;
+        text-align: start;
+        font-size: 3.2rem;
+    }
+    
+    .text {
+        width: 37.8rem;
+        text-align: start;
+    }
+
+    footer {
+        width: 42.9rem;
+        height: 14rem;
+    }
+
+    svg {
+        width: 16.2rem;
+        height: 4.5rem;
+    }
 }
 
 /*Media queri*/
