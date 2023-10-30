@@ -1,0 +1,106 @@
+header {
+    background: url(../assets/HeaderBackground.png), lightgray 50% / cover no-repeat;
+    width: 148.8rem;
+    height: 45.9rem;
+    flex-shrink: 0;
+}
+
+.contentHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+h1 {
+    width: 31.3rem;
+    color: #fff;
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 5.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 7.4rem;
+}
+
+p {
+    width: 75.7rem;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.6rem;
+    list-style: none;
+}
+
+ul > li {
+    height: 4.4rem;
+    border-radius: 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.windows {
+    width: 20.5rem;
+    background: #fff;
+}
+
+.navegador {
+    width: 28.1rem;
+    background: #23272a;
+}
+
+ul > li > a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.linkWindows {
+    color: #23272a;
+}
+
+.linkNavegador {
+    display: flex;
+    color: #fff;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.sectionImage {
+    width: 60.7rem;
+    height: 39.4rem;
+    background: url(../assets/SectionImage.png), lightgray 50% / cover no-repeat;
+}
+
+.sectionText {
+    width: 34.8rem;
+    height: 37.4rem;
+}
+
+/*Media queri*/
+/*@media screen and (max-width: 320px) {}
+
+@media screen and (min-width: 380px) {}
+
+@media screen and (min-width: 576px){}
+
+@media screen and (min-width: 992px) {}*/
