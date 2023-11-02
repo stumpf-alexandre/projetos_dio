@@ -1,0 +1,19 @@
+code {
+    background-color: lightgrey;
+}
+
+.cor::placeholder {
+    color: darkmagenta;
+}
+
+.fundo::placeholder {
+    background-color: aqua;
+}
+
+.fonte::placeholder {
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.texto::placeholder {
+    text-align: center;
+}

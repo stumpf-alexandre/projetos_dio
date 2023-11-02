@@ -1,0 +1,22 @@
+code {
+    background-color: lightgrey;
+}
+
+p::first-line {
+    color: red;
+    text-decoration: line-through;
+}
+
+.cor::first-line {
+    color: blue;
+    text-transform: uppercase;
+}
+
+.fundo::first-line {
+    background-color: aqua;
+    text-overflow: ellipsis;
+}
+
+.fonte::first-line {
+    font-family: 'Noto Sans Kawi', sans-serif;
+}

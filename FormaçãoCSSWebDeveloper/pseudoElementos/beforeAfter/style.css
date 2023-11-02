@@ -1,0 +1,118 @@
+code {
+    background-color: lightgrey;
+}
+
+.textoBefore1::before {
+    content: "";/*obrigatorio o conteudo, pode ser vazio ou conter algo*/
+}
+
+.textoBefore2::before {
+    content: "☠";
+    font-weight: bold;
+    color: red;
+    background-color: burlywood;
+}
+
+.textoBefore3::before {
+    content: "☢";
+    color: black;
+    background-color: yellow;
+}
+
+.textoBefore4::before {
+    content: "☣";
+    font-weight: bold;
+    color: white;
+    background-color: red;
+}
+
+.textoAfter1::after {
+    content: "";/*obrigatorio o conteudo, pode ser vazio ou conter algo*/
+}
+
+.textoAfter2::after {
+    content: "☠";
+    font-weight: bold;
+    color: red;
+    background-color: burlywood;
+}
+
+.textoAfter3::after {
+    content: "☢";
+    color: black;
+    background-color: yellow;
+}
+
+.textoAfter4::after {
+    content: "☣";
+    font-weight: bold;
+    color: white;
+    background-color: red;
+}
+
+.textoBeforeAfter1::before {
+    content: "";/*obrigatorio o conteudo, pode ser vazio ou conter algo*/
+}
+
+.textoBeforeAfter1::after {
+    content: "";/*obrigatorio o conteudo, pode ser vazio ou conter algo*/
+}
+
+.textoBeforeAfter2::before {
+    content: "☠";
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+}
+
+.textoBeforeAfter2::after {
+    content: "☠";
+    font-weight: bold;
+    color: red;
+    background-color: burlywood;
+}
+
+.textoBeforeAfter3::before {
+    content: "☢";
+    color: black;
+    background-color: yellow;
+}
+
+.textoBeforeAfter3::after {
+    content: "☢";
+    color: brown;
+    background-color: orange;
+}
+
+.textoBeforeAfter4::before {
+    content: "☣";
+    font-weight: bold;
+    color: white;
+    background-color: red;
+}
+
+.textoBeforeAfter4::after {
+    content: "☣";
+    font-weight: bold;
+    color: white;
+    background-color: blueviolet;
+}
+
+.card-image {
+    width: 300px;
+    height: 300px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    background: url(./image/montanha.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgb(237, 128, 188));
+}

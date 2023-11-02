@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Noto+Sans+Kawi:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pseudo-elementos</title>
+</head>
+<body>
+    <h1>Pseudo-elementos</h1>
+    <p>
+        Usado para adicionar elementos extras na página, sem a necessidade de declarã-lo no HTML, ou para selecionar uma parte de algum elemento.
+    </p>
+    <p>
+        Identificado por <code>::palavra-chave</code>
+    </p>
+    <h2>Pseudo-elemento - <code>::placeholder</code></h2>
+    <p>
+        Um placeholder é uma dica para ajudar no preenchimento de algum campo de formulário
+    </p>
+
+    <p>Propriedades aceita:</p>
+    <ul>
+        <li><code>color</code></li>
+        <li><code>font</code></li>
+        <li><code>background</code></li>
+        <li><code>text</code></li>
+    </ul>
+
+    <hr>
+
+    <p>Exemplo com color:</p>
+    <label for="nome">Nome</label>
+    <input class="cor" name="nome" type="text" placeholder="Ex: Fulano de Tal">
+
+    <label for="senha">Senha</label>
+    <input class="cor" name="senha" type="password" placeholder="Mínimo de 10 caracteres">
+
+    <hr>
+
+    <p>Exemplo com font:</p>
+    <label for="nome">Nome</label>
+    <input class="fonte" name="nome" type="text" placeholder="Ex: Fulano de Tal">
+
+    <label for="senha">Senha</label>
+    <input class="fonte" name="senha" type="password" placeholder="Mínimo de 10 caracteres">
+
+    <hr>
+
+    <p>Exemplo com background:</p>
+    <label for="nome">Nome</label>
+    <input class="fundo" name="nome" type="text" placeholder="Ex: Fulano de Tal">
+
+    <label for="senha">Senha</label>
+    <input class="fundo" name="senha" type="password" placeholder="Mínimo de 10 caracteres">
+
+    <hr>
+
+    <p>Exemplo com text:</p>
+    <label for="nome">Nome</label>
+    <input class="texto" name="nome" type="text" placeholder="Ex: Fulano de Tal">
+
+    <label for="senha">Senha</label>
+    <input class="texto" name="senha" type="password" placeholder="Mínimo de 10 caracteres">
+</body>
+</html>

@@ -1,0 +1,31 @@
+code {
+    background-color: lightgrey;
+}
+
+p::first-letter {
+    color: red;
+}
+
+.cor::first-letter {
+    color: blue;
+}
+
+.fundo::first-letter {
+    background-color: aqua;
+}
+
+.marg::first-letter {
+    margin: 10px;
+}
+
+.padd::first-letter {
+    padding: 10px;
+}
+
+.borda::first-letter {
+    border: 1px solid red;
+}
+
+.fonte::first-letter {
+    font-family: 'Luckiest Guy', cursive;
+}

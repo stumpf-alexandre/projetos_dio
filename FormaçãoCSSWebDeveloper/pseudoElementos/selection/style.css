@@ -1,0 +1,15 @@
+code {
+    background-color: lightgrey;
+}
+
+.cor::selection {
+    color: red;
+}
+
+.fundo::selection {
+    background-color: aquamarine;
+}
+
+.texto::selection {
+    text-decoration: underline;
+}
