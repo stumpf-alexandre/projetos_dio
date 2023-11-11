@@ -1,0 +1,48 @@
+code {
+    background-color: lightgrey;
+}
+
+label, button {
+    display: block;
+    margin: 12px;
+    font-size: 1.5rem;
+}
+
+input, select {
+    font-size: 1.5rem;
+}
+
+.inputFoc:focus {
+    outline: 2px dashed blue;
+}
+
+.selectFoc:focus {
+    background-color: yellow;
+}
+
+.buttonFoc:focus {
+    outline: 3px solid red;
+    outline-offset: 2px;
+    background-color: palevioletred;
+    color: white;
+}
+
+.labelFocWit:focus-within {
+    font-weight: bold;
+    color: red;
+}
+
+.inputFocVis:focus-visible {
+    outline: 2px dashed blue;
+}
+
+.selectFocVis:focus-visible {
+    background-color: yellow;
+}
+
+.buttonFocVis:focus-visible {
+    outline: 3px solid red;
+    outline-offset: 2px;
+    background-color: palevioletred;
+    color: white;
+}

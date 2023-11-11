@@ -1,0 +1,16 @@
+code {
+    background-color: lightgrey;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+}
+
+    
+input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+}
+
+.post p:not(.irrelevante) {
+    color: red;
+}

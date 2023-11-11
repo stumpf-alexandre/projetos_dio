@@ -1,0 +1,27 @@
+code {
+    background-color: lightgrey;
+}
+
+body {
+    font-family: Arial,sans-serif;
+}
+
+input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+}
+
+.article1 :first-child {
+    color: orange;
+}
+
+.article2 :first-of-type {
+    color: orange;
+}
+
+.article3 :last-child {
+    color: orange;
+}
+
+.article4 :last-of-type {
+    color: orange;
+}

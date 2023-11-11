@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Noto+Sans+Kawi:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pseudo-classes</title>
+</head>
+<body>
+    <h1>Pseudo-classes</h1>
+    <p>
+        Identificado por <code>:palavra-chave</code>
+    </p>
+    <h2>Pseudo-classes <code>:empty</code></h2>
+    <p>Representa um elemento que não possua um elemento filho</p>
+
+    <input name="only" type="checkbox">
+    <label for="only">:empty</label>
+
+    <hr>
+
+    <p>Elemento sem conteúdo:</p>
+    <div></div>
+
+    <p>Elemento com comentário:</p>
+    <div><!--Simple comment--></div>
+
+    <p>Elemento com espaço em branco:</p>
+    <div> </div>
+
+    <p>Elemento com elemento vazio dentro dele:</p>
+    <div><p></p></div>
+    
+    <p>Elemento com propriedade content</p>
+    <div id="elemento-content"></div>
+</body>
+</html>

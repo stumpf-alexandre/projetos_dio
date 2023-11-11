@@ -1,0 +1,112 @@
+code {
+    background-color: lightgrey;
+}
+
+body {
+    font-family: Arial,sans-serif;
+}
+
+input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    text-align: left;
+}
+
+th, td {
+    padding: 1rem;
+}
+
+td + td, th + th {
+    text-align: right;
+}
+
+.article1 p:nth-child(3) {
+    color: red;
+}
+
+.article2 p:nth-child(1) {
+    color: red;
+}
+
+.article3 p:nth-child(2) {
+    color: red;
+}
+
+.article4 :nth-child(1) {
+    color: red;
+}
+
+.article5 p:nth-of-type(1) {
+    color: red;
+}
+
+.article6 span:nth-of-type(1) {
+    color: red;
+}
+
+.article7 :nth-of-type(1) {
+    color: red;
+}
+
+#lista-1 li:nth-child(3) {
+    color: red;
+}
+
+#lista-2 li:nth-child(6) {
+    color: red;
+}
+
+#lista-3 li:nth-child(even) {
+    color: red;
+}
+
+#lista-4 li:nth-child(odd) {
+    background-color: palegreen;
+}
+
+#lista-5 li:nth-child(even) {
+    color: red;
+}
+
+#lista-5 li:nth-child(odd) {
+    color: blue;
+}
+
+#lista-6 li:nth-child(even) {
+    color: red;
+}
+
+#lista-6 li:nth-child(odd) {
+    color: blue;
+}
+
+#lista-7 li:nth-child(3n) {
+    color: red;
+}
+
+#lista-8 li:nth-child(3n + 1) {
+    color: red;
+}
+
+#lista-9 li:nth-of-type(4n) {
+    color: red;
+}
+
+#lista-10 li:nth-of-type(2n+2) {
+    color: red;
+}
+
+tr:nth-child(even) td {
+    background-color: lightblue;
+}
+
+tr:nth-child(odd) td {
+    background-color: lightgoldenrodyellow;
+}

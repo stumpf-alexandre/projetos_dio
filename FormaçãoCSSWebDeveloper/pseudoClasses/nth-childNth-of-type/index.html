@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Noto+Sans+Kawi:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pseudo-classes</title>
+</head>
+<body>
+    <h1>Pseudo-classes</h1>
+    <p>
+        Identificado por <code>:palavra-chave</code>
+    </p>
+    <h2>Pseudo-classes <code>:nth-child</code> e <code>:nth-of-type</code></h2>
+    <p>Estilização de elementos devido a sua ordem</p>
+    <div>
+        <input name="task1" type="checkbox">
+        <label for="task1">:nth-child</labe>
+
+        <input name="task2" type="checkbox">
+        <label for="task2">:nth-of-type</labe>
+    </div>
+
+    <hr>
+
+    <code>:nth-child</code>
+    <article class="article1">
+        <!--<span class="ex">Teste</span>-->
+        <!--<span>Teste 2</span>-->
+        <p class="ex">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate aspernatur natus exercitationem dolor quia, incidunt aliquam quidem quis voluptates odio error obcaecati iusto reprehenderit hic ex non! Recusandae, voluptate ea.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi saepe quasi illo, atque alias eveniet enim officiis eos placeat beatae reiciendis magnam ut recusandae! Ab repudiandae soluta corporis quaerat accusamus!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, aliquid placeat commodi eligendi nisi dolores voluptatibus rem tempora perferendis sit, sint ex minus inventore! Quae dolorum recusandae a quasi sed?</p>
+        <p class="ex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus enim dolorum deleniti sapiente doloribus quasi perspiciatis laboriosam. Recusandae repellendus odio nemo autem, quas perspiciatis, sint consequatur blanditiis quam, modi saepe.</p>
+    </article>
+
+    <hr>
+
+    <article class="article2">
+        <span class="ex">Teste span</span>
+        <!--<span>Teste 2</span>-->
+        <p class="ex">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate aspernatur natus exercitationem dolor quia, incidunt aliquam quidem quis voluptates odio error obcaecati iusto reprehenderit hic ex non! Recusandae, voluptate ea.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi saepe quasi illo, atque alias eveniet enim officiis eos placeat beatae reiciendis magnam ut recusandae! Ab repudiandae soluta corporis quaerat accusamus!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, aliquid placeat commodi eligendi nisi dolores voluptatibus rem tempora perferendis sit, sint ex minus inventore! Quae dolorum recusandae a quasi sed?</p>
+        <p class="ex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus enim dolorum deleniti sapiente doloribus quasi perspiciatis laboriosam. Recusandae repellendus odio nemo autem, quas perspiciatis, sint consequatur blanditiis quam, modi saepe.</p>
+    </article>
+
+    <hr>
+
+    <article class="article3">
+        <span class="ex">Teste span</span>
+        <!--<span>Teste 2</span>-->
+        <p class="ex">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate aspernatur natus exercitationem dolor quia, incidunt aliquam quidem quis voluptates odio error obcaecati iusto reprehenderit hic ex non! Recusandae, voluptate ea.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi saepe quasi illo, atque alias eveniet enim officiis eos placeat beatae reiciendis magnam ut recusandae! Ab repudiandae soluta corporis quaerat accusamus!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, aliquid placeat commodi eligendi nisi dolores voluptatibus rem tempora perferendis sit, sint ex minus inventore! Quae dolorum recusandae a quasi sed?</p>
+        <p class="ex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus enim dolorum deleniti sapiente doloribus quasi perspiciatis laboriosam. Recusandae repellendus odio nemo autem, quas perspiciatis, sint consequatur blanditiis quam, modi saepe.</p>
+    </article>
+
+    <hr>
+
+    <article class="article4">
+        <span class="ex">Teste span</span>
+        <!--<span>Teste 2</span>-->
+        <p class="ex">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate aspernatur natus exercitationem dolor quia, incidunt aliquam quidem quis voluptates odio error obcaecati iusto reprehenderit hic ex non! Recusandae, voluptate ea.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi saepe quasi illo, atque alias eveniet enim officiis eos placeat beatae reiciendis magnam ut recusandae! Ab repudiandae soluta corporis quaerat accusamus!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, aliquid placeat commodi eligendi nisi dolores voluptatibus rem tempora perferendis sit, sint ex minus inventore! Quae dolorum recusandae a quasi sed?</p>
+        <p class="ex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus enim dolorum deleniti sapiente doloribus quasi perspiciatis laboriosam. Recusandae repellendus odio nemo autem, quas perspiciatis, sint consequatur blanditiis quam, modi saepe.</p>
+    </article>
+
+    <hr>
+
+    <code>:nth-of-type</code>
+    <article class="article5">
+        <span class="ex">Teste span</span>
+        <!--<span>Teste 2</span>-->
+        <p class="ex">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate aspernatur natus exercitationem dolor quia, incidunt aliquam quidem quis voluptates odio error obcaecati iusto reprehenderit hic ex non! Recusandae, voluptate ea.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi saepe quasi illo, atque alias eveniet enim officiis eos placeat beatae reiciendis magnam ut recusandae! Ab repudiandae soluta corporis quaerat accusamus!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, aliquid placeat commodi eligendi nisi dolores voluptatibus rem tempora perferendis sit, sint ex minus inventore! Quae dolorum recusandae a quasi sed?</p>
+        <p class="ex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus enim dolorum deleniti sapiente doloribus quasi perspiciatis laboriosam. Recusandae repellendus odio nemo autem, quas perspiciatis, sint consequatur blanditiis quam, modi saepe.</p>
+    </article>
+
+    <hr>
+
+    <article class="article6">
+        <span class="ex">Teste span</span>
+        <span>Teste 2</span>
+        <p class="ex">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate aspernatur natus exercitationem dolor quia, incidunt aliquam quidem quis voluptates odio error obcaecati iusto reprehenderit hic ex non! Recusandae, voluptate ea.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi saepe quasi illo, atque alias eveniet enim officiis eos placeat beatae reiciendis magnam ut recusandae! Ab repudiandae soluta corporis quaerat accusamus!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, aliquid placeat commodi eligendi nisi dolores voluptatibus rem tempora perferendis sit, sint ex minus inventore! Quae dolorum recusandae a quasi sed?</p>
+        <p class="ex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus enim dolorum deleniti sapiente doloribus quasi perspiciatis laboriosam. Recusandae repellendus odio nemo autem, quas perspiciatis, sint consequatur blanditiis quam, modi saepe.</p>
+    </article>
+
+    <hr>
+
+    <article class="article7">
+        <span class="ex">Teste span</span>
+        <span>Teste 2</span>
+        <p class="ex">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate aspernatur natus exercitationem dolor quia, incidunt aliquam quidem quis voluptates odio error obcaecati iusto reprehenderit hic ex non! Recusandae, voluptate ea.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi saepe quasi illo, atque alias eveniet enim officiis eos placeat beatae reiciendis magnam ut recusandae! Ab repudiandae soluta corporis quaerat accusamus!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, aliquid placeat commodi eligendi nisi dolores voluptatibus rem tempora perferendis sit, sint ex minus inventore! Quae dolorum recusandae a quasi sed?</p>
+        <p class="ex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus enim dolorum deleniti sapiente doloribus quasi perspiciatis laboriosam. Recusandae repellendus odio nemo autem, quas perspiciatis, sint consequatur blanditiis quam, modi saepe.</p>
+        <div>Eu sou uma div</div>
+    </article>
+
+    <hr>
+
+    <div class="listas">
+        <ul id="lista-1">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+            <li>Item 9</li>
+            <li>Item 10</li>
+        </ul>
+
+        <br>
+
+        <ul id="lista-2">
+            <li>Categoria 1</li>
+            <li>Categoria 2</li>
+            <li>Categoria 3</li>
+            <li>Categoria 4</li>
+            <li>Categoria 5</li>
+            <li>Categoria 6</li>
+            <li>Categoria 7</li>
+            <li>Categoria 8</li>
+            <li>Categoria 9</li>
+            <li>Categoria 10</li>
+        </ul>
+
+        <br>
+
+        <ul id="lista-3">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+            <li>Item 9</li>
+            <li>Item 10</li>
+        </ul>
+
+        <br>
+
+        <ul id="lista-4">
+            <li>Categoria 1</li>
+            <li>Categoria 2</li>
+            <li>Categoria 3</li>
+            <li>Categoria 4</li>
+            <li>Categoria 5</li>
+            <li>Categoria 6</li>
+            <li>Categoria 7</li>
+            <li>Categoria 8</li>
+            <li>Categoria 9</li>
+            <li>Categoria 10</li>
+        </ul>
+
+        <br>
+
+        <ul id="lista-5">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+            <li>Item 9</li>
+            <li>Item 10</li>
+        </ul>
+
+        <br>
+
+        <ul id="lista-6">
+            <li>Categoria 1</li>
+            <li>Categoria 2</li>
+            <li>Categoria 3</li>
+            <li>Categoria 4</li>
+            <li>Categoria 5</li>
+            <li>Categoria 6</li>
+            <li>Categoria 7</li>
+            <li>Categoria 8</li>
+            <li>Categoria 9</li>
+            <li>Categoria 10</li>
+        </ul>
+
+        <br>
+
+        <ul id="lista-7">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+            <li>Item 9</li>
+            <li>Item 10</li>
+        </ul>
+
+        <br>
+
+        <ul id="lista-8">
+            <li>Categoria 1</li>
+            <li>Categoria 2</li>
+            <li>Categoria 3</li>
+            <li>Categoria 4</li>
+            <li>Categoria 5</li>
+            <li>Categoria 6</li>
+            <li>Categoria 7</li>
+            <li>Categoria 8</li>
+            <li>Categoria 9</li>
+            <li>Categoria 10</li>
+        </ul>
+
+        <br>
+
+        <ul id="lista-9">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+            <li>Item 9</li>
+            <li>Item 10</li>
+        </ul>
+
+        <br>
+
+        <ul id="lista-10">
+            <li>Categoria 1</li>
+            <li>Categoria 2</li>
+            <li>Categoria 3</li>
+            <li>Categoria 4</li>
+            <li>Categoria 5</li>
+            <li>Categoria 6</li>
+            <li>Categoria 7</li>
+            <li>Categoria 8</li>
+            <li>Categoria 9</li>
+            <li>Categoria 10</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Descrição</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lorem ipsum dolor sit amet</td>
+                <td>R$ 123.40</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit amet</td>
+                <td>R$ 70.40</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit amet</td>
+                <td>R$ 333.33</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit amet</td>
+                <td>R$ 123.40</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit amet</td>
+                <td>R$ 70.40</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit amet</td>
+                <td>R$ 333.33</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

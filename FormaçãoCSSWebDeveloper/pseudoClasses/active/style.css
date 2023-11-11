@@ -1,0 +1,24 @@
+code {
+    background-color: lightgrey;
+}
+
+button {
+    background-color: palevioletred;
+    border: none;
+    padding: 8px 14px;
+    color: white;
+}
+
+button:active {
+    background-color: purple;
+    color: white;
+}
+
+a:active {
+    background-color: pink;
+    color: black;
+}
+
+h2:active {
+    background-color: greenyellow;
+}

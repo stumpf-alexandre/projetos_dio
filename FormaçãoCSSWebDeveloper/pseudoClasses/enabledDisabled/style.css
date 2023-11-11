@@ -1,0 +1,8 @@
+code {
+    background-color: lightgrey;
+}
+
+button:enabled {
+    background-color: palevioletred;
+    color: white;
+}

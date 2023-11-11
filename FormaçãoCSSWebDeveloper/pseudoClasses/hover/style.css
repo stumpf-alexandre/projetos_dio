@@ -1,0 +1,43 @@
+code {
+    background-color: lightgrey;
+}
+
+button {
+    background-color: palevioletred;
+    border: none;
+    padding: 8px 14px;
+    color: white;
+}
+
+button:hover {
+    background-color: palegreen;
+    color: darkgreen;
+    border: 1px solid darkgreen;
+    cursor: pointer;
+}
+
+.container {
+    width: 100px;
+    height: 100px;
+    background-color: palegoldenrod;
+    margin-top: 30px;
+}
+
+.container:hover {
+    background: url(./image/01.jpeg) no-repeat;
+    background-size: cover;
+}
+
+.container2 {
+    width: 100px;
+    height: 100px;
+    background-color: palegoldenrod;
+    margin-top: 30px;
+}
+
+/*seletor por descendencia*/
+.container2 button:hover {
+    background-color: purple;
+    color: yellow;
+    border-color: yellow;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Noto+Sans+Kawi:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pseudo-classes</title>
+</head>
+<body>
+    <h1>Pseudo-classes</h1>
+    <p>
+        Identificado por <code>:palavra-chave</code>
+    </p>
+    <h2>Pseudo-classes <code>:autofill</code>, <code>:webkit-autofill</code>, <code>:-ms-autofill</code>, <code>:-mox-autofill</code> e <code>:-o-autofill</code></h2>
+    <ul>
+        <li><input type="checkbox">:autofill (auto completado pelo navegador)</li>
+        <li><input type="checkbox">:-webkit-autofill (necessita de um prefixo de navegador para funcionar)</li>
+        <li><input type="checkbox">:-ms-autofill (necessita de um prefixo de navegador para funcionar)</li>
+        <li><input type="checkbox">:-mox-autofill (necessita de um prefixo de navegador para funcionar)</li>
+        <li><input type="checkbox">:-o-autofill (necessita de um prefixo de navegador para funcionar)</li>
+    </ul>
+
+    <hr>
+
+    <form>
+        <h3>Login</h3>
+        <label for="email" required>E-mail:</label>
+        <input type="email" name="email">
+
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha">
+
+        <button type="submit">Entrer</button>
+    </form>
+</body>
+</html>

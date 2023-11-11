@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Noto+Sans+Kawi:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pseudo-classes</title>
+</head>
+<body>
+    <h1>Pseudo-classes</h1>
+    <p>
+        Identificado por <code>:palavra-chave</code>
+    </p>
+    <h2>Pseudo-classes <code>:only-of-type</code></h2>
+    <p>Estiliza o elemento que esteja sozinho em um grupo de elementos</p>
+
+    <input name="only" type="checkbox">
+    <label for="only">:only-of-type</label>
+
+    <hr>
+
+    <main>
+        <div>Eu sou a div #1</div>
+        <p>Eu sou o unico p entre meus irmãos</p>
+        <div>Eu sou a div #2</div>
+        <div>
+            Eu sou  a div #3
+            <i>Eu sou o unico filho i</i>
+            <em>Eu sou o em #1</em>
+            <em>Eu sou o em #2</em>
+        </div>
+    </main>
+</body>
+</html>

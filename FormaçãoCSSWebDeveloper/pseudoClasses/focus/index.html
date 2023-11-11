@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Noto+Sans+Kawi:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pseudo-classes</title>
+</head>
+<body>
+    <h1>Pseudo-classes</h1>
+    <p>
+        Identificado por <code>:palavra-chave</code>
+    </p>
+    <h2>Pseudo-classes <code>:focus, :focus-within e :focus-visible</code></h2>
+
+    <h2>Focus</h2>
+    <form>
+        <p>Faça seu pedido! Escolha o sabor do sorvete que você deseja</p>
+
+        <label>
+            Nome Completo:
+            <input class="inputFoc" name="nome" type="text">
+        </label>
+
+        <label>
+            Sabor do Sorvete:
+            <select class="selectFoc" name="sabor">
+                <option value="chocolate">Chocolate</option>
+                <option value="morango">Morango</option>
+                <option value="doce-de-leite">Doce de Leite</option>
+                <option value="abacaxi">Abacaxi</option>
+            </select>
+        </label>
+        <button class="buttonFoc">Finalizar Pedido</button>
+    </form>
+
+    <hr>
+
+    <h2>Focus-within</h2>
+    <form>
+        <p>Faça seu pedido! Escolha o sabor do sorvete que você deseja</p>
+
+        <label class="labelFocWit">
+            Nome Completo:
+            <input name="nome" type="text">
+        </label>
+
+        <label class="labelFocWit">
+            Sabor do Sorvete:
+            <select name="sabor">
+                <option value="chocolate">Chocolate</option>
+                <option value="morango">Morango</option>
+                <option value="doce-de-leite">Doce de Leite</option>
+                <option value="abacaxi">Abacaxi</option>
+            </select>
+        </label>
+        <button  class="buttonFocWit">Finalizar Pedido</button>
+    </form>
+
+    <hr>
+
+    <h2>Focus-visible</h2>
+    <form>
+        <p>Faça seu pedido! Escolha o sabor do sorvete que você deseja</p>
+
+        <label>
+            Nome Completo:
+            <input class="inputFocVis" name="nome" type="text">
+        </label>
+
+        <label>
+            Sabor do Sorvete:
+            <select class="selectFocVis" name="sabor">
+                <option value="chocolate">Chocolate</option>
+                <option value="morango">Morango</option>
+                <option value="doce-de-leite">Doce de Leite</option>
+                <option value="abacaxi">Abacaxi</option>
+            </select>
+        </label>
+        <button class="buttonFocVis">Finalizar Pedido</button>
+    </form>
+</body>
+</html>

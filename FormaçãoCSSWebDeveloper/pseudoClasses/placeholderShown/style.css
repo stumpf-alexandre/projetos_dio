@@ -1,0 +1,12 @@
+code {
+    background-color: lightgrey;
+}
+
+input:placeholder-shown {
+    border-color: royalblue;
+    background-color: royalblue;
+}
+
+input::placeholder {
+    color: white;
+}

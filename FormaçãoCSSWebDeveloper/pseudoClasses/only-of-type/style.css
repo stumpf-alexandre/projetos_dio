@@ -1,0 +1,20 @@
+code {
+    background-color: lightgrey;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+}
+
+i, em {
+    display: block;
+}
+
+main :only-of-type {
+    color: red;
+    font-weight: bold;
+}

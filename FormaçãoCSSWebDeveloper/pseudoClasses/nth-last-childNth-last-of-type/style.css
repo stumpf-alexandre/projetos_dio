@@ -1,0 +1,34 @@
+code {
+    background-color: lightgrey;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+}
+
+.top:nth-last-child(2) {
+    font-weight: bold;
+    color: purple;
+}
+
+.top2:nth-last-child(2n) {
+    font-weight: bold;
+    color: purple;
+}
+
+.top3:nth-last-child(-n+3) {
+    font-weight: bold;
+    color: purple;
+}
+
+.dd:nth-last-of-type(even) {
+    color: red;
+}
+
+.dd2:nth-last-of-type(odd) {
+    color: red;
+}
