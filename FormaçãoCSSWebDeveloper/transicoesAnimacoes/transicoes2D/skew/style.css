@@ -1,0 +1,53 @@
+code {
+    background-color: lightgrey;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(247, 247, 247);
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.box1:hover {
+    transform: skewX(20deg);
+}
+
+.box2:hover {
+    transform: skewX(-20deg);
+}
+
+.box3:hover {
+    transform: skewY(20deg);
+}
+
+.box4:hover {
+    transform: skewY(-20deg);
+}
+
+.box5:hover {
+    transform: skew(20deg, 20deg);
+}
+
+.box6:hover {
+    transform: skew(-20deg, -20deg);
+}
+
+.box7:hover {
+    transform: skew(-20deg, 20deg);
+}
+
+.box8:hover {
+    transform: skew(20deg, -20deg);
+}

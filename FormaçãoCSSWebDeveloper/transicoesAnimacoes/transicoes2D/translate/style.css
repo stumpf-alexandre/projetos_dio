@@ -1,0 +1,45 @@
+code {
+    background-color: lightgrey;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(247, 247, 247);
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.box1:hover {
+    transform: translateX(50px);
+}
+
+.box2:hover {
+    transform: translateX(-50px);
+}
+
+.box3:hover {
+    transform: translateY(50px);
+}
+
+.box4:hover {
+    transform: translateY(-50px);
+}
+
+.box5:hover {
+    transform: translateX(50px) translateY(-50px);
+}
+
+.box6:hover {
+    transform: translate(-50px, -50px);/*valor 1=eixo X, valor 2=eixo y  */
+}
