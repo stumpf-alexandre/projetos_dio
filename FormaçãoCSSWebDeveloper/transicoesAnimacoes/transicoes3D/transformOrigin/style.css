@@ -1,0 +1,66 @@
+code {
+    background-color: lightgrey;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(247, 247, 247);
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    transition: 2s;
+}
+
+.box1 {
+    perspective: 300px;
+}
+
+.box11:hover {
+    transform: rotate(20deg);
+    transform-origin: center;
+}
+
+.box12:hover {
+    transform: rotate(20deg);
+    transform-origin: top left;
+}
+
+.box13:hover {
+    transform: rotate(20deg);
+    transform-origin: 50px 50px;
+}
+
+.box14:hover {
+    transform: rotate(20deg);
+    transform-origin: bottom right 60px;
+}
+
+.box15:hover {
+    transform: scale(1.7);
+    transform-origin: center;
+}
+
+.box16:hover {
+    transform: scale(1.7);
+    transform-origin: top left;
+}
+
+.box17:hover {
+    transform: scale(1.7);
+    transform-origin: 50px 50px;
+}
+
+.box18:hover {
+    transform: scale(1.7);
+    transform-origin: bottom right 60px;
+}
