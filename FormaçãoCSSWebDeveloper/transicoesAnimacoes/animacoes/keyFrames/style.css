@@ -1,0 +1,1334 @@
+code {
+    background-color: lightgrey;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(247, 247, 247);
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: #d53369;
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 20px 20px 10px lightgray;
+}
+
+.box1:hover {
+    animation-name: exemplo;
+    animation-duration: 4s;
+}
+
+.box2:hover {
+    animation-name: exemplo2;
+    animation-duration: 5s;
+}
+
+.box3:hover {
+    animation-name: exemplo3;
+    animation-duration: 3s;
+}
+
+.box4:hover {
+    animation-name: exemplo4;
+    animation-duration: 2s;
+}
+
+.box5:hover {
+    animation-name: exemplo5;
+    animation-duration: 4s;
+}
+
+.box6:hover {
+    animation-name: exemplo6;
+    animation-duration: 4s;
+}
+
+.box7:hover {
+    animation-name: exemplo7;
+    animation-duration: 10s;
+}
+
+.box8:hover {
+    animation-name: exemplo8;
+    animation-duration: 10s;
+    animation-delay: 3s;
+}
+
+.box9:hover {
+    animation-name: exemplo9;
+    animation-duration: 10s;
+    animation-delay: -3s;
+}
+
+.box10:hover {
+    animation-name: exemplo10;
+    animation-duration: 10s;
+    animation-iteration-count: 3;
+}
+
+.box11:hover {
+    animation-name: exemplo11;
+    animation-duration: 10s;
+    animation-iteration-count: 5;
+}
+
+.box12:hover {
+    animation-name: exemplo12;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.box13:hover {
+    animation-name: exemplo13;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.box14:hover {
+    animation-name: exemplo14;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+.box15:hover {
+    animation-name: exemplo15;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.box16:hover {
+    animation-name: exemplo16;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.box17:hover {
+    animation-name: exemplo17;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+.box18:hover {
+    animation-name: exemplo18;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease;
+}
+
+.box19:hover {
+    animation-name: exemplo19;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+}
+
+.box20:hover {
+    animation-name: exemplo20;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+}
+
+.box21:hover {
+    animation-name: exemplo21;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-out;
+}
+
+.box22:hover {
+    animation-name: exemplo22;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+}
+
+.box23:hover {
+    animation-name: exemplo23;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: ease;
+}
+
+.box24:hover {
+    animation-name: exemplo24;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: ease-in;
+}
+
+.box25:hover {
+    animation-name: exemplo25;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;
+}
+
+.box26:hover {
+    animation-name: exemplo26;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: ease-out;
+}
+
+.box27:hover {
+    animation-name: exemplo27;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+.box28:hover {
+    animation-name: exemplo28;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+
+.box29:hover {
+    animation-name: exemplo29;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+.box30:hover {
+    animation-name: exemplo30;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.box31:hover {
+    animation-name: exemplo31;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+
+.box32:hover {
+    animation-name: exemplo32;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+}
+
+.box33:hover {
+    animation-name: exemplo33;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease;
+}
+
+.box34:hover {
+    animation-name: exemplo34;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in;
+}
+
+.box35:hover {
+    animation-name: exemplo35;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+}
+
+.box36:hover {
+    animation-name: exemplo36;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-out;
+}
+
+.box37:hover {
+    animation-name: exemplo37;
+    animation-duration: 10s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-out;
+    animation-fill-mode: none;
+}
+
+.box38:hover {
+    animation-name: exemplo38;
+    animation-duration: 10s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.box39:hover {
+    animation-name: exemplo39;
+    animation-duration: 10s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+.box40:hover {
+    animation-name: exemplo40;
+    animation-duration: 10s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+
+.box41 {
+    animation-name: exemplo41;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.box41:hover {
+    animation-play-state: paused;
+}
+
+.box42 {
+    animation: exemplo42 5s linear 2s infinite alternate;
+}
+
+.box42:hover {
+    animation-play-state: paused;
+}
+
+.box42 {
+    margin-bottom: 500px;
+}
+
+@keyframes exemplo {
+    from {
+        background: palegreen;
+    }
+    to {
+        background: purple;
+    }
+}
+
+@keyframes exemplo2 {
+    0% {
+        background: palegreen;
+    }
+    100% {
+        background: purple;
+    }
+}
+
+@keyframes exemplo3 {
+    0% {
+        background: palegreen;
+    }
+    50% {
+        background: darkblue;
+    }
+    100% {
+        background: purple;
+    }
+}
+
+@keyframes exemplo4 {
+    0% {
+        background: palegreen;
+        width: 200px;
+    }
+    50% {
+        background: darkblue;
+        width: 500px;
+    }
+    100% {
+        background: purple;
+        width: 100px;
+    }
+}
+
+@keyframes exemplo5 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    50% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    100% {
+        background: purple;
+        width: 100px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo6 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    50% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    75% {
+        background: purple;
+        width: 100px;
+        height: 200px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo7 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    50% {
+        background: blue;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background: purple;
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo8 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    50% {
+        background: blue;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background: purple;
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo9 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    50% {
+        background: blue;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background: purple;
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo10 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    50% {
+        background: blue;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background: purple;
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo11 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    50% {
+        background: blue;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background: purple;
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo12 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    50% {
+        background: blue;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background: purple;
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo13 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    50% {
+        background: blue;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background: purple;
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo14 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    50% {
+        background: blue;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background: purple;
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo15 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    50% {
+        background: blue;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background: purple;
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo16 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    50% {
+        background: blue;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background: purple;
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo17 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    50% {
+        background: blue;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background: purple;
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo18 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    50% {
+        background: blue;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background: purple;
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo19 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    50% {
+        background: blue;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background: purple;
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo20 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    50% {
+        background: blue;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background: purple;
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo21 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    50% {
+        background: blue;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background: purple;
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo22 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    50% {
+        background: blue;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background: purple;
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo23 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    50% {
+        background: blue;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background: purple;
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo24 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    50% {
+        background: blue;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background: purple;
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo25 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    50% {
+        background: blue;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background: purple;
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo26 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    50% {
+        background: blue;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background: purple;
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo27 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    50% {
+        background: blue;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background: purple;
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo28 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    50% {
+        background: blue;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background: purple;
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo29 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    50% {
+        background: blue;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background: purple;
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo30 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    50% {
+        background: blue;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background: purple;
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo31 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    50% {
+        background: blue;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background: purple;
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo32 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    50% {
+        background: blue;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background: purple;
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo33 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    50% {
+        background: blue;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background: purple;
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo34 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    50% {
+        background: blue;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background: purple;
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo35 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    50% {
+        background: blue;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background: purple;
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo36 {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        background: darkblue;
+        width: 500px;
+        height: 400px;
+    }
+    50% {
+        background: blue;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background: purple;
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background: #d53369;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes exemplo37 {
+    0% {
+        background: palegreen;
+    }
+    50% {
+        background: darkblue;
+    }
+    100% {
+        background: purple;
+    }
+}
+
+@keyframes exemplo38 {
+    0% {
+        background: palegreen;
+    }
+    50% {
+        background: darkblue;
+    }
+    100% {
+        background: purple;
+    }
+}
+
+@keyframes exemplo39 {
+    0% {
+        background: palegreen;
+    }
+    50% {
+        background: darkblue;
+    }
+    100% {
+        background: purple;
+    }
+}
+
+@keyframes exemplo40 {
+    0% {
+        background: palegreen;
+    }
+    50% {
+        background: darkblue;
+    }
+    100% {
+        background: purple;
+    }
+}
+
+@keyframes exemplo41 {
+    0% {
+        background: palegreen;
+    }
+    50% {
+        background: darkblue;
+    }
+    100% {
+        background: purple;
+    }
+}
+
+@keyframes exemplo42 {
+    0% {
+        background: palegreen;
+    }
+    50% {
+        background: darkblue;
+    }
+    100% {
+        background: purple;
+    }
+}

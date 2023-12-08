@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Animações</title>
+</head>
+<body>
+    <h1><code>@keyframes</code></h1>
+
+    <lu>
+        <li><code>animation-name: exemplo;</code></li>
+        <li><code>animation-duration: 4s</code></li>
+        <li><code>@keyframes{
+            from{background: palegreen;}
+            to{background: purple;}
+        }</code></li>
+    </lu>
+    <div class="box box1"></div>
+
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo2;</code></li>
+        <li><code>animation-duration: 5s</code></li>
+        <li><code>@keyframes{
+            0%{background: palegreen;}
+            100%{background: purple;}
+        }</code></li>
+    </lu>
+    <div class="box box2"></div>
+
+    <hr>
+    
+    <lu>
+        <li><code>animation-name: exemplo3;</code></li>
+        <li><code>animation-duration: 3s</code></li>
+        <li><code>@keyframes{
+            0%{background: palegreen;}
+            50%{background: darkblue;}
+            100%{background: purple;}
+        }</code></li>
+    </lu>
+    <div class="box box3"></div>
+    
+    <hr>
+    
+    <lu>
+        <li><code>animation-name: exemplo4;</code></li>
+        <li><code>animation-duration: 2s</code></li>
+        <li><code>@keyframes{
+            0%{
+                background: palegreen;
+                width: 200px;
+            }
+            50%{
+                background: darkblue;
+                width: 500px;
+            }
+            100%{
+                background: purple;
+                width: 100px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box4"></div>
+
+    <hr>
+    
+    <lu>
+        <li><code>animation-name: exemplo5;</code></li>
+        <li><code>animation-duration: 4s</code></li>
+        <li><code>@keyframes{
+            0%{
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            50%{
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            100%{
+                background: purple;
+                width: 100px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box5"></div>
+
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo6;</code></li>
+        <li><code>animation-duration: 4s</code></li>
+        <li><code>@keyframes{
+            0%{
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            50%{
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            75%{
+                background: purple;
+                width: 100px;
+                height: 100px;
+            }
+            100%{
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box6"></div>
+
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo7;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            25% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            50% {
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                background: purple;
+                width: 50px;
+                height: 50px;
+            }
+            100% {
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box7"></div>
+
+    <hr>
+
+    <h1><code>animation-delay</code></h1>
+
+    <lu>
+        <li><code>animation-name: exemplo8;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-delay: 3s</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            25% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            50% {
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                background: purple;
+                width: 50px;
+                height: 50px;
+            }
+            100% {
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box8"></div>
+    
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo9;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-delay: -3s</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            25% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            50% {
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                background: purple;
+                width: 50px;
+                height: 50px;
+            }
+            100% {
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box9"></div>
+    
+    <hr>
+
+    <h1><code>animation-iteration-count</code></h1>
+
+    <lu>
+        <li><code>animation-name: exemplo10;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: 3</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            25% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            50% {
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                background: purple;
+                width: 50px;
+                height: 50px;
+            }
+            100% {
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box10"></div>
+    
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo11;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: 5</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            25% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            50% {
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                background: purple;
+                width: 50px;
+                height: 50px;
+            }
+            100% {
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box11"></div>
+        
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo12;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: infinite</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            25% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            50% {
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                background: purple;
+                width: 50px;
+                height: 50px;
+            }
+            100% {
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box12"></div>
+    <hr>
+
+    <h1><code>animation-direction</code></h1>
+
+    <lu>
+        <li><code>animation-name: exemplo13;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: 3</code></li>
+        <li><code>animation-direction: normal</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            25% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            50% {
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                background: purple;
+                width: 50px;
+                height: 50px;
+            }
+            100% {
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box13"></div>
+    
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo14;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: 5</code></li>
+        <li><code>animation-direction: reverse</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            25% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            50% {
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                background: purple;
+                width: 50px;
+                height: 50px;
+            }
+            100% {
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box14"></div>
+        
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo15;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: infinite</code></li>
+        <li><code>animation-direction: alternate</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            25% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            50% {
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                background: purple;
+                width: 50px;
+                height: 50px;
+            }
+            100% {
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box15"></div>
+        
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo16;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: infinite</code></li>
+        <li><code>animation-direction: alternate-reverse</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            25% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            50% {
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                background: purple;
+                width: 50px;
+                height: 50px;
+            }
+            100% {
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box16"></div>
+
+    <hr>
+
+    <h1><code>animation-timing-function</code></h1>
+
+    <lu>
+        <li><code>animation-name: exemplo17;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: 3</code></li>
+        <li><code>animation-direction: normal</code></li>
+        <li><code>animation-timing-function: linear</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            25% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            50% {
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                background: purple;
+                width: 50px;
+                height: 50px;
+            }
+            100% {
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box17"></div>
+    
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo18;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: 3</code></li>
+        <li><code>animation-direction: normal</code></li>
+        <li><code>animation-timing-function: ease</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            25% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            50% {
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                background: purple;
+                width: 50px;
+                height: 50px;
+            }
+            100% {
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box18"></div>
+    
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo19;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: 3</code></li>
+        <li><code>animation-direction: normal</code></li>
+        <li><code>animation-timing-function: ease-in</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            25% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            50% {
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                background: purple;
+                width: 50px;
+                height: 50px;
+            }
+            100% {
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box19"></div>
+    
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo20;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: 3</code></li>
+        <li><code>animation-direction: normal</code></li>
+        <li><code>animation-timing-function: ease-in-out</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            25% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            50% {
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                background: purple;
+                width: 50px;
+                height: 50px;
+            }
+            100% {
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box20"></div>
+    
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo21;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: 3</code></li>
+        <li><code>animation-direction: normal</code></li>
+        <li><code>animation-timing-function: ease-out</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            25% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            50% {
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                background: purple;
+                width: 50px;
+                height: 50px;
+            }
+            100% {
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box21"></div>
+    
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo22;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: 5</code></li>
+        <li><code>animation-direction: reverse</code></li>
+        <li><code>animation-timing-function: linear</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            25% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            50% {
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                background: purple;
+                width: 50px;
+                height: 50px;
+            }
+            100% {
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box22"></div>
+        
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo23;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: 5</code></li>
+        <li><code>animation-direction: reverse</code></li>
+        <li><code>animation-timing-function: ease</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            25% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            50% {
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                background: purple;
+                width: 50px;
+                height: 50px;
+            }
+            100% {
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box23"></div>
+        
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo24;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: 5</code></li>
+        <li><code>animation-direction: reverse</code></li>
+        <li><code>animation-timing-function: ease-in</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            25% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            50% {
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                background: purple;
+                width: 50px;
+                height: 50px;
+            }
+            100% {
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box24"></div>
+        
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo25;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: 5</code></li>
+        <li><code>animation-direction: reverse</code></li>
+        <li><code>animation-timing-function: ease-in-out</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            25% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            50% {
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                background: purple;
+                width: 50px;
+                height: 50px;
+            }
+            100% {
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box25"></div>
+        
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo26;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: 5</code></li>
+        <li><code>animation-direction: reverse</code></li>
+        <li><code>animation-timing-function: ease-out</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            25% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            50% {
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                background: purple;
+                width: 50px;
+                height: 50px;
+            }
+            100% {
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box26"></div>
+        
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo27;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: infinite</code></li>
+        <li><code>animation-direction: alternate</code></li>
+        <li><code>animation-timing-function: linear</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            25% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            50% {
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                background: purple;
+                width: 50px;
+                height: 50px;
+            }
+            100% {
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box27"></div>
+        
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo28;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: 5</code></li>
+        <li><code>animation-direction: reverse</code></li>
+        <li><code>animation-timing-function: ease</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            25% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            50% {
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                background: purple;
+                width: 50px;
+                height: 50px;
+            }
+            100% {
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box28"></div>
+        
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo29;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: 5</code></li>
+        <li><code>animation-direction: reverse</code></li>
+        <li><code>animation-timing-function: ease-in</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            25% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            50% {
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                background: purple;
+                width: 50px;
+                height: 50px;
+            }
+            100% {
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box29"></div>
+        
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo30;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: 5</code></li>
+        <li><code>animation-direction: reverse</code></li>
+        <li><code>animation-timing-function: ease-in-out</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            25% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            50% {
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                background: purple;
+                width: 50px;
+                height: 50px;
+            }
+            100% {
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box30"></div>
+        
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo31;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: 5</code></li>
+        <li><code>animation-direction: reverse</code></li>
+        <li><code>animation-timing-function: ease-out</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            25% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            50% {
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                background: purple;
+                width: 50px;
+                height: 50px;
+            }
+            100% {
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box31"></div>
+        
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo32;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: infinite</code></li>
+        <li><code>animation-direction: alternate-reverse</code></li>
+        <li><code>animation-timing-function: linear</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            25% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            50% {
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                background: purple;
+                width: 50px;
+                height: 50px;
+            }
+            100% {
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box32"></div>
+
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo33;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: 5</code></li>
+        <li><code>animation-direction: reverse</code></li>
+        <li><code>animation-timing-function: ease</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            25% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            50% {
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                background: purple;
+                width: 50px;
+                height: 50px;
+            }
+            100% {
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box33"></div>
+        
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo34;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: 5</code></li>
+        <li><code>animation-direction: reverse</code></li>
+        <li><code>animation-timing-function: ease-in</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            25% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            50% {
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                background: purple;
+                width: 50px;
+                height: 50px;
+            }
+            100% {
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box34"></div>
+        
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo35;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: 5</code></li>
+        <li><code>animation-direction: reverse</code></li>
+        <li><code>animation-timing-function: ease-in-out</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            25% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            50% {
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                background: purple;
+                width: 50px;
+                height: 50px;
+            }
+            100% {
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box35"></div>
+        
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo36;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: 5</code></li>
+        <li><code>animation-direction: reverse</code></li>
+        <li><code>animation-timing-function: ease-out</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+                width: 200px;
+                height: 200px;
+            }
+            25% {
+                background: darkblue;
+                width: 500px;
+                height: 400px;
+            }
+            50% {
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            75% {
+                background: purple;
+                width: 50px;
+                height: 50px;
+            }
+            100% {
+                background: #d53369;
+                width: 200px;
+                height: 200px;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box36"></div>
+
+    <hr>
+
+    <h1><code>animation-fill-mode</code></h1>
+
+    <lu>
+        <li><code>animation-name: exemplo37;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: 2</code></li>
+        <li><code>animation-direction: alternate-reverse</code></li>
+        <li><code>animation-timing-function: ease-out</code></li>
+        <li><code>animation-fill-mode: none</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+            }
+            50% {
+                background: darkblue;
+            }
+            100% {
+                background: purple;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box37"></div>
+
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo38;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: 2</code></li>
+        <li><code>animation-direction: alternate-reverse</code></li>
+        <li><code>animation-timing-function: ease-out</code></li>
+        <li><code>animation-fill-mode: forwards</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+            }
+            50% {
+                background: darkblue;
+            }
+            100% {
+                background: purple;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box38"></div>
+
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo39;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: 2</code></li>
+        <li><code>animation-direction: alternate-reverse</code></li>
+        <li><code>animation-timing-function: ease-out</code></li>
+        <li><code>animation-fill-mode: backwards</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+            }
+            50% {
+                background: darkblue;
+            }
+            100% {
+                background: purple;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box39"></div>
+
+    <hr>
+
+    <lu>
+        <li><code>animation-name: exemplo40;</code></li>
+        <li><code>animation-duration: 10s</code></li>
+        <li><code>animation-iteration-count: 2</code></li>
+        <li><code>animation-direction: alternate-reverse</code></li>
+        <li><code>animation-timing-function: ease-out</code></li>
+        <li><code>animation-fill-mode: both</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+            }
+            50% {
+                background: darkblue;
+            }
+            100% {
+                background: purple;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box40"></div>
+
+    <hr>
+
+    <h1><code>animation-play-state</code></h1>
+
+    <lu>
+        <li><code>animation-name: exemplo41;</code></li>
+        <li><code>animation-duration: 5s</code></li>
+        <li><code>animationtiming-function: linear</code></li>
+        <li><code>animation-delay: 2s</code></li>
+        <li><code>animation-iteration-count: infinite</code></li>
+        <li><code>animation-direction: alternate</code></li>
+        <li><code>animation-play-state: paused</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+            }
+            50% {
+                background: darkblue;
+            }
+            100% {
+                background: purple;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box41"></div>
+
+    <hr>
+
+    <h1><code>short hand</code> do <code>animation</code></h1>
+
+    <lu>
+        <li><code>animation: exemplo42 5s linear 2s infinite alternate;</code></li>
+        <li><code>animation-play-state: paused</code></li>
+        <li><code>@keyframes{
+            0% {
+                background: palegreen;
+            }
+            50% {
+                background: darkblue;
+            }
+            100% {
+                background: purple;
+            }
+        }</code></li>
+    </lu>
+    <div class="box box42"></div>
+</body>
+</html>

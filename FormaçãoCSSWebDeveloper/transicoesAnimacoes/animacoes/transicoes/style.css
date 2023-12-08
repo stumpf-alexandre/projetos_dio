@@ -1,0 +1,143 @@
+code {
+    background-color: lightgrey;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(247, 247, 247);
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    perspective: 300px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    
+    background: #d53369;
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+
+    transition: 1s;
+}
+
+/*  transation: shorthand
+    > transition-property
+    > transition-duration
+    > transition-timing-function
+    > transition-delay
+*/
+
+.box:hover {
+    background-color: rgb(215, 205, 104);
+}
+
+.box2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    
+    background: #d53369;
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+
+    transition: background-color 1s, transform 4s;
+}
+
+.box2:hover {
+    background-color: rgb(215, 205, 104);
+    transform: rotateX(40deg);
+}
+
+.box3 {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    
+    background: #d53369;
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+
+    transition: background-color 1s linear, transform 4s ease-in-out;
+}
+
+.box3:hover {
+    background-color: rgb(215, 205, 104);
+    transform: rotateX(40deg);
+    width: 300px;
+}
+
+.box4 {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    
+    background: #d53369;
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+
+    transition: background-color 1s linear 4s, transform 4s ease-in-out 5s;
+}
+
+.box4:hover {
+    background-color: rgb(215, 205, 104);
+    transform: rotateX(40deg);
+    width: 300px;
+}
+
+.div {
+    width: 100px;
+    height: 100px;background: red;
+    color: white;
+    transition: width 2s;
+}
+
+.div1 {
+    transition-timing-function: linear;/*aplica a mesma velocidade do inicio ao fim*/
+}
+
+.div2 {
+    transition-timing-function: ease;/*começa devagar, fica rapido e depois fica devagar*/
+}
+
+.div3 {
+    transition-timing-function: ease-in;/*é devagar no inicio*/
+}
+
+.div4 {
+    transition-timing-function: ease-out;/*é devagar no final*/
+}
+
+.div5 {
+    transition-timing-function: ease-in-out;/*é devagar no inicio e no final*/
+}
+
+.div:hover {
+    width: 300px;
+}
