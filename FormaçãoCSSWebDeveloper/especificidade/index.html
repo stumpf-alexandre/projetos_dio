@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Especificidade</title>
+    <style>
+        p {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Especificidade</h1>
+    <main id="conteudo">
+        <p class="texto">Texto 1</p>
+        <p>Texto 2</p>
+    </main>
+
+    <p>Texto 3</p>
+
+    <br><hr><br>
+
+    <h6>Calculo de Especificidade</h6>
+    <ol>
+        <li>Inline: 1000 pontos</li>
+        <li>Id: 100 pontos</li>
+        <li>Classes, pseudo-classes e atributos: 10 pontos</li>
+        <li>Tag HTML: 1 ponto</li>
+    </ol>
+
+    <br><hr><br>
+
+    <ul>
+        <li><strong>#exemplo h1.titulo</strong> = 111 pontos</li><!--id + tag + classe-->
+        <li><strong>a:hover</strong> = 11 pontos</li><!--tag + pseudo-classe-->
+        <li><strong>div p</strong> = 2 pontos</li><!--tag + tag-->
+    </ul>
+</body>
+</html>

@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    color: red;
+    font-size: 1.5rem;
+}/*é passado como herança para as tags p*/
+
+.teste {
+    padding: 8px;
+    border: 2px solid blue;
+}/*não é passado como herança para as tags p*/
+
+/*forçando a tag filho a aceitar a herança da tag pai*/
+.teste p {
+    border: inherit;
+    padding: inherit;
+}

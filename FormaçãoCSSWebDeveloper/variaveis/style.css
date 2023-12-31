@@ -1,0 +1,54 @@
+/*
+* VARIÁVEIS CSS
+* Declaração: --nome-da-variavel
+* Referência: var(--nome-da-variavel)
+*/
+
+/*variavel global*/
+/*:root {
+    --bg-gradiente: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+}*/
+:root {
+    --box-shadow-default: 10px 10px 10px lightgrey;
+}
+
+/*variavel local*/
+.light-theme {
+    --bg-body: rgb(247, 247, 247);
+    --bg-gradiente: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
+
+.dark-theme {
+    --bg-body: rgb(34, 34, 34);
+    --bg-gradiente: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-body);
+    text-align: center;
+}
+
+h1 {
+    background: var(--bg-gradiente);
+    font-size: 5rem;
+    text-align: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -ms-background-clip: text;
+    color: transparent;
+}
+
+a {
+    text-decoration: none;
+    background: var(--bg-gradiente);
+    padding: 8px 14px;
+    border-radius: 4px;
+    color: white;
+    box-shadow: var(--box-shadow-default);
+}
+
+/*quando uma variavel não esta especificada*/
+p {
+    color: var(--text-color, blue);
+}
