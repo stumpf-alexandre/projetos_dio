@@ -10,38 +10,38 @@
 <body>
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./assets/images/logo.png" alt="Logotipo Cafeteria Coffee CSS">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">Sobre Nós</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#menu">Cardápio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#local">Local</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-              <button class="btn btn-primary" type="submit">Buscar</button>
-            </form>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/images/logo.png" alt="Logotipo Cafeteria Coffee CSS">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Sobre Nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Cardápio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#local">Local</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-primary" type="submit">Buscar</button>
+          </form>
         </div>
-      </nav> <!--fixed-top-->
+      </div>
+    </nav>
 
     <!--Carousel-->
-    <div id="carousel-coffee" class="carousel slide">
+    <section id="carousel-coffee" class="carousel slide">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carousel-coffee" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carousel-coffee" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -78,7 +78,7 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>
+    </section>
 
     <!--Citação [Quote]-->
     <figure>
@@ -89,6 +89,46 @@
         <cite title="Source Title">Coffee Shop</cite>
       </figcaption>
     </figure>
+
+    <!--About Cards-->
+    <section id="about" class="container mt-5">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid rounded-start" alt="Imagem de uma mesa posta com xicaras de cafés expresso">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Somos apaixonados por café</h5>
+                  <h6 class="card-subtitle text-muted mb-3">Acreditamos que o café pode mudar o (seu) mundo</h6>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit delectus optio ducimus doloribus minima nihil, libero aliquam aliquid sequi dolor veniam magni architecto blanditiis enim laboriosam repellat reiciendis? Quod, dolore.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="https://images.unsplash.com/photo-1522992319-0365e5f11656?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid rounded-start" alt="Equipe preparando uma xicara de café">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Equipe premium de baristas</h5>
+                  <h6 class="card-subtitle text-muted">Profissionais especializados para levar o melhor do café até a sua mesa</h6>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit delectus optio ducimus doloribus minima nihil, libero aliquam aliquid sequi dolor veniam magni architecto blanditiis enim laboriosam repellat reiciendis? Quod, dolore.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
