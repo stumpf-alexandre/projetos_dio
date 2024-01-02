@@ -7,15 +7,6 @@ main {
     width: 50px;
 }
 
-.btn {
-    --bs-btn-bg: #198754;
-    --bs-btn-border-color: #146c43;
-    --bs-btn-hover-bg: #146c43;
-    --bs-btn-hover-border-color: #146c43;
-    --bs-btn-active-bg: #0c5734;
-    --bs-btn-active-border-color: #146c43;
-}
-
 /*CSS carousel*/
 .carousel-item {
     height: 500px;
@@ -46,3 +37,6 @@ main {
     height: 300px;
     object-fit: cover;
 }
+
+/*CSS modal*/
+.btn-close {}
