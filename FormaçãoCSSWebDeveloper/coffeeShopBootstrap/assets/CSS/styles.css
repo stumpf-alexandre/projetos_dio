@@ -1,5 +1,14 @@
+:root {
+    --bs-link-color: #198754;
+    --bs-link-hover-color: #146c43;
+}
+
 main {
     margin-top: 5rem;
+}
+
+section {
+    scroll-margin-top: 6rem;
 }
 
 /*CSS navbar*/
@@ -38,5 +47,14 @@ main {
     object-fit: cover;
 }
 
-/*CSS modal*/
-.btn-close {}
+/*CSS footer*/
+.bi-heart-fill {
+    color: red;
+    animation: heart 2s ease-in-out alternate infinite;
+}
+
+@keyframes heart {
+    to {
+        transform: scale(1.5);
+    }
+}
