@@ -35,8 +35,14 @@ main {
     position: absolute;
 }
 
-/*CSS cards*/
+/*CSS about cards*/
 #about img {
     height: 100%;
+    object-fit: cover;
+}
+
+/*CSS menu cards*/
+.card-menu img {
+    height: 300px;
     object-fit: cover;
 }
