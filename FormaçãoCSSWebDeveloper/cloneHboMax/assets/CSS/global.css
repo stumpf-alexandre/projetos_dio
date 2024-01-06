@@ -1,10 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;/*não deixa uma caixa alterar suas medidas quando utilizada padding dentro dela*/
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
 }
 
 /*resolvendo o problema de medidas fixas como o px*/
 :root {
     font-size: 62.5%;/*para converter o px em rem, apenas dividindo por 10. Ex:65px é igual a 6.5rem*/
+    --primary-color: #020228;
+    --secondary-color: #ff00e5;
+    --tertiary-color: #b535f6;
+    --btn-bg-color-gradient: linear-gradient(45deg,#9b34ef 0%,#490cb0 20%, transparent 50%);
+    --btn-link-bg-color: #fff;
+    --btn-link-color: #000;
+    --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
+    --divider-bg-color: linear-gradient(90deg, #5516ba, rgba(255, 0, 229, 0.5) 80%);
+    --nav-bg-color: rgba(0, 0, 0, 0.3);
+    --text-color: #fff;
+    --link-color: #9e86ff;
+    --form-bg-color: rgba(211, 211, 211, 0.06);
+    --form-field-bg-color: rgba(0, 0, 0, 0.2);
+    --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
+    --form-field-placeholder: rgba(255, 255, 255, 0.7);
+    --form-field-error: rgb(255, 76, 76);
+
+    scroll-behavior: smooth;
 }
+
+/*CSS scroll*/
+::-webkit-scrollbar {
+    width: 8px;
+}
+    
+::-webkit-scrollbar-thumb {
+    background: var(--tertiary-color);
+    border-radius: 10px;
+}
+    
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
+
+/*CSS menu*/
+nav {
+    width: 100%;
+    height: 6rem;
+    background: var(--nav-bg-color);
+    position: fixed;
+    top: 0;
+}
+
+.containerNavbar {
+    margin-top: 1.4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerNavbar a img {
+    margin-top: 0.2rem;
+    width: 17rem;
+    margin-left: 1.6rem;
+}
+.menu-list {
+    width: 25rem;
+    margin-right: 3rem;
+}
+
+.menu-link {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item {
+    list-style: none;
+}
+
+a {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-color);
+    text-decoration: none;
+    letter-spacing: 0.02rem;
+}
+
+.item-button {
+    padding: 1rem 2.8rem;
+    background-color: var(--tertiary-color);
+    border-radius: 50rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 1s, color 1s;
+}
+
+.item-button:hover {
+    background-color: var(--btn-link-bg-color);
+    color: var(--btn-link-color);
+}
+
+.botton-gradient {
+    font-size: 1.7rem;
+    letter-spacing: 0.4rem;
+    padding: 1.6rem 3.3rem;
+    background: var(--btn-bg-color-gradient);
+    outline: 3px solid transparent;
+    transition: background-color 1s, outline 1s, transform 1s;
+    background-size: 250%;
+}
+
+.botton-gradient:hover {
+    background-color: transparent;
+    background-position: 100%;
+    color: var(--text-color);
+    outline: 2px solid var(--secondary-color);
+    transform: scale(1.05);
+}
+
