@@ -8,8 +8,8 @@
     font-family: "Raleway", sans-serif;
 }
 
-/*resolvendo o problema de medidas fixas como o px*/
 :root {
+    /*resolvendo o problema de medidas fixas como o px*/
     font-size: 62.5%;/*para converter o px em rem, apenas dividindo por 10. Ex:65px é igual a 6.5rem*/
     --primary-color: #020228;
     --secondary-color: #ff00e5;
@@ -52,6 +52,7 @@ nav {
     background: var(--nav-bg-color);
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 .containerNavbar {
@@ -97,6 +98,7 @@ a {
     padding: 1rem 2.8rem;
     background-color: var(--tertiary-color);
     border-radius: 50rem;
+    font-weight: 700;
     border: none;
     cursor: pointer;
     transition: background-color 1s, color 1s;
@@ -112,6 +114,7 @@ a {
     letter-spacing: 0.4rem;
     padding: 1.6rem 3.3rem;
     background: var(--btn-bg-color-gradient);
+    color: var(--text-color);
     outline: 3px solid transparent;
     transition: background-color 1s, outline 1s, transform 1s;
     background-size: 250%;
@@ -123,5 +126,17 @@ a {
     color: var(--text-color);
     outline: 2px solid var(--secondary-color);
     transform: scale(1.05);
+}
+
+/*CSS inscrever*/
+section {
+    scroll-margin-top: 6rem;
+}
+
+.container {
+    max-width: 120rem;
+    margin: auto;
+    padding: 2.4rem;
+    text-align: center;
 }
 
