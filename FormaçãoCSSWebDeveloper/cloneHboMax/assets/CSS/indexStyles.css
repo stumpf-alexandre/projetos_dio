@@ -276,14 +276,14 @@ header .text-small {
   }
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1023px) {
   .subscribe-plans {
     flex-direction: column;
     align-items: center;
   }
 
   .subscribe-card {
-    max-width: 60rem;
+    max-width: 50rem;
   }
 }
 
