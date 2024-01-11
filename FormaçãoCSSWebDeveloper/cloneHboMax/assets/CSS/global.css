@@ -8,6 +8,15 @@
     font-family: "Raleway", sans-serif;
 }
 
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+  }
+
+p {
+    font-family: "Quicksand", sans-serif;
+}
+
 :root {
     /*resolvendo o problema de medidas fixas como o px*/
     font-size: 62.5%;/*para converter o px em rem, apenas dividindo por 10. Ex:65px é igual a 6.5rem*/
@@ -140,3 +149,34 @@ section {
     text-align: center;
 }
 
+/*Footer*/
+
+.footer-link {
+    font-weight: bold;
+    color: var(--link-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 1.4rem;
+    letter-spacing: 0.2rem;
+    transition: color 0.5s;
+    font-size: 1.5rem;
+  }
+  
+  .footer-link:hover {
+    color: var(--text-color);
+  }
+  
+  .footer-legal {
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin: 1.6rem 0;
+    color: var(--link-color);
+  }
+  
+  .footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 8rem;
+  }
