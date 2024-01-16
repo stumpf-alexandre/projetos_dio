@@ -78,58 +78,47 @@ nav {
     width: 17rem;
     margin-left: 1.6rem;
 }
-.menu-list {
-    width: 25rem;
-    margin-right: 3rem;
-}
 
-.menu-link {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.item {
-    list-style: none;
-}
-
-a {
-    font-size: 1.2rem;
+.menu-item {
+    margin-right: 2.4rem;
     font-weight: 700;
+    font-size: 1.2rem;
     color: var(--text-color);
     text-decoration: none;
-    letter-spacing: 0.02rem;
-}
+    letter-spacing: 0.2rem;
+} 
 
-.item-button {
-    padding: 1rem 2.8rem;
-    background-color: var(--tertiary-color);
-    border-radius: 50rem;
-    font-weight: 700;
-    border: none;
-    cursor: pointer;
+.menu-item-button {
     transition: background-color 1s, color 1s;
 }
 
-.item-button:hover {
+.menu-item-button:hover {
     background-color: var(--btn-link-bg-color);
     color: var(--btn-link-color);
+
 }
 
-.botton-gradient {
-    font-size: 1.7rem;
-    letter-spacing: 0.4rem;
-    padding: 1.6rem 3.3rem;
-    background: var(--btn-bg-color-gradient);
+.item-button {
+    padding: 0.8rem 2.4rem;
+    background-color: var(--tertiary-color);
+    border-radius: 50rem;
+    font-weight: 700;
     color: var(--text-color);
+    text-decoration: none;
+    letter-spacing: 0.4rem;
+    border: none;
+    cursor: pointer;
+}
+
+.item-button.botton-gradient {
+    font-size: 1.7rem;
+    background: var(--btn-bg-color-gradient);
     outline: 3px solid transparent;
     transition: background-color 1s, outline 1s, transform 1s;
     background-size: 250%;
 }
 
-.botton-gradient:hover {
+.item-button.botton-gradient:hover {
     background-color: transparent;
     background-position: 100%;
     color: var(--text-color);
