@@ -1,0 +1,8 @@
+-Na pasta raiz, via terminal digite 'npm init -y'
+-Vai criar uma pagina package.json
+-digite 'npm install -D tailwindcss' para criar a dependencia de Tailwind
+-cria no package.json uma dependencia de desenvolvedor tailwindcss
+-para gerar o arquivo de configuração para tailwind com o código 'npx tailwindcss init'
+-crie uma pasta src e dentro um arquivo index.html, uma pasta CSS e dentro da pasta CSS um arquivo input.css para escrever nossas diretrises do tailwind
+-no tailwind.config.js escrevo o caminho dentro do content: ["..."], ->Ex:content: ["./src/**/*.{html,js}"],
+-no terminal digitamos 'npx tailwindcss -i ./src/CSS/input.css -o ./dist/output.css --watch'
