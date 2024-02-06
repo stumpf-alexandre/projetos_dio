@@ -1,0 +1,14 @@
+Instalando tailwind:
+1 - dentro da pasta raiz do projeto
+2 - digite npm init -y
+3 - cria um package.json
+4 - digite npm install -D tailwindcss
+5 - cria o pacote node_modules e package-lock.json
+6 - digite npx tailwindcss init
+7 - cria o arquivo tailwind.config.js de configuração do tailwind
+8 - criamos uma pasta src, e dentro dela uma pasta css, e dentro da pasta css criamos um arquivo input.css
+9 - no arquivo input.css escrevemos @tailwind base; @tailwind components; @tailwind utilities;
+10 - no arquivo tailwind.config.js onde esta escrito "content: [],", reescreva "content: ["./src/**.*{html,js}"],"
+11 - digite no terminal npx tailwindcss -i ./src/css/input.css -o ./dist/output.css --watch
+12 cria uma pasta dist com um arquivo output.css
+13 - criamos o arquivo index.html na pasta src e linkamos o index com o arquivo output.css "<link rel="stylesheet" href="../dist/output.css">"
