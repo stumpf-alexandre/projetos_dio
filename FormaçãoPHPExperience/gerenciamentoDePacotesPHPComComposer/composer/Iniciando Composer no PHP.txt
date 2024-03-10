@@ -1,0 +1,44 @@
+Iniciando Composer no PHP
+
+- na pasta do projeto com o terminal digite composer init (enter)
+
+- nome do pacote: em branco para colocar o nome padrão (enter)
+
+- descrição: Estudando Composer (enter)
+
+- autor: ja puxa automático (enter)
+
+- minimo stabilidade: em branco (enter)
+
+- tipo de pacote: projeto (enter)
+
+- licença: em branco (enter)
+
+- definindo dependencias: em branco (enter)
+
+- definindo dev dependencias: em branco (enter)
+
+- criar a pasta src: em branco (enter)
+
+- vai criar um arquivo em json: yes (enter)
+
+- vai criar uma arquivo composer.json, uma pasta vendor com as dependencias necessárias e uma pasta src vazia
+______________________________________________________________
+
+- abrindo https://packagist.org/, para procurar as dependencias a ser usada no composer
+
+- na dependencia mpdf, é copiado o código "composer require mpdf/mpdf", para colar no terminal na pasta raiz do projeto para instalar as dependencias
+
+- se as dependencias ja estiverem declaradas na pasta composer.json é só dar o comando "composer install" no terminal na pasta raiz do projeto
+
+- o composer.lock foi criado, ele armazena a versão das dependencias utilizadas no projeto
+
+- na pasta vendor fica todas as configurações das dependencias instaladas no projeto
+
+- comando no terminal "composer update" na pasta raiz do projeto, serve para atualizar as dependencias
+
+- comando no terminal "composer remove nome da dependencia/nome da dependencia" na pasta raiz do projeto, serve para remover a dependencia do projeto
+
+- autoload.php faz o mapeamento de todas as dependencias instaladas no projeto, faz um required em toda pagina que for usar o composer " require __DIR__ . '/vendor/autoload.php'; "
+
+- servidor de teste do php, no terminal, na pasta raiz do projeto digite "php -S localhost:9000"

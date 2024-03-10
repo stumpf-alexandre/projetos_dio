@@ -1,0 +1,14 @@
+{
+    "name": "alsst/composer",
+    "description": "Estodo Composer",
+    "type": "project",
+    "authors": [
+        {
+            "name": "stumpf-alexandre",
+            "email": "als.stumpf@gmail.com"
+        }
+    ],
+    "require": {
+        "mpdf/mpdf": "^6.1"
+    }
+}
