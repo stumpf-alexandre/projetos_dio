@@ -1,0 +1,17 @@
+{
+    "name": "alsst/metodos-eatributos",
+    "description": "Estudos de OO com PHP e composer",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Alsst\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "stumpf-alexandre",
+            "email": "als.stumpf@gmail.com"
+        }
+    ],
+    "require": {}
+}

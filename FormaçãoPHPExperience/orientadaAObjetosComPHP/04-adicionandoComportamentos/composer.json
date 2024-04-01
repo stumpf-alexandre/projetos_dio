@@ -1,0 +1,17 @@
+{
+    "name": "alsst/04-adicionando-comportamentos",
+    "description": "projeto de OO com php e composer",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Alsst\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "stumpf-alexandre",
+            "email": "als.stumpf@gmail.com"
+        }
+    ],
+    "require": {}
+}
