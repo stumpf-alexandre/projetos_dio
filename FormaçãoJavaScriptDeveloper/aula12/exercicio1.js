@@ -1,4 +1,4 @@
-const {gets, print} = require('./funcoesAuxiliares');
+const {gets, print} = require('./funcoesAuxiliaresEx1');
 
 /*
 Uma sala contem 5 alunos e para cada aluno foi sorteado um número de 1 - 100.
